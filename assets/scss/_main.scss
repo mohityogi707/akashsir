@@ -1,0 +1,126 @@
+
+::-webkit-scrollbar-track {
+  // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: rgba($black, 0);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 2px;
+  background-color: rgba($black, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $theming1;
+}
+
+
+body{
+  font-family: 'Poppins', sans-serif;
+  // overflow: hidden auto;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.msgbtn {
+  height: 60px;
+  width: 60px;
+  font-size: 22px;
+  color: #fff;
+  background-color: $theme1;
+  // border: 1px solid $theme2;
+  bottom: 30px;
+  right: 30px;
+  z-index: 22;
+}
+
+.navbarLogo {
+  height: 45px;
+}
+
+.activepage {
+  & .breadcrumb {
+    background-color: $theme1;
+    padding: 6px 10px;
+  }
+  & .breadcrumb-item {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+    
+    &.active{
+      color: $theme2;
+      &::before {
+        color: $theme2;
+      }
+    }
+    & .returnpage {
+      color: #fff;
+    }
+  }
+}
+
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+  .msgbtn {
+    height: 55px;
+    width:55px;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .msgbtn {
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    right: 20px;
+    bottom: 20px;
+  }
+  
+  .navbarLogo {
+    height: 40px;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .navbarLogo {
+    height: 35px;
+  }
+  .msgbtn {
+    height: 45px;
+    width: 45px;
+    font-size: 17px;
+    bottom: 15px;
+    right: 15px;
+  }
+  .activepage {
+    & .breadcrumb {
+    }
+    & .breadcrumb-item {
+      font-size: 13px;
+      
+      &.active{
+        &::before {
+        }
+      }
+      & .returnpage {
+      }
+    }
+  }
+}

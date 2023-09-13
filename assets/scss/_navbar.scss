@@ -1,0 +1,230 @@
+.navbar {
+    height: 80px;
+    &.profilenav {
+        background: url(../img/index/bg.jpg) no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    & .headerlink {
+        gap: 24px;
+        & .login {
+            font-size: 14px;
+            font-weight: 500;
+            color: #fff;
+            transition: all 0.3s ease-in-out;
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                height: 1.5px;
+                width: 100%;
+                background-color: #fff;
+                transition: all 0.3s ease-in-out;
+                transform: scale(0);
+                transform-origin: right;
+            }
+            &:hover {
+                &::before {
+                    // width: 100%;
+                    transform: scale(1);
+                    transform-origin: left;
+                }
+            }
+        }
+        & .slash {
+            font-size: 14px;
+            color: #fff;
+        }
+    }
+    &.fixed-navbar {
+        top: 0;
+        // position: fixed !important;
+        animation-name: fixedAnim;
+        animation-duration: 1s;
+        background: white !important;
+        animation-fill-mode: forwards;
+        -webkit-box-shadow: 0 12px 6px rgba(0, 0, 0, 0.06);
+        -moz-box-shadow: 0 12px 6px rgba(0, 0, 0, 0.06);
+        box-shadow: 0 6px 6px rgba(0, 0, 0, 0.06);
+    
+        @keyframes fixedAnim {
+            from {
+                top: -50px;
+            }
+        
+            to {
+                top: 0;
+            }
+        }
+        & .navbarLogo {
+            & img {
+                // filter: brightness(0);
+            }
+        }
+        & .customBtn {
+            border: 1px solid $theme1;
+            color: $theme1;
+            background-color: transparent;
+            &::before {
+                background-color: $theme1;
+            }
+            &:hover {
+                color: #fff;
+            }
+
+        }
+        & .headerlink {
+            & .login {
+                color: #000;
+                &::before {
+                    background-color: #000;
+                }
+                &:hover {
+                    &::before {
+                    }
+                }
+            }
+            & .slash {
+                color: #000;
+            }
+        }
+        & .userdropdwon {
+            & .dropdownbtn {
+                color: #000 !important;
+                gap: 7px;
+                & .userimg {
+                    border-color: #000;
+                }
+            }
+            & .innerdata {
+                & .innerlink {
+                }
+            }
+        }
+    }
+    & .userdropdwon {
+        & .dropdownbtn {
+            font-size: 14px;
+            color: #fff !important;
+            gap: 7px;
+            & .userimg {
+                height: 35px;
+                border: 1.5px solid #fff;
+                width: 35px;
+            }
+        }
+        & .innerdata {
+            min-width: 100%;
+            width: 100%;
+            & .innerlink {
+                font-size: 14px;
+                padding: 6px 14px;
+                font-weight: 500;
+                color: #000;
+            }
+        }
+    }
+}
+
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {
+    .navbar {
+        height: 70px;
+        & .userdropdwon {
+            & .dropdownbtn {
+                font-size: 13px;
+                gap: 5px;
+                & .userimg {
+                    height: 30px;
+                    width: 30px;
+                }
+            }
+            & .innerdata {
+                & .innerlink {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .navbar {
+        height: 60px;
+        & .navbarLogo {
+            height: 30px;
+        }
+        & .headerlink {
+            gap: 17px;
+            & .login {
+                font-size: 12px;
+                &::before {
+                }
+                &:hover {
+                    &::before {
+                    }
+                }
+            }
+            & .slash {
+            }
+        }
+        &.fixed-navbar {
+            & .navbarLogo {
+                & img {
+                }
+            }
+            & .customBtn {
+                &::before {
+                }
+                &:hover {
+                }
+    
+            }
+            & .headerlink {
+                & .login {
+                    &::before {
+                    }
+                    &:hover {
+                        &::before {
+                        }
+                    }
+                }
+                & .slash {
+                }
+            }
+        }
+        & .userdropdwon {
+            & .dropdownbtn {
+                font-size: 12px;
+                gap: 3px;
+                & .userimg {
+                    height: 25px;
+                    width: 25px;
+                }
+            }
+            & .innerdata {
+                & .innerlink {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

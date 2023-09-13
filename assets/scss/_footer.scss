@@ -1,0 +1,118 @@
+// footer start 
+.footer {
+    background: #28212D;
+    // padding-top: 40px;
+    & .footerdata {
+        padding: 28px 0;
+    }
+    & .copyright {
+        padding: 12px 0;
+        & .copyrigtTitle {
+            font-size: 13px;
+            color: #89868a;
+        }
+        & .privacydata {
+            gap: 30px;
+            & .privacylink {
+                font-size: 13px;
+                color: #89868a;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    & .footerlogo {
+        height:50px;
+    }
+    & .footerlinkmain {
+        gap: 40px;
+        & .footerlink {
+            font-size: 15px;
+            color: #fff;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                color: $theme2;
+            }
+        }
+    }
+}
+
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {
+    .footer {
+        & .footerdata {
+        }
+        & .copyright {
+            & .copyrigtTitle {
+            }
+            & .privacydata {
+                & .privacylink {
+                    &:hover {
+                    }
+                }
+            }
+        }
+        & .footerlogo {
+        }
+        & .footerlinkmain {
+            gap: 28px;
+            & .footerlink {
+                &:hover {
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .footer {
+        & .footerdata {
+            padding: 28px 0;
+        }
+        & .copyright {
+            & .copyrigtTitle {
+                font-size: 12px;
+            }
+            & .privacydata {
+                gap: 15px;
+                & .privacylink {
+                    font-size: 12px;
+                    &:hover {
+                    }
+                }
+            }
+        }
+        & .footerlogo {
+            height: 35px;
+        }
+        & .footerlinkmain {
+            gap: 18px;
+            & .footerlink {
+                font-size: 12px;
+                &:hover {
+                }
+            }
+        }
+    }
+}
+
+// footer end 

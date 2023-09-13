@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css  -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+    <!-- bootstrap css  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="assets/FontAwesome/css/all.min.css">
+</head>
+<body>
+    <!-- <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center msgbtn rounded-circle position-fixed" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+        <i class="fa-solid fa-comments"></i>
+    </a> -->
+    <button class="text-decoration-none d-flex border-0 align-items-center justify-content-center msgbtn rounded-circle position-fixed" data-bs-toggle="modal" data-bs-target="#chatmodal">
+        <i class="fa-solid fa-comments"></i>
+    </button>
+    <!-- <button class="btn position-fixed msgbtn rounded-circle d-flex align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <i class="fa-solid fa-comments"></i>
+    </button> -->
+
+    <!-- navbar start  -->
+    <nav class="navbar container-fluid fixed-top" id="navbar">
+        <div class="container">
+            <div class="row w-100 align-items-center mx-auto">
+                <div class="col d-mdblock dnone">
+                    <a href="javascript:;" class="navbarLogo d-inline-flex align-items-center justify-content-center">
+                        <img src="assets/img/index/logo2.png" alt="logo" class="h-100">
+                    </a>
+                </div>
+                <div class="col-auto mx-auto">
+                    <div class="headerlink d-flex align-items-center">
+                        <a href="startselling.html" class="customBtn text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                            <span class="position-relative z-1">Start Selling</span>
+                        </a>
+                        <div class="d-flex align-items-center gap-sm-2 gap-1">
+                            <a href="javascript:;" class="login text-decoration-none position-relative" data-bs-toggle="modal" data-bs-target="#loginmodal">Log In</a>
+                            <span class="slash">/</span>
+                            <a href="javascript:;" class="login text-decoration-none position-relative"  data-bs-toggle="modal" data-bs-target="#signup">Register</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end  -->
+
+    <!-- hero section start  -->
+    <div class="container-fluid herosection vh100">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-xl-9 col-lg-10  mx-auto">
+                    <div class="herocard rounded-3">
+                        <div class="row ">
+                            <!-- <a href="javascript:;" class="navbarLogo d-md-none mb-2 d-inline-flex align-items-center justify-content-center">
+                                <img src="assets/img/index/logo.png" alt="logo" class="h-100">
+                            </a> -->
+                            <div class="heortitle col-12 pb-4 text-center">Quick & Secure social media marketplace.</div>
+                            <div class="col-12">
+                                <div class="d-flex pb-2 align-items-center heroBtns flex-nowrap overflow-x-auto  justify-contentcenter">
+                                    <a href="javascript:;" class="customBtn active herobtn text-decoration-none fw-medium rounded-pill d-flex align-items-center position-relative overflow-hiddn z-1">
+                                        <span class="position-relative z-1">Youtube</span>
+                                    </a>
+                                    <a href="javascript:;" class="customBtn herobtn text-decoration-none fw-medium rounded-pill d-flex align-items-center position-relative overflow-hiddn z-1">
+                                        <span class="position-relative z-1">Instagram</span>
+                                    </a>
+                                    <a href="javascript:;" class="customBtn herobtn text-decoration-none fw-medium rounded-pill d-flex align-items-center position-relative overflow-hiddn z-1">
+                                        <span class="position-relative z-1">Facebook</span>
+                                    </a>
+                                    <a href="javascript:;" class="customBtn herobtn text-decoration-none fw-medium rounded-pill d-flex align-items-center position-relative overflow-hiddn z-1">
+                                        <span class="position-relative z-1">Telegram</span>
+                                    </a>
+                                    <a href="javascript:;" class="customBtn herobtn text-decoration-none fw-medium rounded-pill d-flex align-items-center position-relative overflow-hiddn z-1">
+                                        <span class="position-relative z-1">Twitter</span>
+                                    </a>
+                                    <a href="javascript:;" class="customBtn herobtn text-decoration-none fw-medium rounded-pill d-flex align-items-center position-relative overflow-hiddn z-1">
+                                        <span class="position-relative z-1">TikTok</span>
+                                    </a>
+                                    <a href="javascript:;" class="customBtn herobtn text-decoration-none fw-medium rounded-pill d-flex align-items-center position-relative overflow-hiddn z-1">
+                                        <span class="position-relative z-1">Likee</span>
+                                    </a>
+                                    <a href="javascript:;" class="customBtn herobtn text-decoration-none fw-medium rounded-pill d-flex align-items-center position-relative overflow-hiddn z-1">
+                                        <span class="position-relative z-1">Discord</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-12 pt-md-4 pt-3 mt-3">
+                                <div class="d-flex flex-sm-row flex-column align-items-center gap-3">
+                                    <input type="text" class="form-control heroinput shadow-none border-0" placeholder="Search By Name...">
+                                    <select class="form-select heroinput shadow-none border-0" tabindex="-1">
+                                        <option value="0" disabled selected>Select Subject</option>
+                                        <option value="1">Cars &amp; Bikes</option>
+                                        <option value="2">Luxury &amp; Motivation</option>
+                                        <option value="4">Pets &amp; Animals</option>
+                                        <option value="6">Games</option>
+                                        <option value="9">Movies &amp; Music</option>
+                                        <option value="14">Fashion &amp; Style</option>
+                                        <option value="16">Educational &amp; QA</option>
+                                        <option value="17">Food</option>
+                                        <option value="19">Nature</option>
+                                        <option value="30">Fitness &amp; Sports</option>
+                                        <option value="34">Travel</option>
+                                        <option value="38">Beautiful girls</option>
+                                        <option value="39">Humor</option>
+                                        <option value="41">Models &amp; Celebrities</option>
+                                        <option value="42">Reviews &amp; How-to</option>
+                                        <option value="43">YouTube shorts &amp; Facebook reels</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 pt-4 ">
+                                <div class="d-flex align-items-center flex-md-row flex-column gap-sm-3 gap-2">
+                                    <div class="w-100">
+                                        <input type="checkbox" id="check1" class="checkinput" hidden>
+                                        <label for="check1" class="checkbox text-nowrap d-inline-flex w-100 align-items-center rounded-2 justify-content-center">
+                                            <i class="fa-solid fa-check icon"></i>
+                                            Verified listings
+                                        </label>
+                                    </div>
+                                    <div class="w-100">
+                                        <input type="checkbox" id="check2" class="checkinput" hidden>
+                                        <label for="check2" class="checkbox text-nowrap d-inline-flex w-100 align-items-center rounded-2 justify-content-center">
+                                            <i class="fa-solid fa-check icon"></i>
+                                            Monetization enabled
+                                        </label>
+                                    </div>
+                                    <div class="w-100">
+                                        <input type="checkbox" id="check3" class="checkinput" hidden>
+                                        <label for="check3" class="checkbox text-nowrap d-inline-flex w-100 align-items-center rounded-2 justify-content-center">
+                                            <i class="fa-solid fa-check icon"></i>
+                                            Verified identity
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 pt-4 mt-sm-0 mt-1">
+                                <div class="row inputdata mx-0 bg-white rounded-2">
+                                    <div class="col-12 inputtitle">
+                                        Subscribers:
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="subscriberinputs d-flex flex-sm-row flex-column align-items-center">
+                                            <input type="text" class="form-control heroinput shadow-none border" placeholder="from">
+                                            <div class="equalline">
+                                                <i class="fa-solid fa-arrow-right-long"></i>
+                                            </div>
+                                            <input type="text" class="form-control heroinput shadow-none border" placeholder="to">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row inputdata mx-0 bg-white rounded-2 mt-3">
+                                    <div class="col-12 inputtitle">
+                                        Price:
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="subscriberinputs d-flex flex-sm-row flex-column align-items-center">
+                                            <input type="text" class="form-control heroinput shadow-none border" placeholder="from">
+                                            <div class="equalline">
+                                                <i class="fa-solid fa-arrow-right-long"></i>
+                                            </div>
+                                            <input type="text" class="form-control heroinput shadow-none border" placeholder="to">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row inputdata mx-0 bg-white rounded-2 mt-3">
+                                    <div class="col-12 inputtitle">
+                                        Income:
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="subscriberinputs d-flex flex-sm-row flex-column align-items-center">
+                                            <input type="text" class="form-control heroinput shadow-none border" placeholder="from">
+                                            <div class="equalline">
+                                                <i class="fa-solid fa-arrow-right-long"></i>
+                                            </div>
+                                            <input type="text" class="form-control heroinput shadow-none border" placeholder="to">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="col-12 pt-md-5 pt-4 mt-md-0 mt-3 tex-center">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <a href="javascript:;" class="customBtn px-5 searchbtn text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                        <span class="position-relative z-1">Search</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hero section end -->
+
+    <!-- card section start  -->
+    <div class="container-fluid cardsection">
+        <div class="container">
+            <div class="row g-3">
+                <div class="col">
+                    <div class="d-flex align-items-center justify-content-sm-start justify-content-center">
+                        <div class="sortByTitle fw-semibold text-nowrap">
+                            Sort By:
+                        </div>
+                        <div class="dropdown sortby bord ms-2">
+                            <button class="btn dropdown-toggle sortbybtn" type="button" data-bs-toggle="dropdown" data-bs-auclose="outside" aria-expanded="false">
+                                relevance 
+                            </button>
+                            <ul class="dropdown-menu innerdata">
+                                <li><a class="dropdown-item innerlink" href="javascript:;">creation date</a></li>
+                                <li><a class="dropdown-item innerlink" href="javascript:;">Price</a></li>
+                                <li><a class="dropdown-item innerlink" href="javascript:;">subscribers </a></li>
+                                <li><a class="dropdown-item innerlink" href="javascript:;">income</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto mx-auto">
+                    <div class="d-flex align-items-center gap-3 justify-content-end">
+                        <a href="javascript:;" class="customBtn btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                            <span class="position-relative z-1">Notifications</span>
+                        </a>
+                        <a href="javascript:;" class="customBtn btnthree text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                            <span class="position-relative z-1">Sellers' ratings</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row cardmain g-3 ">
+                <div class="col">
+                    <div class="premiumcard rounded-2 overflow-hidden">
+                        <div class="cardimg rounded-top-2 overflow-hidden position-relative">
+                            <img src="assets/img/index/card1" alt="card" class="h-100 w-100 img-fluid">
+                            <div class="premium position-absolute">
+                                PREMIUM
+                            </div>
+                            <div class="vip position-absolute d-flex align-items-center ">
+                                <span class="vipImg"><img src="assets/img/index/vip.png" alt="vip" class="h-100 w-100 img-fluid"></span>
+                                VIP
+                            </div>
+                            <div class="pass position-absolute d-flex align-items-center rounded-pill">
+                                <i class="fa-solid fa-check icon"></i>
+                                PASS
+                            </div>
+                            <a href="javascript:;" class="customBtn showbtn text-decoration-none position-absolute 50 fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1">show more</span>
+                            </a>
+                        </div>
+                        <div class="cardcontent bg-white">
+                            <div class="d-flex align-items-center justify-content-center gap-2">
+                                <div class="chechIcon rounded-circle overflow-hidden d-flex align-items-center justify-content-center">
+                                    <img src="assets/img/index/check.png" alt="check" class="h-100 w-100 img-fluid">
+                                </div>
+                                <a href="javscript:;" class="text-decoration-none cardHeding">Decode The Future </a>
+                            </div>
+                            <div class="text-center headingTitle">Reviews & How-to</div>
+                            <div class="price text-center"><span>$</span> 200</div>
+                            <div class="carddata text-center"><span class="fw-bold">7 660 —</span> subscribers</div>
+                            <div class="carddata text-center"><span class="fw-bold">5$ / months —</span> income</div>
+                        </div>
+                        <a href="javscript:;" class="buychannel text-decoration-none text-center d-flex align-items-center justify-content-center">Buy this channel</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="premiumcard rounded-2 overflow-hidden">
+                        <div class="cardimg rounded-top-2 overflow-hidden position-relative">
+                            <img src="assets/img/index/card1" alt="card" class="h-100 w-100 img-fluid">
+                            <div class="premium position-absolute">
+                                PREMIUM
+                            </div>
+                            <div class="vip position-absolute d-flex align-items-center ">
+                                <span class="vipImg"><img src="assets/img/index/vip.png" alt="vip" class="h-100 w-100 img-fluid"></span>
+                                VIP
+                            </div>
+                            <div class="pass position-absolute d-flex align-items-center rounded-pill">
+                                <i class="fa-solid fa-check icon"></i>
+                                PASS
+                            </div>
+                            <a href="javascript:;" class="customBtn showbtn text-decoration-none position-absolute 50 fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1">show more</span>
+                            </a>
+                        </div>
+                        <div class="cardcontent bg-white">
+                            <div class="d-flex align-items-center justify-content-center gap-2">
+                                <div class="chechIcon rounded-circle overflow-hidden d-flex align-items-center justify-content-center">
+                                    <img src="assets/img/index/check.png" alt="check" class="h-100 w-100 img-fluid">
+                                </div>
+                                <a href="javscript:;" class="text-decoration-none cardHeding">Decode The Future </a>
+                            </div>
+                            <div class="text-center headingTitle">Reviews & How-to</div>
+                            <div class="price text-center"><span>$</span> 200</div>
+                            <div class="carddata text-center"><span class="fw-bold">7 660 —</span> subscribers</div>
+                            <div class="carddata text-center"><span class="fw-bold">5$ / months —</span> income</div>
+                        </div>
+                        <a href="javscript:;" class="buychannel text-decoration-none text-center d-flex align-items-center justify-content-center">Buy this channel</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="premiumcard rounded-2 overflow-hidden">
+                        <div class="cardimg rounded-top-2 overflow-hidden position-relative">
+                            <img src="assets/img/index/card1" alt="card" class="h-100 w-100 img-fluid">
+                            <div class="premium position-absolute">
+                                PREMIUM
+                            </div>
+                            <div class="vip position-absolute d-flex align-items-center ">
+                                <span class="vipImg"><img src="assets/img/index/vip.png" alt="vip" class="h-100 w-100 img-fluid"></span>
+                                VIP
+                            </div>
+                            <div class="pass position-absolute d-flex align-items-center rounded-pill">
+                                <i class="fa-solid fa-check icon"></i>
+                                PASS
+                            </div>
+                            <a href="javascript:;" class="customBtn showbtn text-decoration-none position-absolute 50 fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1">show more</span>
+                            </a>
+                        </div>
+                        <div class="cardcontent bg-white">
+                            <div class="d-flex align-items-center justify-content-center gap-2">
+                                <div class="chechIcon rounded-circle overflow-hidden d-flex align-items-center justify-content-center">
+                                    <img src="assets/img/index/check.png" alt="check" class="h-100 w-100 img-fluid">
+                                </div>
+                                <a href="javscript:;" class="text-decoration-none cardHeding">Decode The Future </a>
+                            </div>
+                            <div class="text-center headingTitle">Reviews & How-to</div>
+                            <div class="price text-center"><span>$</span> 200</div>
+                            <div class="carddata text-center"><span class="fw-bold">7 660 —</span> subscribers</div>
+                            <div class="carddata text-center"><span class="fw-bold">5$ / months —</span> income</div>
+                        </div>
+                        <a href="javscript:;" class="buychannel text-decoration-none text-center d-flex align-items-center justify-content-center">Buy this channel</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="premiumcard rounded-2 overflow-hidden">
+                        <div class="cardimg rounded-top-2 overflow-hidden position-relative">
+                            <img src="assets/img/index/card1" alt="card" class="h-100 w-100 img-fluid">
+                            <div class="premium position-absolute">
+                                PREMIUM
+                            </div>
+                            <div class="vip position-absolute d-flex align-items-center ">
+                                <span class="vipImg"><img src="assets/img/index/vip.png" alt="vip" class="h-100 w-100 img-fluid"></span>
+                                VIP
+                            </div>
+                            <div class="pass position-absolute d-flex align-items-center rounded-pill">
+                                <i class="fa-solid fa-check icon"></i>
+                                PASS
+                            </div>
+                            <a href="javascript:;" class="customBtn showbtn text-decoration-none position-absolute 50 fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1">show more</span>
+                            </a>
+                        </div>
+                        <div class="cardcontent bg-white">
+                            <div class="d-flex align-items-center justify-content-center gap-2">
+                                <div class="chechIcon rounded-circle overflow-hidden d-flex align-items-center justify-content-center">
+                                    <img src="assets/img/index/check.png" alt="check" class="h-100 w-100 img-fluid">
+                                </div>
+                                <a href="javscript:;" class="text-decoration-none cardHeding">Decode The Future </a>
+                            </div>
+                            <div class="text-center headingTitle">Reviews & How-to</div>
+                            <div class="price text-center"><span>$</span> 200</div>
+                            <div class="carddata text-center"><span class="fw-bold">7 660 —</span> subscribers</div>
+                            <div class="carddata text-center"><span class="fw-bold">5$ / months —</span> income</div>
+                        </div>
+                        <a href="javscript:;" class="buychannel text-decoration-none text-center d-flex align-items-center justify-content-center">Buy this channel</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="premiumcard rounded-2 overflow-hidden">
+                        <div class="cardimg rounded-top-2 overflow-hidden position-relative">
+                            <img src="assets/img/index/card1" alt="card" class="h-100 w-100 img-fluid">
+                            <div class="premium position-absolute">
+                                PREMIUM
+                            </div>
+                            <div class="vip position-absolute d-flex align-items-center ">
+                                <span class="vipImg"><img src="assets/img/index/vip.png" alt="vip" class="h-100 w-100 img-fluid"></span>
+                                VIP
+                            </div>
+                            <div class="pass position-absolute d-flex align-items-center rounded-pill">
+                                <i class="fa-solid fa-check icon"></i>
+                                PASS
+                            </div>
+                            <a href="javascript:;" class="customBtn showbtn text-decoration-none position-absolute 50 fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1">show more</span>
+                            </a>
+                        </div>
+                        <div class="cardcontent bg-white">
+                            <div class="d-flex align-items-center justify-content-center gap-2">
+                                <div class="chechIcon rounded-circle overflow-hidden d-flex align-items-center justify-content-center">
+                                    <img src="assets/img/index/check.png" alt="check" class="h-100 w-100 img-fluid">
+                                </div>
+                                <a href="javscript:;" class="text-decoration-none cardHeding">Decode The Future </a>
+                            </div>
+                            <div class="text-center headingTitle">Reviews & How-to</div>
+                            <div class="price text-center"><span>$</span> 200</div>
+                            <div class="carddata text-center"><span class="fw-bold">7 660 —</span> subscribers</div>
+                            <div class="carddata text-center"><span class="fw-bold">5$ / months —</span> income</div>
+                        </div>
+                        <a href="javscript:;" class="buychannel text-decoration-none text-center d-flex align-items-center justify-content-center">Buy this channel</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="premiumcard rounded-2 overflow-hidden">
+                        <div class="cardimg rounded-top-2 overflow-hidden position-relative">
+                            <img src="assets/img/index/card1" alt="card" class="h-100 w-100 img-fluid">
+                            <div class="premium position-absolute">
+                                PREMIUM
+                            </div>
+                            <div class="vip position-absolute d-flex align-items-center ">
+                                <span class="vipImg"><img src="assets/img/index/vip.png" alt="vip" class="h-100 w-100 img-fluid"></span>
+                                VIP
+                            </div>
+                            <div class="pass position-absolute d-flex align-items-center rounded-pill">
+                                <i class="fa-solid fa-check icon"></i>
+                                PASS
+                            </div>
+                            <a href="javascript:;" class="customBtn showbtn text-decoration-none position-absolute 50 fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1">show more</span>
+                            </a>
+                        </div>
+                        <div class="cardcontent bg-white">
+                            <div class="d-flex align-items-center justify-content-center gap-2">
+                                <div class="chechIcon rounded-circle overflow-hidden d-flex align-items-center justify-content-center">
+                                    <img src="assets/img/index/check.png" alt="check" class="h-100 w-100 img-fluid">
+                                </div>
+                                <a href="javscript:;" class="text-decoration-none cardHeding">Decode The Future </a>
+                            </div>
+                            <div class="text-center headingTitle">Reviews & How-to</div>
+                            <div class="price text-center"><span>$</span> 200</div>
+                            <div class="carddata text-center"><span class="fw-bold">7 660 —</span> subscribers</div>
+                            <div class="carddata text-center"><span class="fw-bold">5$ / months —</span> income</div>
+                        </div>
+                        <a href="javscript:;" class="buychannel text-decoration-none text-center d-flex align-items-center justify-content-center">Buy this channel</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="premiumcard rounded-2 overflow-hidden">
+                        <div class="cardimg rounded-top-2 overflow-hidden position-relative">
+                            <img src="assets/img/index/card1" alt="card" class="h-100 w-100 img-fluid">
+                            <div class="premium position-absolute">
+                                PREMIUM
+                            </div>
+                            <div class="vip position-absolute d-flex align-items-center ">
+                                <span class="vipImg"><img src="assets/img/index/vip.png" alt="vip" class="h-100 w-100 img-fluid"></span>
+                                VIP
+                            </div>
+                            <div class="pass position-absolute d-flex align-items-center rounded-pill">
+                                <i class="fa-solid fa-check icon"></i>
+                                PASS
+                            </div>
+                            <a href="javascript:;" class="customBtn showbtn text-decoration-none position-absolute 50 fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1">show more</span>
+                            </a>
+                        </div>
+                        <div class="cardcontent bg-white">
+                            <div class="d-flex align-items-center justify-content-center gap-2">
+                                <div class="chechIcon rounded-circle overflow-hidden d-flex align-items-center justify-content-center">
+                                    <img src="assets/img/index/check.png" alt="check" class="h-100 w-100 img-fluid">
+                                </div>
+                                <a href="javscript:;" class="text-decoration-none cardHeding">Decode The Future </a>
+                            </div>
+                            <div class="text-center headingTitle">Reviews & How-to</div>
+                            <div class="price text-center"><span>$</span> 200</div>
+                            <div class="carddata text-center"><span class="fw-bold">7 660 —</span> subscribers</div>
+                            <div class="carddata text-center"><span class="fw-bold">5$ / months —</span> income</div>
+                        </div>
+                        <a href="javscript:;" class="buychannel text-decoration-none text-center d-flex align-items-center justify-content-center">Buy this channel</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="premiumcard rounded-2 overflow-hidden">
+                        <div class="cardimg rounded-top-2 overflow-hidden position-relative">
+                            <img src="assets/img/index/card1" alt="card" class="h-100 w-100 img-fluid">
+                            <div class="premium position-absolute">
+                                PREMIUM
+                            </div>
+                            <div class="vip position-absolute d-flex align-items-center ">
+                                <span class="vipImg"><img src="assets/img/index/vip.png" alt="vip" class="h-100 w-100 img-fluid"></span>
+                                VIP
+                            </div>
+                            <div class="pass position-absolute d-flex align-items-center rounded-pill">
+                                <i class="fa-solid fa-check icon"></i>
+                                PASS
+                            </div>
+                            <a href="javascript:;" class="customBtn showbtn text-decoration-none position-absolute 50 fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1">show more</span>
+                            </a>
+                        </div>
+                        <div class="cardcontent bg-white">
+                            <div class="d-flex align-items-center justify-content-center gap-2">
+                                <div class="chechIcon rounded-circle overflow-hidden d-flex align-items-center justify-content-center">
+                                    <img src="assets/img/index/check.png" alt="check" class="h-100 w-100 img-fluid">
+                                </div>
+                                <a href="javscript:;" class="text-decoration-none cardHeding">Decode The Future </a>
+                            </div>
+                            <div class="text-center headingTitle">Reviews & How-to</div>
+                            <div class="price text-center"><span>$</span> 200</div>
+                            <div class="carddata text-center"><span class="fw-bold">7 660 —</span> subscribers</div>
+                            <div class="carddata text-center"><span class="fw-bold">5$ / months —</span> income</div>
+                        </div>
+                        <a href="javscript:;" class="buychannel text-decoration-none text-center d-flex align-items-center justify-content-center">Buy this channel</a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="">
+                <nav aria-label="..." class="pagedatamain">
+                    <ul class="pagination pagedata m-0">
+                        <li class="page-item disabled">
+                            <span class="page-link">Previous</span>
+                        </li>
+                        <!-- <li class="page-item active" aria-current="page">
+                            <span class="page-link">1</span>
+                        </li> -->
+                        <li class="page-item"><a class="page-link active h-100 shadow-none disabled"  href="#">1</a></li>
+                        <li class="page-item"><a class="page-link h-100 shadow-none" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link h-100 shadow-none" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link h-100 shadow-none" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link h-100 shadow-none" href="#">5</a></li>
+                        <li class="page-item">
+                            <a class="page-link h-100 shadow-none" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+        </div>
+    </div>
+    <!-- card section end -->
+
+    <!-- about us section start -->
+    <div class="container-fluid aboutus">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 aboutheading text-center">
+                    ChannelsFlip.com is your reliable partner for buying and selling Youtube channels.
+                </div>
+                <div class="col-12 aboutdata text-center">
+                    ChannelsFlip.com is a unique service that allows you to securely make deals between sellers and buyers of social media accounts. If you're a buyer, we'll guarantee the transfer of your new channel to you, or your money back. And as a seller, you can be sure that you'll either get your agreed-upon payment, or your channel will be returned to you.
+                </div>
+                <div class="col-12 pt-2">
+                    <div class="d-flex align-items-center flex-wrap justify-content-center">
+                        <div class="d-flex align-items-center text-decoration-none aboutlinksmain">
+                            <a href="javascript:;" class="aboutlink text-decoration-none ps-0"> Instagram accounts for sale</a>
+                            <span class="linkdivide">|</span>
+                        </div>
+                        <div class="d-flex align-items-center text-decoration-none aboutlinksmain">
+                            <a href="javascript:;" class="aboutlink text-decoration-none">Facebook groups/pages for sale</a>
+                            <span class="linkdivide">|</span>
+                        </div>
+                        <div class="d-flex align-items-center text-decoration-none aboutlinksmain">
+                            <a href="javascript:;" class="aboutlink text-decoration-none"> Telegram channels for sale</a>
+                            <span class="linkdivide">|</span>
+                        </div>
+                        <div class="d-flex align-items-center text-decoration-none aboutlinksmain">
+                            <a href="javascript:;" class="aboutlink text-decoration-none"> Youtube channels for sale</a>
+                            <span class="linkdivide">|</span>
+                        </div>
+                        <div class="d-flex align-items-center text-decoration-none aboutlinksmain">
+                            <a href="javascript:;" class="aboutlink text-decoration-none"> Twitter accounts for sale</a>
+                            <span class="linkdivide">|</span>
+                        </div>
+                        <div class="d-flex align-items-center text-decoration-none aboutlinksmain">
+                            <a href="javascript:;" class="aboutlink text-decoration-none ps0">Tiktok accounts for sale</a>
+                            <span class="linkdivide">|</span>
+                        </div>
+                        <div class="d-flex align-items-center text-decoration-none aboutlinksmain">
+                            <a href="javascript:;" class="aboutlink text-decoration-none">Likee accounts for sale</a>
+                            <span class="linkdivide">|</span>
+                        </div>
+                        <div class="d-flex align-items-center text-decoration-none aboutlinksmain">
+                            <a href="javascript:;" class="aboutlink text-decoration-none">Discord servers for sale</a>
+                            <span class="linkdivide">|</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- about us section end -->
+
+    <!-- footer start  -->
+    <footer class="container-fluid footer">
+        <div class="container">
+            <div class="row footerdata align-items-center justify-content-center ">
+                <div class="col-md-auto order1">
+                    <a href="javascipt:;" class="footerlogo d-flex align-items-center justify-content-center">
+                        <img src="assets/img/index/logo2.png" alt="logo" class="h-100">
+                    </a>
+                </div>
+                <div class="col mt-md-0 mt-sm-3 mt-2 orderl ord-3">
+                    <ul class="footerlinkmain list-unstyled d-flex justify-content-center m-0 align-items-center">
+                        <li><a href="javascript:;" class="footerlink text-decoration-none text-nowrap">About us</a></li>
+                        <li><a href="javascript:;" class="footerlink text-decoration-none text-nowrap">Escrow service</a></li>
+                        <li><a href="javascript:;" class="footerlink text-decoration-none text-nowrap">Sellers</a></li>
+                        <li><a href="javascript:;" class="footerlink text-decoration-none text-nowrap">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-auto ms-sm-auto mx-auto mt-md-0 mt-3 order2">
+                    <a href="javascript:;" class="customBtn text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                        <span class="position-relative z-1">Start Selling</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="border-top border-light border-opacity-10">
+            <div class="container">
+                <div class="copyright row align-items-center text-md-start text-center">
+                    <div class="col-md">
+                        <div class="copyrigtTitle">MetaSwap LPd</div>
+                        <div class="copyrigtTitle mt-md-0 mt-1">Address: 91 Battersea Park Road, London, England, SW8 4DU</div>
+                    </div>
+                    <div class="col-md-auto mt-md-0 mt-2">
+                        <ul class="list-unstyled m-0 privacydata d-flex align-items-center justify-content-md-start justify-content-center">
+                            <li><a href="javascript:;" class="privacylink text-decoration-none">Terms and Conditions </a></li>
+                            <li><a href="javascript:;" class="privacylink text-decoration-none">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- bootstrap js  -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/js.js"></script>
+
+    <!-- login modal  -->
+    <div class="modal fade loginmodal" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog loginDialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fw-semibold" id="exampleModalLabel">Log in </div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div>
+                            <input type="text" class="form-control modalinput shadow-none" placeholder="Username or Email">
+                        </div>
+                        <div class="mt-3">
+                            <input type="password" class="form-control modalinput shadow-none" placeholder="Password">
+                        </div>
+                        <div class="text-end pt-1 pb-2">
+                            <a href="javascript:;" class="modaltitle text-decoration-none">Reset password</a>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center mt-3">
+                            <button type="submit" class="customBtn btnthree px-3 text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1 mx-4">Submit</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- sign up modal  -->
+    <div class="modal fade loginmodal" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog loginDialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fw-semibold" id="exampleModalLabel">Log in </div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div>
+                            <input type="text" class="form-control modalinput shadow-none" placeholder="Email">
+                        </div>
+                        <div class="mt-3">
+                            <input type="text" class="form-control modalinput shadow-none" placeholder="Username">
+                        </div>
+                        <div class="mt-3">
+                            <input type="password" class="form-control modalinput shadow-none" placeholder="Password">
+                        </div>
+                        <div class="mt-3">
+                            <input type="password" class="form-control modalinput shadow-none" placeholder="Confirm Password">
+                        </div>
+                        <div class="text-end pt-1 pb-2">
+                            <a href="javascript:;" class="modaltitle text-decoration-none" data-bs-target="#loginmodal" data-bs-toggle="modal">Already have an account ?</a>
+                        </div>
+                        <div id="html_element" class="w-100"></div>
+                        <!-- <input type="submit" value="Submit" class="fb9" /> -->
+                        <div class="d-flex align-items-center justify-content-center mt-3">
+                            <button type="submit" class="customBtn btnthree px-3 text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1 mx-4">Submit</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- chat offcanvas start  -->
+    <div class="offcanvas offcanvas-start chatoffcanvas" data-bs-backdrop="static" tabindex="1" id="chatoffcanvas" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header border-bottom shadow-sm bglight">
+            <div class="d-flex align-items-center userheader">
+                <div class="aiicon overflow-hidden rounded-circle">
+                    <img src="assets/img/index/aiicon.png" alt="icon" class="h-100 w-100 img-fluid">
+                </div>
+                <div>
+                    <div class="agentname fw-semibold">Agent (Marie)</div>
+                    <div class="onlinestatus fw-semibold">Online (24/7)</div>
+                </div>
+            </div>
+            <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body chatdata bg-light px-1">
+            <div class="row w-100 mx-auto alignitems-end  h100">
+                <div class="col-12 pt-2">
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="aiimg rounded-circle overflow-hidden">
+                                <img src="assets/img/index/aiicon.png" alt="ai" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-6 ps-0">
+                            <div class="msgcard aibox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir</div>
+                                <div class="time text-end">
+                                    <!-- <div></div>
+                                    <div></div> -->
+                                    13:20
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="col-12 pt-2">
+                    <div class="row justify-content-end">
+                        <div class="col-6 pe-0 text-end">
+                            <div class="msgcard userbox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir</div>
+                                <div class="time text-end">
+                                    <!-- <div></div>
+                                    <div></div> -->
+                                    13:20
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="aiimg rounded-circle overflow-hidden">
+                                <img src="assets/img/index/usericon.svg" alt="ai" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="col-12 pt-2">
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="aiimg rounded-circle overflow-hidden">
+                                <img src="assets/img/index/aiicon.png" alt="ai" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-6 ps-0">
+                            <div class="msgcard aibox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir</div>
+                                <div class="time text-end">
+                                    <!-- <div></div>
+                                    <div></div> -->
+                                    13:20
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="col-12 pt-2">
+                    <div class="row justify-content-end">
+                        <div class="col-6 pe-0 text-end">
+                            <div class="msgcard userbox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir</div>
+                                <div class="time text-end">
+                                    <!-- <div></div>
+                                    <div></div> -->
+                                    13:20
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="aiimg rounded-circle overflow-hidden">
+                                <img src="assets/img/index/usericon.svg" alt="ai" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="col-12 pt-2">
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="aiimg rounded-circle overflow-hidden">
+                                <img src="assets/img/index/aiicon.png" alt="ai" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-6 ps-0">
+                            <div class="msgcard aibox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir</div>
+                                <div class="time text-end">
+                                    <!-- <div></div>
+                                    <div></div> -->
+                                    13:20
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="col-12 pt-2">
+                    <div class="row justify-content-end">
+                        <div class="col-6 pe-0 text-end">
+                            <div class="msgcard userbox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir</div>
+                                <div class="time text-end">
+                                    <!-- <div></div>
+                                    <div></div> -->
+                                    13:20
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="aiimg rounded-circle overflow-hidden">
+                                <img src="assets/img/index/usericon.svg" alt="ai" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="col-12 pt-2">
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="aiimg rounded-circle overflow-hidden">
+                                <img src="assets/img/index/aiicon.png" alt="ai" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-6 ps-0">
+                            <div class="msgcard aibox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir hello sir hello sirhello sir hello sir hello sir v</div>
+                                <div class="time text-end">
+                                    <!-- <div></div>
+                                    <div></div> -->
+                                    13:20
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="col-12 pt-2">
+                    <div class="row justify-content-end">
+                        <div class="col-6 pe-0 text-end">
+                            <div class="msgcard userbox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir hello sirhello sirhello sirhello sirhello sirhello sirhello sirhello sirhello sirhello sirhello sirhello sir</div>
+                                <div class="time text-end">
+                                    <!-- <div></div>
+                                    <div></div> -->
+                                    13:20
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="aiimg rounded-circle overflow-hidden">
+                                <img src="assets/img/index/usericon.svg" alt="ai" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        <div class="offcanvasfooter shadow-sm border-top bglight">
+            <div class="d-flex align-items-center gap-2">
+                <div class="input-group inputdata borderbottom rounded0 rounded-5 align-items-center  ">
+                    <input type="text" class="form-control msginput ps-0 h-100 shadow-none bg-transparent border-0 rounded-0" placeholder="Enter Your Message" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <input type="file" id="filedata" hidden>
+                    <label for="filedata" class="border-0 d-flex align-items-center justify-content-center shadow-none filechoose bg-transparent" id="basic-addon2">
+                        <img src="assets/img/index/attachfile.svg" alt="file" class="h-100 w100">
+                    </label>
+                </div>
+                <button class="btn sendbtn rounded-circle d-flex align-items-center justify-content-center">
+                    <img src="assets/img/index/send.svg" alt="send" class="h-100 w-100 img-fluid">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- chat modal  -->
+    <div class="modal fade chatmodal" id="chatmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog chatdialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="exampleModalLabel">Chat</div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-0">
+                    <div class="row contactdata">
+                        <div class="col-12 contactinner">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-theme1">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

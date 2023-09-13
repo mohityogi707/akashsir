@@ -1,0 +1,1492 @@
+@charset "UTF-8";
+
+// hero section start 
+.herosection {
+    background: url(../img/index/bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    & .herocard {
+        background: rgba(0, 0, 0, 0.5);
+        // background-color: rgba($theme1, 0.3);
+        padding: 40px;
+        & .heortitle {
+            font-size: 18px;
+            font-weight: 400;
+            color: #fff;
+        }
+        & .heroBtns {
+            gap: 16px;
+            scroll-behavior: smooth;
+            // scroll-padding-right: 20px;
+            
+        }
+        ::-webkit-scrollbar-track {
+            // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+            background-color: rgba($black, 0);
+        }
+        
+        ::-webkit-scrollbar {
+        width: 6px;
+        height: 2px;
+        background-color: rgba($black, 0);
+        }
+        
+        ::-webkit-scrollbar-thumb {
+        background-color: #a9a9a9;
+        }
+        
+        & .heroinput {
+            font-size: 14px;
+            font-weight: 500;
+            color: rgb(103, 103, 103);
+            height: 40px;
+            &::placeholder {
+                font-size: 14px;
+                font-weight: 500;
+                color: rgb(103, 103, 103);
+            }
+            & option {
+                font-size: 13px;
+                font-weight: 500;
+                color: rgb(103, 103, 103);
+            }
+        }
+        & .checkbox {
+            height: 40px;
+            border: 2px solid rgb(90, 90, 90);
+            padding: 0 20px;
+            gap: 20px;
+            color: #dadada;
+            font-weight: 500;
+            font-size: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            & .icon {
+                // visibility: hidden;
+                opacity: 0;
+                transition: all 0.3s ease-in-out;
+                font-weight: 700;
+                color: #00D50A;
+            }
+        }
+        & .checkinput {
+            &:checked ~ .checkbox {
+                border-color: #fff;
+                color: #fff;
+                & .icon {
+                    opacity: 1;
+                }
+            }
+        }
+        & .inputtitle {
+            font-size: 16px;
+            font-weight: 500;
+            padding-bottom: 10px;
+            color: #000;
+            line-height: normal;
+        }
+        & .subscriberinputs {
+            gap: 20px;
+            & .equalline {
+                // width: 50px;
+                // background-color: #898989;
+                // height: 2px;
+                & i {
+                    font-size: 18px;
+                    color: #000;
+                }
+            }
+        }
+        & .inputdata {
+            padding: 15px 0 19px;
+        }
+        & .searchbtn {
+            padding: 10px 0;
+        }
+    }
+}
+.heroinput {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(103, 103, 103);
+    height: 40px;
+    &::placeholder {
+        font-size: 14px;
+        font-weight: 500;
+        color: rgb(103, 103, 103);
+    }
+    & option {
+        font-size: 13px;
+        font-weight: 500;
+        color: rgb(103, 103, 103);
+    }
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {
+    .herosection {
+        padding-top: 80px;
+        padding-bottom: 50px;
+        & .herocard {
+            padding: 30px;
+            & .heortitle {
+                font-size: 16px;
+            }
+            & .heroBtns {
+                gap: 14px;
+            }
+            
+            & .checkbox {
+                & .icon {
+                }
+            }
+            & .checkinput {
+                &:checked ~ .checkbox {
+                    & .icon {
+                    }
+                }
+            }
+            & .inputtitle {
+                // margin-bottom: 7px;
+            }
+            & .subscriberinputs {
+                gap: 13px;
+                & .equalline {
+                    // width: 50px;
+                    & i {
+                        font-size: 17px;
+                    }
+                }
+            }
+            & .inputdata {
+                padding: 12px 0 14px;
+            }
+            & .searchbtn {
+                padding: 8px 0;
+            }
+        }
+    }
+    .heroinput {
+        height: 35px;
+        &::placeholder {
+        }
+        & option {
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .herosection {
+        padding-top: 80px;
+        padding-bottom: 35px;
+        & .herocard {
+            padding: 20px 14px;
+            & .heortitle {
+                font-size: 15px;
+            }
+            & .heroBtns {
+                gap: 14px;
+            }
+            
+            & .checkbox {
+                font-size: 13px;
+                & .icon {
+                }
+            }
+            & .checkinput {
+                &:checked ~ .checkbox {
+                    & .icon {
+                    }
+                }
+            }
+            & .inputtitle {
+                // margin-bottom: 7px;
+                font-size: 14px;
+                padding-bottom: 7px;
+            }
+            & .subscriberinputs {
+                gap: 4px;
+                & .equalline {
+                    & i {
+                        font-size: 14px;
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+            & .inputdata {
+                padding: 13px 0 16px;
+            }
+            & .searchbtn {
+                padding: 9px 0;
+            }
+        }
+    }
+    .heroinput {
+        height: 35px;
+        font-size: 13px;
+        &::placeholder {
+            font-size: 13px;
+        }
+        & option {
+            font-size: 12px;
+        }
+    }
+}
+
+// hero section end
+
+// card section start 
+.cardsection {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    & .sortByTitle {
+        font-size: 18px;
+        color: #4a4a4a;
+    }
+    & .sortby {
+        & .sortbybtn {
+            font-size: 15px;
+            font-weight: 500;
+            border: 1.5px solid #000;
+            padding: 4px 14px;
+        }
+        & .innerdata {
+            min-width: 100%;
+            & .innerlink {
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+    & .cardmain {
+        padding-top: 40px;
+        & >* {
+            flex: 1 1 25%;
+            width: 25% ;
+        }
+        & .premiumcard {
+            background-color: $theme2;
+            padding: 6px;
+            transition: all 0.3s ease-in-out;
+            & .cardimg {
+                aspect-ratio: 5/4;
+                & .premium {
+                    padding: 4px 10px;
+                    font-size: 15px;
+                    color: #000;
+                    font-weight: 600;
+                    background-color: $theme2;
+                    top: 0;
+                    right: 0;
+                    border-radius: 0 0 0 7px;
+                }
+                & .vip {
+                    padding: 6px 10px;
+                    font-size: 16px;
+                    color: #000;
+                    font-weight: 700;
+                    background-color: $theme2;
+                    border-radius: 0 7px 0 0;
+                    left: 0px;
+                    bottom: 0px;
+                    line-height: normal;
+                    gap: 7px;
+                    & .vipImg {
+                        height: 20px;
+                        width: 30px;
+                        & img {
+                            filter: brightness(0);
+                        }
+                    }
+                }
+                & .pass {
+                    background-color: #fff;
+                    right: 8px;
+                    bottom: 8px;
+                    font-size: 13px;
+                    font-weight: 700;
+                    color: #000;
+                    padding: 3px 12px;
+                    gap: 5px;
+                    & .icon {
+                        font-size: 16px;
+                    }
+                }
+                & .showbtn {
+                    left: 50%;
+                    transform: translate(-50%, 50%);
+                    top: -40%;
+                    
+                }
+                & img {
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            & .cardcontent {
+                padding: 22px 13px;
+                & .chechIcon {
+                    height: 18px;
+                    width: 18px;
+                }
+                & .cardHeding {
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #000;
+                    display: block;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    transition: all 0.3s ease-in-out;
+                    line-height: normal;
+                    &:hover {
+                        color: $theme1;
+                    }
+                }
+                & .headingTitle {
+                    font-size: 13px;
+                    font-weight: 400;
+                    color: #000;
+                }
+                & .price {
+                    font-size: 30px;
+                    color: #000;
+                    padding: 14px 0 10px;
+                    & span {
+                        font-size: 26px;
+                    }
+                }
+                & .carddata {
+                    font-size: 14px;
+                    line-height: normal;
+                    padding-top: 4px;
+                }
+            }
+            & .buychannel {
+                font-size: 15px;
+                font-weight: 500;
+                color: #000;
+                background-color: $theme2;
+                padding: 12px 0 6px;
+            }
+            &:hover {
+                // box-shadow: 2px 2px 3px gray;
+                box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.15) !important;
+                transform: scale(1.02);
+                & .showbtn {
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                & .cardimg {
+                    & img {
+                        transform: scale(1.1) rotate(3deg);
+                        
+                    }
+                }
+            }
+        }
+    }
+    & .pagedatamain {
+        margin-top: 40px;
+        & .pagedata {
+            & .page-item, .page-link {
+                font-size: 14px;
+                color: #000;
+                font-weight: 500;
+            }
+            & .page-link {
+                &.active {
+                    background-color: $theme1;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .cardsection {
+        // padding-top: 30px;
+        // padding-bottom: 35px;
+        & .sortByTitle {
+            font-size: 16px;
+        }
+        & .sortby {
+            & .sortbybtn {
+                font-size: 14px;
+                // padding: 3px 10px;
+            }
+            & .innerdata {
+                & .innerlink {
+                    font-size: 13px;
+                }
+            }
+        }
+        & .cardmain {
+            // padding-top: 30px;
+            & >* {
+                flex: 1 1 33.33%;
+                width: 33.33%;
+            }
+            & .premiumcard {
+                & .cardimg {
+                    & .premium {
+                        font-size: 14px;
+                    }
+                    & .vip {
+                        font-size: 15px;
+                        & .vipImg {
+                            height: 17px;
+                            width: 27px;
+                            margin-bottom: 4px;
+                            & img {
+                            }
+                        }
+                    }
+                    & .pass {
+                        font-size: 12px;
+                        & .icon {
+                            font-size: 14px;
+                        }
+                    }
+                    & .showbtn {
+                    }
+                }
+                & .cardcontent {
+                    padding: 18px 13px;
+                    & .chechIcon {
+                        height: 15px;
+                        min-width: 15px;
+                        max-width: 15px;
+                    }
+                    & .cardHeding {
+                        font-size: 17px;
+                        &:hover {
+                        }
+                    }
+                    & .headingTitle {
+                    }
+                    & .price {
+                        font-size: 25px;
+                        & span {
+                            font-size: 20px;
+                        }
+                    }
+                    & .carddata {
+                    }
+                }
+                & .buychannel {
+                }
+                &:hover {
+                    & .showbtn {
+                    }
+                }
+            }
+        }
+        & .pagedatamain {
+            margin-top: 35px;
+            & .pagedata {
+                & .page-item, .page-link {
+                }
+                & .page-link {
+                    &.active {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .cardsection {
+        padding-top: 35px;
+        padding-bottom: 40px;
+        & .sortByTitle {
+            font-size: 15px;
+        }
+        & .sortby {
+            & .sortbybtn {
+            }
+            & .innerdata {
+                & .innerlink {
+                }
+            }
+        }
+        & .cardmain {
+            padding-top: 35px;
+            & >* {
+                flex: 1 1 50%;
+                width: 50%;
+            }
+            & .premiumcard {
+                & .cardimg {
+                    & .premium {
+                    }
+                    & .vip {
+                        font-size: 14px;
+                        & .vipImg {
+                            height: 15px;
+                            width: 25px;
+                            margin-bottom: 5px;
+                            & img {
+                            }
+                        }
+                    }
+                    & .pass {
+                        & .icon {
+                        }
+                    }
+                    & .showbtn {
+                    }
+                }
+                & .cardcontent {
+                    & .chechIcon {
+                    }
+                    & .cardHeding {
+                        font-size: 16px;
+                        &:hover {
+                        }
+                    }
+                    & .headingTitle {
+                    }
+                    & .price {
+                        font-size: 24px;
+                        & span {
+                            font-size: 19px;
+                        }
+                    }
+                    & .carddata {
+                    }
+                }
+                & .buychannel {
+                }
+                &:hover {
+                    & .showbtn {
+                    }
+                }
+            }
+        }
+        & .pagedatamain {
+            margin-top: 30px;
+            & .pagedata {
+                & .page-item, .page-link {
+                }
+                & .page-link {
+                    &.active {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .cardsection {
+        padding-top: 35px;
+        padding-bottom: 40px;
+        & .sortByTitle {
+            font-size: 14px;
+        }
+        & .sortby {
+            & .sortbybtn {
+                font-size: 13px;
+                padding: 3px 10px;
+            }
+            & .innerdata {
+                & .innerlink {
+                    font-size: 13px;
+                }
+            }
+        }
+        & .cardmain {
+            padding-top: 30px;
+            // & >* {
+            //     flex: 1 1 50%;
+            //     width: 50%;
+            // }
+            & .premiumcard {
+                & .cardimg {
+                    & .premium {
+                        font-size: 13px;
+                    }
+                    & .vip {
+                        font-size: 13px;
+                        & .vipImg {
+                            height: 15px;
+                            width: 25px;
+                            margin-bottom: 5px;
+                            & img {
+                            }
+                        }
+                    }
+                    & .pass {
+                        font-size: 11px;
+                        & .icon {
+                            font-size: 12px;
+                        }
+                    }
+                    & .showbtn {
+                        transform: translate(-50%, -50%);
+                        top: 50%;
+                    }
+                }
+                & .cardcontent {
+                    padding: 16px 13px;
+                    & .chechIcon {
+                        height: 14px;
+                        min-width: 14px;
+                        max-width: 14px;
+                    }
+                    & .cardHeding {
+                        font-size: 15px;
+                        &:hover {
+                        }
+                    }
+                    & .headingTitle {
+                        font-size: 12px;
+                    }
+                    & .price {
+                        font-size: 22px;
+                        padding: 12px 0 8px;
+                        & span {
+                            font-size: 18px;
+                        }
+                    }
+                    & .carddata {
+                        font-size: 13px;
+                    }
+                }
+                & .buychannel {
+                    font-size: 14px;
+                    padding: 8px 0 4px;
+                }
+                &:hover {
+                    & .showbtn {
+                    }
+                }
+            }
+        }
+        & .pagedatamain {
+            margin-top: 25px;
+            & .pagedata {
+                & .page-item, .page-link {
+                    font-size: 12px;
+                }
+                & .page-link {
+                    &.active {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:430px) {
+    .cardsection {
+        & .cardmain {
+            & >* {
+                width: 100%;
+            }
+        }
+    }
+    
+}
+
+// card section end 
+
+// about us section start 
+.aboutus {
+    margin-bottom: 45px;
+    & .aboutheading {
+        font-size: 22px;
+        font-weight: 700;
+        color: #000;
+    }
+    & .aboutdata {
+        font-size: 14px;
+        color: #272626;
+        padding-top: 10px;
+
+    }
+    & .aboutlinksmain {
+        margin-top: 9px;
+        & .aboutlink {
+            font-size: 15px;
+            font-weight: 500;
+            color: #000;
+            transition: all 0.3s ease-in-out;
+            padding: 0 12px;
+            white-space: nowrap;
+            &:hover {
+                color: $theme1;
+            }
+        }
+        & .linkdivide {
+            line-height: normal;
+            margin-bottom: 4px;
+        }
+    }
+}
+
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {
+    .aboutus {
+        margin-bottom: 35px;
+        & .aboutheading {
+            font-size: 20px;
+        }
+        & .aboutdata {
+        }
+        & .aboutlinksmain {
+            & .aboutlink {
+                font-size: 14px;
+                padding: 0 10px;
+                &:hover {
+                }
+            }
+            & .linkdivide {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .aboutus {
+        // margin-bottom: 30px;
+        & .aboutheading {
+            font-size: 18px;
+        }
+        & .aboutdata {
+            font-size: 13px;
+    
+        }
+        & .aboutlinksmain {
+            margin-top: 7px;
+            & .aboutlink {
+                font-size: 13px;
+                padding: 0 8px;
+                &:hover {
+                }
+            }
+            & .linkdivide {
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+// about us section end
+
+
+// login modal start 
+.loginmodal {
+    & .loginDialog {
+        max-width: 400px;
+        & .modal-title  {
+            font-size: 20px;
+            color: #000;
+        }
+        & .modalinput {
+            font-size: 13px;
+            height:38px;
+            border: 1px solid #a4a4a4;
+            &::placeholder {
+                font-size: 13px;
+            }
+        }
+        & .modaltitle {
+            font-size: 13px;
+        }
+    }
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {
+    .loginmodal {
+        & .loginDialog {
+            max-width: 100%;
+            & .modal-title  {
+                font-size: 18px;
+            }
+            & .modalinput {
+                font-size: 12px;
+                height:36px;
+                &::placeholder {
+                    font-size: 12px;
+                }
+            }
+            & .modaltitle {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+// login modal end 
+
+
+
+// profile page start
+.profileSection {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    & .usercard{
+        gap: 18px;
+        padding: 20px 14px;
+        top: 90px;
+        border-radius: 9px;
+        & .userimglabel {
+            height: 120px;
+            width: 120px;
+            cursor: pointer;
+        }
+        & .online {
+            font-size: 14px;
+            color: #00D50A;
+        }
+        & .Username {
+            font-size: 18px;
+            color: $theme1;
+        }
+        & .usertitle {
+            font-size: 14px;
+            color: rgba(41, 48, 55, 0.7);
+            line-height: normal;
+        }
+    }
+    & .proflilcard {
+        padding: 25px;
+        border-radius: 7px;
+    }
+    & .profiledata {
+        padding-top: 40px;
+    }
+    & .textbox {
+        height: 150px;
+        resize: none;
+        font-size: 13px;
+        color: #000;
+        &::placeholder {
+            font-size: 13px;
+            color: #000;
+        }
+    }
+    & .listings {
+        font-size: 18px;
+        color: #000;
+    }
+    & .nolistings {
+        font-size: 13px;
+        padding-top: 10px;
+        color: #FF7200;
+    }
+} 
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {
+    .profileSection {
+        padding-top: 45px;
+        padding-bottom: 45px;
+        & .usercard{
+            gap: 10px;
+            padding: 16px 13px;
+            border-radius: 7px 7px 0 0;
+            & .userimglabel {
+                height: 110px;
+                width: 110px;
+            }
+            & .online {
+                font-size: 13px;
+            }
+            & .Username {
+                font-size: 17px;
+            }
+            & .usertitle {
+                font-size: 13px;
+            }
+        }
+        & .proflilcard {
+            padding: 18px;
+            border-radius:0 0 7px 7px ;
+        }
+        & .profiledata {
+            padding-top: 25px;
+        }
+        & .textbox {
+            height: 130px;
+            &::placeholder {
+            }
+        }
+        & .listings {
+            font-size: 17px;
+        }
+        & .nolistings {
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .profileSection {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        & .usercard{
+            gap: 6px;
+            padding: 12px 10px;
+            & .userimglabel {
+                height: 100px;
+                width: 100px;
+                cursor: pointer;
+            }
+            & .online {
+                font-size: 12px;
+            }
+            & .Username {
+                font-size: 16px;
+            }
+            & .usertitle {
+                font-size: 12px;
+            }
+        }
+        & .proflilcard {
+            padding: 15px;
+        }
+        & .profiledata {
+            padding-top: 20px;
+        }
+        & .textbox {
+            height: 120px;
+            font-size: 12px;
+            &::placeholder {
+                font-size: 12px;
+            }
+        }
+        & .listings {
+            font-size: 16px;
+        }
+        & .nolistings {
+            font-size: 12px;
+            padding-top: 5px;
+        }
+    } 
+    
+}
+
+@media (max-width:386px) {
+    .profileSection {
+        & .usercard{
+            & .userimglabel {
+            }
+            & .online {
+            }
+            & .Username {
+            }
+            & .usertitle {
+            }
+        }
+        & .proflilcard {
+        }
+        & .profiledata {
+            justify-content: center !important;
+            gap: 10px;
+
+        }
+        & .textbox {
+            &::placeholder {
+            }
+        }
+        & .listings {
+        }
+        & .nolistings {
+        }
+    } 
+    
+}
+
+// profile page end 
+
+
+// chat offcanvas start 
+.chatoffcanvas {
+    width: 420px !important;
+    z-index: 1070 !important;
+    & .userheader {
+        gap: 12px;
+        & .aiicon {
+            height: 40px;
+            width: 40px;
+        }
+        & .agentname {
+            font-size: 16px;
+            color: #000;
+            line-height: normal;
+        }
+        & .onlinestatus {
+            font-size: 12px;
+            padding-top: 1px;
+            line-height: normal;
+            color: #00D50A;
+        }
+    }
+    & .btn-close {
+        background-size: 13px;
+    }
+    & .chatdata {
+        & .aiimg {
+            height: 35px;
+            min-width: 35px;
+            max-width: 35px;
+        }
+        & .msgcard {
+            padding: 6px 16px;
+            & .chatmsg {
+                font-size: 13px;
+                color:#000;
+                font-weight: 500;
+                line-height: 20px;
+                text-align: start;
+            }
+            & .time {
+                font-size: 11px;
+                font-weight: 500;
+                line-height: normal;
+                color: #000;
+            }
+            &.aibox {
+                background-color: $theme2;
+                &::before {
+                    background-color: $theme2;
+                    content: '';
+                    position: absolute;
+                    left: -4px;
+                    top: 3px;
+                    height: 15px;
+                    width: 15px;
+                    z-index: 0;
+                    transform: rotate(42deg);
+                }
+            }
+            &.userbox {
+                background-color: $theme1;
+                &::before {
+                    background-color: $theme1;
+                    content: '';
+                    position: absolute;
+                    right: -5px;
+                    top: 4px;
+                    height: 12px;
+                    width: 12px;
+                    transform: rotate(42deg);
+                    z-index: 0;
+                }
+                & .chatmsg {
+                    color: #fff;
+                }
+                & .time {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    & .offcanvasfooter {
+        padding: 16px;
+        & .inputdata {
+            height: 40px;
+            padding: 0 18px;
+            background-color: #a9a9a97a;
+            & .msginput {
+                font-size: 14px;
+                color: #000;
+                &::placeholder {
+                    font-size: 14px;
+                    color: #000;
+                }
+            }
+            & .filechoose {
+                height: 20px;
+                cursor: pointer;
+            }
+        }
+        & .sendbtn {
+            height: 43px;
+            min-width: 43px;
+            max-width: 43px;
+            background-color: $theme1;
+            & img {
+                filter: invert(1);
+
+            }
+            &:active {
+                background-color: $theme1;
+            }
+        }
+    }
+    & ::-webkit-scrollbar-track {
+        // -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        background-color: rgba($black, 0);
+    }
+    
+    & ::-webkit-scrollbar {
+        width: 5px;
+        height: 2px;
+        background-color: rgba($black, 0);
+    }
+    
+    & ::-webkit-scrollbar-thumb {
+        background-color: rgba($black, 0.2);
+    } 
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {
+    .chatoffcanvas {
+        & .userheader {
+            gap: 11px;
+            & .aiicon {
+            }
+            & .agentname {
+                font-size: 13px;
+            }
+            & .onlinestatus {
+                font-size: 11px;
+            }
+        }
+        & .btn-close {
+        }
+        & .chatdata {
+            & .aiimg {
+            }
+            & .msgcard {
+                & .chatmsg {
+                    font-size: 12px;
+                }
+                & .time {
+                }
+                &.aibox {
+                    &::before {
+                    }
+                }
+                &.userbox {
+                    &::before {
+                    }
+                    & .chatmsg {
+                    }
+                    & .time {
+                    }
+                }
+            }
+        }
+        & .offcanvasfooter {
+            padding: 14px;
+            & .inputdata {
+                height: 37px;
+                padding: 0 16px;
+                & .msginput {
+                    font-size: 13px;
+                    &::placeholder {
+                        font-size: 13px;
+                    }
+                }
+                & .filechoose {
+                    height: 18px;
+                }
+            }
+            & .sendbtn {
+                height: 40px;
+                min-width: 40px;
+                max-width: 40px;
+                & img {
+                }
+                &:active {
+                }
+            }
+        } 
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .chatoffcanvas {
+        & .userheader {
+            gap: 10px;
+            & .aiicon {
+                height: 35px;
+                width: 35px;
+            }
+            & .agentname {
+                font-size: 14px;
+            }
+            & .onlinestatus {
+                font-size: 10px;
+                padding-top: 1px;
+            }
+        }
+        & .btn-close {
+            background-size: 12px;
+        }
+        & .chatdata {
+            & .aiimg {
+                height: 30px;
+                min-width: 30px;
+                max-width: 30px;
+            }
+            & .msgcard {
+                padding: 4px 12px;
+                & .chatmsg {
+                    font-size: 11px;
+                    line-height: 18px;
+                }
+                & .time {
+                    font-size: 10px;
+                }
+                &.aibox {
+                    &::before {
+                    }
+                }
+                &.userbox {
+                    &::before {
+                        z-index: 0;
+                    }
+                    & .chatmsg {
+                    }
+                    & .time {
+                    }
+                }
+            }
+        }
+        & .offcanvasfooter {
+            padding: 12px;
+            & .inputdata {
+                height: 35px;
+                padding: 0 14px;
+                & .msginput {
+                    font-size: 12px;
+                    &::placeholder {
+                        font-size: 12px;
+                    }
+                }
+                & .filechoose {
+                    height: 16px;
+                }
+            }
+            & .sendbtn {
+                height: 38px;
+                min-width: 38px;
+                max-width:38px;
+                padding: 11px;
+                & img {
+                }
+                &:active {
+                }
+            }
+        } 
+    }
+}
+
+// chat offcanvas end
+
+// chat modal start 
+.chatmodal {
+    z-index: 1040;
+    & .chatdialog {
+        max-width: 400px;
+        & .modal-title {
+            font-size: 22px;
+            font-weight: 600;
+            color: #000;
+        }
+        & .btn-close {
+            background-size: 13px;
+        } 
+        & .contactinner {
+            padding: 8px 12px;
+        }
+        & .contactdata {
+            & .contactcard {
+                gap: 5px;
+                & .contactimg {
+                    height: 50px;
+                    width: 50px;
+                }
+                & .username {
+                    font-size: 15px;
+                    font-weight: 500;
+                    color: #000;
+                    line-height: normal;
+                } 
+                & .time {
+                    font-size: 12px;
+                    color: #00000062;
+                    font-weight: 500;
+                }
+                & .lastmsg {
+                    font-size: 13px;
+                    color: #00000083;
+                    padding-top: 1px;
+                    line-height: normal;
+                }
+            }
+        }
+        & .modal-footer {
+            & button {
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+// selling page start 
+.sellingpage {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    & .inputcard {
+        padding: 20px;
+        & .sellingheading {
+            font-size: 24px;
+            font-weight: 700;
+            color: #000;
+        }
+        & .heroinput {
+            font-size: 13px;
+            font-weight: 400;
+            &::placeholder {
+                font-weight: 400;
+                font-size: 13px;
+            }
+        }
+        & .formdata {
+            padding: 4px;
+            height: 45px;
+            & .copylinkbtn {
+                font-size: 13px;
+                font-weight: 500;
+                background-color: $theme1;
+                color: #fff; 
+                padding: 4px 16px;
+            }
+        }
+        & .textbox {
+            height: 80px;
+            resize: none;
+        }
+        & .inputtitle {
+            font-size: 14px;
+            color: #000;
+            font-weight: 500;
+        }
+    }
+}
+
+.dmmodal {
+    & .dmdialog {
+        & .modal-title {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        & .detaildm {
+            font-size: 14px;
+            font-weight: 500;
+            color: #000;
+        }
+    }
+}
+// selling page end
