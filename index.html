@@ -653,7 +653,7 @@
                             <input type="password" class="form-control modalinput shadow-none" placeholder="Password">
                         </div>
                         <div class="text-end pt-1 pb-2">
-                            <a href="javascript:;" class="modaltitle text-decoration-none">Reset password</a>
+                            <a href="javascript:;" class="modaltitle text-decoration-none" data-bs-toggle="modal" data-bs-target="#resetpassword">Reset password</a>
                         </div>
                         <div class="d-flex align-items-center justify-content-center mt-3">
                             <button type="submit" class="customBtn btnthree px-3 text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
@@ -1220,6 +1220,198 @@
             </div>
         </div>
     </div>
+
+    <!-- dm modal start -->
+    <div class="modal fade dmmodal" id="dmcontact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog dmdialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="exampleModalLabel">Dm</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="detaildm">
+                        Placing contacts in the description of the listing or contacts for sale on the page itself is prohibited. If you need to have a contact on the page for advertising, orders or similar purposes, you can leave it. But if the client writes to you about the sale through these contacts, you will have to ask him to contact the seller through the listing he found. By listing on accs-market.com, you accept these conditions and the fact that the administration will control this and will be forced to block you if this condition is not met. If you do not need to leave contacts and open DM on the page, we are ready to give you 50% more rating after the transaction is completed, as this will make it easier for us to control. Rating is one of the main factors of trust from buyers. An additional rating will be automatically added after the completion of the transaction if you check the box below, but in case of violation of this agreement, we will have to block you.
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- dm modal end -->
+
+    <!-- balance modal start  -->
+    <div class="modal fade balancemodal commonmodal" id="balancemodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header border-bottom">
+                    <div class="modal-title fw-bold" id="exampleModalLabel">Balance</div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <label class="col-12 fw-medium amoutlabel">
+                            Amount:- 
+                        </label>
+                        <div class="col-12 pt-2">
+                            <input type="text" class="heroinput form-control shadow-none border" placeholder="Enter amount in rs">
+                        </div>
+                        <label class="col-12 pt-4 fw-medium amoutlabel">
+                            Payment method:- 
+                        </label>
+                        <div class="col-12 pt-2">
+                            <select class="form-select heroinput shadow-none border" tabindex="-1">
+                                <option value="0" disabled="" selected="">Select Method</option>
+                                <option value="1">Debit Card</option>
+                                <option value="2">Credit Card</option>
+                                <option value="4">Visa</option>
+                                <option value="6">UPI</option>
+                            </select>
+                        </div>
+                        <div class="col-12 text-center modaldata">
+                            The money on the balance cannot be withdrawn, but it can be spent on any services on the site (escrow agent's commission and advertisements).
+                            You can't pay the seller with your balance.
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="javascript:;" class="customBtn px-4 py-2 btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1 px-2">Pay</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- balance modal end  -->
+
+    <!-- setting modal start  -->
+    <div class="modal fade settingmodal balancemodal commonmodal" id="settingsmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollables">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="exampleModalLabel">Setting</div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <label class="col-12 fw-medium amoutlabel">
+                            Email:- 
+                        </label>
+                        <div class="col-12 pt-2">
+                            <input type="email" class="heroinput form-control shadow-none border" placeholder="Enter amount in rs">
+                        </div>
+                        <label class="col-12 pt-4 fw-medium amoutlabel">
+                            Username (can be changed no more than once a month):- 
+                        </label>
+                        <div class="col-12 pt-2">
+                            <input type="text" class="heroinput form-control shadow-none border" placeholder="Enter amount in rs">
+                        </div>
+                        <div class="col-12 text-end pt-1">
+                            <a href="javascript:;" class="controltitle text-decoration-none">Control Panel</a>
+                        </div>
+                        <div class="d-flex align-items-center pt-4 justify-content-center">
+                            <a href="javascript:;" class="customBtn px-4 py-2 btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1 px-2">Pay</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- setting modal end  -->
+
+    <!-- reset password modal start  -->
+    <div class="modal fade commonmodal" id="resetpassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title " id="exampleModalLabel">Reset Password</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="alert alert-primary" role="alert" id="liveAlertPlaceholder">
+                                We have e-mailed your password reset link!
+                            </div>
+                        </div>
+                        <label class="col-12 fw-medium amoutlabel">
+                            Email:- 
+                        </label>
+                        <div class="col-12 pt-2">
+                            <input type="email" class="heroinput form-control shadow-none border" placeholder="Enter amount in rs">
+                        </div>
+                        <div class="d-flex align-items-center pt-3 justify-content-center">
+                            <a href="javascript:;" class="customBtn  btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1" id="liveAlertBtn">
+                                <span class="position-relative z-1 px-2">Send Password Reset Link</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- reset password modal end  -->
+
+    <!-- new password modal start -->
+    <div class="modal fade loginmodal" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog loginDialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fw-semibold" id="exampleModalLabel">Create New Password</div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div>
+                            <input type="text" class="form-control modalinput shadow-none" placeholder="Email">
+                        </div>
+                        <div class="mt-3">
+                            <input type="text" class="form-control modalinput shadow-none" placeholder="Username">
+                        </div>
+                        <div class="mt-3">
+                            <input type="password" class="form-control modalinput shadow-none" placeholder="Password">
+                        </div>
+                        <div class="mt-3">
+                            <input type="password" class="form-control modalinput shadow-none" placeholder="Confirm Password">
+                        </div>
+                        <div class="text-end pt-1 pb-2">
+                            <a href="javascript:;" class="modaltitle text-decoration-none" data-bs-target="#loginmodal" data-bs-toggle="modal">Already have an account ?</a>
+                        </div>
+                        <div id="html_element" class="w-100"></div>
+                        <!-- <input type="submit" value="Submit" class="fb9" /> -->
+                        <div class="d-flex align-items-center justify-content-center mt-3">
+                            <button type="submit" class="customBtn btnthree px-3 text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1 mx-4">Submit</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- new password modal end -->
+
 
 </body>
 </html>

@@ -54,10 +54,10 @@
                             </button>
                             <ul class="dropdown-menu innerdata shadow-sm">
                                 <li><a class="dropdown-item innerlink" href="profile.html">Profile</a></li>
-                                <li><a class="dropdown-item innerlink" href="javascript:;">Balance: <span>0</span></a></li>
+                                <li><a class="dropdown-item innerlink" href="javascript:;" data-bs-toggle="modal" data-bs-target="#balancemodal">Balance: <span>0</span></a></li>
                                 <li><a class="dropdown-item innerlink" href="#">Message <span>(0)</span></a></li>
                                 <li><a class="dropdown-item innerlink" href="#">Favorites<a></li>
-                                <li><a class="dropdown-item innerlink" href="#">Settings<a></li>
+                                <li><a class="dropdown-item innerlink" href="javascript:;" data-bs-toggle="modal" data-bs-target="#settingsmodal">Settings<a></li>
                                 <li><a class="dropdown-item innerlink" href="#">My Deals<a></li>
                                 <li><a class="dropdown-item innerlink" href="#">Log out<a></li>
                             </ul>
@@ -173,23 +173,23 @@
                             <label for="fileattach" name="" id="" class="form-control textbox shadow-none border heroinput fw-semibold d-flex align-items-center justify-content-center text-dark" placeholder="Provide details about income sources"> Attach screenshots (proof of income, etc.): <span class="text-danger"> *</span></label>
                         </div>
                     </div>
-                    <div class="col-sm-6 inputtitle">
+                    <div class="col-md-6 inputtitle">
                         Please confirm that you’re the page’s owner by placing this code in the description (for Facebook or YouTube), and in the “Bio” section on Instagram or Twitter.
 
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-md-6">
                         <div class="h-100 formdata rounded-2 d-flex align-items-center ">
                             <textarea name="" disabled id="" class="form-control textbox shadow-none border heroinput" placeholder="What is needed to support the page?"></textarea>
                         </div>
                     </div>
-                    <div class="col-12 pt-3 text-center">
+                    <div class="col-12 pt-sm-3 pt-2 text-center">
                         <!-- <div class=" d-flex align-items-center justify-content-center gap-1">
                             <label for="agree" class="inputtitle "> I agree to remove <a href="javascript:;" class="inputtitle text-theme1" data-bs-toggle="modal" data-bs-target="#dmcontact">contacts / close DM</a> on the page to get 50% more rating</label>
                             <input type="checkbox" id="agree">
                         </div> -->
                         <div class="form-check form-switch d-flex align-items-center gap-1 justify-content-center m-0 p-0">
-                            <label class="f inputtitle" for="agree">I agree to remove <a href="javascript:;" class="inputtitle text-theme1" data-bs-toggle="modal" data-bs-target="#dmcontact">contacts / close DM</a> on the page to get 50% more rating</label>
-                            <input class="form-check-input m-0 shadow-none" type="checkbox" role="switch" id="agree" checked>
+                            <label class=" inputtitle" for="agree">I agree to remove <a href="javascript:;" class="inputtitle text-theme1" data-bs-toggle="modal" data-bs-target="#dmcontact">contacts / close DM</a> on the page to get 50% more rating</label>
+                            <input class="form-check-input checkinput m-0 shadow-none" type="checkbox" role="switch" id="agree" checked>
                         </div>
                     </div>
                 </div>
@@ -251,12 +251,12 @@
 
     <script src="assets/libs/select/selectjs.js"></script>
 
-    <script>
+    <!-- <script>
         new MultiSelectTag('countries')  // id
-    </script>
+    </script> -->
 
-    <!-- login modal  -->
-    <div class="modal fade loginmodal" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- login modal start -->
+    <div class="modal fade loginmodal commonmodal" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog loginDialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
@@ -288,9 +288,10 @@
             </div>
         </div>
     </div>
+    <!-- login modal end -->
 
-    <!-- sign up modal  -->
-    <div class="modal fade loginmodal" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- sign up modal start -->
+    <div class="modal fade loginmodal commonmodal" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog loginDialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
@@ -330,6 +331,7 @@
             </div>
         </div>
     </div>
+    <!-- sign up modal end -->
 
     <!-- chat offcanvas start  -->
     <div class="offcanvas offcanvas-start chatoffcanvas" data-bs-backdrop="static" tabindex="1" id="chatoffcanvas" aria-labelledby="offcanvasExampleLabel">
@@ -524,8 +526,9 @@
             </div>
         </div>
     </div>
+    <!-- chat offcanvas end  -->
 
-    <!-- chat modal  -->
+    <!-- chat modal start  -->
     <div class="modal fade chatmodal" id="chatmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog chatdialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
@@ -839,8 +842,9 @@
             </div>
         </div>
     </div>
+    <!-- chat modal end  -->
 
-    <!-- dm modal  -->
+    <!-- dm modal start -->
     <div class="modal fade dmmodal" id="dmcontact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog dmdialog modal-dialog-scrollable modal-dialog-centered">
             <div class="modal-content">
@@ -860,6 +864,137 @@
             </div>
         </div>
     </div>
+    <!-- dm modal end -->
+
+    <!-- balance modal start  -->
+    <div class="modal fade balancemodal commonmodal" id="balancemodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header border-bottom">
+                    <div class="modal-title fw-bold" id="exampleModalLabel">Balance</div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <label class="col-12 fw-medium amoutlabel">
+                            Amount:- 
+                        </label>
+                        <div class="col-12 pt-2">
+                            <input type="text" class="heroinput form-control shadow-none border" placeholder="Enter amount in rs">
+                        </div>
+                        <label class="col-12 pt-4 fw-medium amoutlabel">
+                            Payment method:- 
+                        </label>
+                        <div class="col-12 pt-2">
+                            <select class="form-select heroinput shadow-none border" tabindex="-1">
+                                <option value="0" disabled="" selected="">Select Method</option>
+                                <option value="1">Debit Card</option>
+                                <option value="2">Credit Card</option>
+                                <option value="4">Visa</option>
+                                <option value="6">UPI</option>
+                            </select>
+                        </div>
+                        <div class="col-12 text-center modaldata">
+                            The money on the balance cannot be withdrawn, but it can be spent on any services on the site (escrow agent's commission and advertisements).
+                            You can't pay the seller with your balance.
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="javascript:;" class="customBtn px-4 py-2 btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1 px-2">Pay</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- balance modal end  -->
+
+    <!-- setting modal start  -->
+    <div class="modal fade settingmodal balancemodal commonmodal" id="settingsmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollables">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="exampleModalLabel">Setting</div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <label class="col-12 fw-medium amoutlabel">
+                            Email:- 
+                        </label>
+                        <div class="col-12 pt-2">
+                            <input type="email" class="heroinput form-control shadow-none border" placeholder="Enter amount in rs">
+                        </div>
+                        <label class="col-12 pt-4 fw-medium amoutlabel">
+                            Username (can be changed no more than once a month):- 
+                        </label>
+                        <div class="col-12 pt-2">
+                            <input type="text" class="heroinput form-control shadow-none border" placeholder="Enter amount in rs">
+                        </div>
+                        <div class="col-12 text-end pt-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <a href="javascript:;" class="controltitle text-decoration-none" data-bs-toggle="modal" data-bs-target="#changepassword">Change Password</a>
+                                <a href="javascript:;" class="controltitle text-decoration-none">Control Panel</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center pt-4 justify-content-center">
+                            <a href="javascript:;" class="customBtn px-4 py-2 btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1 px-2">Save</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- setting modal end  -->
+
+    <!-- new password modal start -->
+    <div class="modal fade loginmodal" id="changepassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog loginDialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fw-semibold" id="exampleModalLabel">Create New Password</div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div>
+                            <input type="text" class="form-control modalinput shadow-none" placeholder="Old Password">
+                        </div>
+                        <div class="mt-3">
+                            <input type="password" class="form-control modalinput shadow-none" placeholder="New Password">
+                        </div>
+                        <div class="mt-3">
+                            <input type="password" class="form-control modalinput shadow-none" placeholder="Confirm New Password">
+                        </div>
+                        <div id="html_element" class="w-100"></div>
+                        <!-- <input type="submit" value="Submit" class="fb9" /> -->
+                        <div class="d-flex align-items-center justify-content-center mt-3">
+                            <button type="submit" class="customBtn btnthree px-3 text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1 mx-4">Save</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- new password modal end -->
+
     <!-- tooltip  -->
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')

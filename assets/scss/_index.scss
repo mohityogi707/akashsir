@@ -108,10 +108,10 @@
     }
 }
 .heroinput {
-    font-size: 14px;
-    font-weight: 500;
-    color: rgb(103, 103, 103);
-    height: 40px;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: rgb(103, 103, 103) !important;
+    height: 40px !important;
     &::placeholder {
         font-size: 14px;
         font-weight: 500;
@@ -185,7 +185,7 @@
         }
     }
     .heroinput {
-        height: 35px;
+        height: 35px !important;
         &::placeholder {
         }
         & option {
@@ -240,8 +240,8 @@
         }
     }
     .heroinput {
-        height: 35px;
-        font-size: 13px;
+        height: 35px !important;
+        font-size: 13px !important;
         &::placeholder {
             font-size: 13px;
         }
@@ -1384,6 +1384,7 @@
 
 // chat offcanvas end
 
+
 // chat modal start 
 .chatmodal {
     z-index: 1040;
@@ -1434,6 +1435,8 @@
         }
     }
 }
+// chat modal end
+
 
 // selling page start 
 .sellingpage {
@@ -1475,6 +1478,9 @@
             font-weight: 500;
         }
     }
+    & .checkinput {
+        min-width: 30px;
+    }
 }
 
 .dmmodal {
@@ -1490,4 +1496,208 @@
         }
     }
 }
+
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {
+    .sellingpage {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        & .inputcard {
+            padding: 15px;
+            & .sellingheading {
+                font-size: 22px;
+            }
+            & .heroinput {
+                &::placeholder {
+                }
+            }
+            & .formdata {
+                height: 43px;
+                & .copylinkbtn {
+                }
+            }
+            & .textbox {
+            }
+            & .inputtitle {
+                font-size: 3;
+            }
+        }
+    }
+    
+    .dmmodal {
+        & .dmdialog {
+            & .modal-title {
+                font-size: 22px;
+            }
+            & .detaildm {
+                font-size: 13px;
+            }
+        }
+    }
+    
+}
+
+@include media-breakpoint-down(sm) {
+    .sellingpage {
+        padding-top: 35px;
+        padding-bottom: 35px;
+        & .inputcard {
+            padding: 10px;
+            & .sellingheading {
+                font-size: 20px;
+            }
+            & .heroinput {
+                font-size: 12px;
+                &::placeholder {
+                    font-size: 12px;
+                }
+            }
+            & .formdata {
+                padding: 3px;
+                height: 40px;
+                & .copylinkbtn {
+                    font-size: 12px;
+                    padding: 4px 13px;
+                }
+            }
+            & .textbox {
+                height: 70px;
+            }
+            & .inputtitle {
+                font-size: 12px;
+            }
+        }
+    }
+    
+    .dmmodal {
+        & .dmdialog {
+            & .modal-title {
+                font-size: 20px;
+            }
+            & .detaildm {
+                font-size: 12px;
+            }
+        }
+    }
+    
+}
+
 // selling page end
+
+
+// balance modal start
+.commonmodal {
+    & .modal-title {
+        font-size: 22px;
+        font-weight: 700;
+        color: $black;
+    }
+    & .btn-close {
+        background-size: 13px;
+    }
+    & .controltitle {
+        font-size: 14px;
+        line-height: normal;
+        font-weight: 500;
+    }
+} 
+.balancemodal {
+    & .amoutlabel {
+        font-size: 14px;
+    }
+    & .modaldata {
+        font-size: 12px;
+        color: $danger;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+// setting modal start 
+.settingmodal {
+
+}
+
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .commonmodal {
+        & .modal-title {
+            font-size: 21px;
+        }
+    } 
+}
+
+@include media-breakpoint-down(md) {
+    .commonmodal {
+        & .modal-title {
+            font-size: 20px;
+        }
+        & .controltitle {
+            font-size: 13px;
+        }
+    } 
+}
+
+@include media-breakpoint-down(sm) {
+    .commonmodal {
+        & .modal-title {
+            font-size: 19px;
+        }
+        & .controltitle {
+            font-size: 12px;
+        }
+        & .alert {
+            font-size: 12px;
+        }
+    } 
+    .balancemodal {
+        & .modal-title {
+            font-size: 20px;
+        }
+        & .btn-close {
+            background-size: 12px;
+        }
+        & .amoutlabel {
+            font-size: 13px;
+        }
+        & .modaldata {
+            font-size: 11px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    }
+}
+
+// balance modal end
