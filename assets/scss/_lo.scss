@@ -1,0 +1,140 @@
+.channelinfo {
+    padding-top: 45px;
+    padding-bottom: 40px;
+
+    & .detail-box {
+        & .left-details {
+            & .text {
+                font-size: 14px;
+                line-height: normal;
+                font-weight: normal;
+                color: #89868a;
+                margin-left: 30px;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    width: 1px;
+                    height: 10px;
+                    background: #89868a;
+                    position: absolute;
+                    left: -15px;
+                    top: 5px;
+                }
+
+                &:first-child {
+                    margin: 0;
+
+                    &::before {
+                        content: unset;
+                    }
+                }
+            }
+        }
+
+        & .right-details {
+            & .close-channel-text {
+                font-size: 14px;
+                line-height: normal;
+                font-weight: normal;
+                color: #89868a;
+
+                & .close-icon {
+                    height: 14px;
+                    width: 14px;
+                    line-height: 10px;
+                }
+            }
+        }
+    }
+
+    & .profilecard {
+        padding: 14px;
+
+        & .left-container {
+            & .channel-image {
+                aspect-ratio: 4/3;
+            }
+
+            & .channel-info {
+                & .channel-main-details {
+                    & .channel-name {
+                        font-size: 24px;
+                        line-height: 30px;
+                        color: $black;
+                    }
+
+                    & .channel-subtitle {
+                        font-size: 14px;
+                        line-height: normal;
+                    }
+                }
+            }
+
+            & .details {
+                & .details-text {
+                    font-size: 14px;
+
+                    & span {
+                        font-weight: 500;
+                    }
+                }
+            }
+
+            & .price-box {
+                font-size: 20px;
+
+                & .price {}
+            }
+        }
+    }
+
+    & .seller-container{
+        padding: 14px;
+    }
+
+    & .channeldata {
+        padding: 14px;
+        & .right-container{
+            & .heading{
+                font-size: 18px;
+            }
+            & .paragraph{
+                font-size: 14px;
+                line-height: 24px;
+                color: #505050;
+                & span{
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+    & .comments-container{
+        padding: 14px;
+        & .heading{
+            font-size: 18px;
+        }
+    }
+}
+
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {}
