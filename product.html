@@ -5,32 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <!-- jquery -->
+    <script src="./assets/js/jquery.js"></script>
     <!-- css  -->
     <link rel="stylesheet" href="assets/css/style.min.css">
-
     <!-- bootstrap css  -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
     <!-- font awesome  -->
     <link rel="stylesheet" href="assets/FontAwesome/css/all.min.css">
+    <!-- owl-carousel -->
+    <link rel="stylesheet"
+        href="./assets/libs/owl/cdnjs.cloudflare.com_ajax_libs_OwlCarousel2_2.3.4_assets_owl.carousel.min.css">
 </head>
 
 <body>
-    <!-- <a href="javascript:;" class="text-decoration-none d-flex align-items-center justify-content-center msgbtn rounded-circle position-fixed" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
-        <i class="fa-solid fa-comments"></i>
-    </a> -->
     <button
         class="text-decoration-none d-flex border-0 align-items-center justify-content-center msgbtn rounded-circle position-fixed"
         data-bs-toggle="modal" data-bs-target="#chatmodal">
         <i class="fa-solid fa-comments"></i>
     </button>
     <!-- <button class="btn position-fixed msgbtn rounded-circle d-flex align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-        <i class="fa-solid fa-comments"></i>
-    </button> -->
-
+         <i class="fa-solid fa-comments"></i>
+         </button> -->
+         
     <!-- navbar start  -->
-    <nav class="navbar container-fluid fixed-top" id="navbar">
+    <nav class="navbar container-fluid sticky-top profilenav" id="navbar">
         <div class="container">
             <div class="row w-100 align-items-center mx-auto">
                 <div class="col d-mdblock dnone">
@@ -39,17 +38,39 @@
                     </a>
                 </div>
                 <div class="col-auto mx-auto">
-                    <div class="headerlink d-flex align-items-center">
-                        <a href="startselling.html"
+                    <div class="headerlink d-flex gap-0 align-items-center">
+                        <a href="javascript:;"
                             class="customBtn text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
                             <span class="position-relative z-1">Start Selling</span>
                         </a>
-                        <div class="d-flex align-items-center gap-sm-2 gap-1">
-                            <a href="javascript:;" class="login text-decoration-none position-relative"
-                                data-bs-toggle="modal" data-bs-target="#loginmodal">Log In</a>
-                            <span class="slash">/</span>
-                            <a href="javascript:;" class="login text-decoration-none position-relative"
-                                data-bs-toggle="modal" data-bs-target="#signup">Register</a>
+                        <!-- <div class="d-flex align-items-center gap-2">
+                        <a href="javascript:;" class="login text-decoration-none position-relative" data-bs-toggle="modal" data-bs-target="#loginmodal">Log In</a>
+                        <span class="slash">/</span>
+                        <a href="javascript:;" class="login text-decoration-none position-relative"  data-bs-toggle="modal" data-bs-target="#signup">Register</a>
+                        </div> -->
+                        <div class="dropdown ms-3 userdropdwon">
+                            <button
+                                class="btn dropdownbtn p-0 ps-sm-2 ps-1 dropdown-toggle fw-medium d-flex align-items-center border-0"
+                                type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span
+                                    class="userimg rounded-circle  overflow-hidden d-flex align-items-center justify-content-center">
+                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
+                                </span>
+                                User name
+                            </button>
+                            <ul class="dropdown-menu innerdata shadow-sm">
+                                <li><a class="dropdown-item innerlink" href="profile.html">Profile</a></li>
+                                <li><a class="dropdown-item innerlink" href="javascript:;">Balance: <span>0</span></a>
+                                </li>
+                                <li><a class="dropdown-item innerlink" href="#">Message <span>(0)</span></a></li>
+                                <li>
+                                    <a class="dropdown-item innerlink" href="#">Favorites
+                                        <a>
+                                </li>
+                                <li><a class="dropdown-item innerlink" href="#">Settings<a></li>
+                                <li><a class="dropdown-item innerlink" href="#">My Deals<a></li>
+                                <li><a class="dropdown-item innerlink" href="#">Log out<a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -58,24 +79,195 @@
     </nav>
     <!-- navbar end  -->
 
-    <!-- profile page start  -->
-    <div class="container-fluid">
+    <!-- channel section start  -->
+    <div class="container-fluid channelinfo">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="d-flex align-items-center ">
-                        <div class="">
+            <nav aria-label="breadcrumb" class="activepage">
+                <ol class="breadcrumb mb-md-2 mb-0 rounded-2 d-inline-flex">
+                    <li class="breadcrumb-item"><a href="index.html" class="returnpage text-decoration-none">Home</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                </ol>
+            </nav>
+            <!-- top details -->
+            <div class="detail-box d-flex flex-wrap row-gap-2 align-items-center justify-content-between mt-3">
+                <div class="left-details d-flex">
+                    <div class="text">Listed: 4 days ago </div>
+                    <div class="text">UP: 4 days ago </div>
+                    <div class="text">Views: 285</div>
+                </div>
+                <div class="right-details">
+                    <a href="javascript:void(0)" class="close-channel-text d-flex align-items-center gap-2">
+                        <div class="close-icon">
+                            <img src="./assets/img/index/close-icon.svg" alt="close-icon" class="h-100 w-100">
+                        </div>
+                        The channel is mine, delete listing!
+                    </a>
+                </div>
+            </div>
+            <!-- main details container -->
+            <div class="row pt-4 justify-content-between row-gap-3">
+                <div class="col-md-4">
+                    <!-- channel details  -->
+                    <div class="profilecard shadow-sm bg-light rounded-2">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="left-container">
+                                    <div class="channel-image rounded-4 overflow-hidden">
+                                        <img src="./assets/img/index/channel.jpg" alt="channel-image"
+                                            class="h-100 w-100 object-fit-cover ">
+                                    </div>
+                                    <div
+                                        class="channel-info d-flex flex-wrap justify-content-between align-items-center gap-3 mt-3">
+                                        <div class="channel-main-details">
+                                            <div class="channel-name fw-bold">
+                                                Bullish XD
+                                            </div>
+                                            <div class="channel-subtitle text-muted fw-normal">
+                                                Luxury & Motivation
+                                            </div>
+                                        </div>
+                                        <div class="channel-link">
+                                            <a href="javascript:void(0)" class="youtubeBtn">
+                                                <span><i class="fab fa-youtube"></i></span>
+                                                YouTube</a>
+                                        </div>
+                                    </div>
+                                    <div class="price-box fw-bold mt-2">
+                                        $ <span class="price">780</span>
+                                    </div>
+                                    <div class="details mt-2 ps-3 border-start border-2 border-theme1">
+                                        <div class="details-text text-muted ">
+                                            <span class="text-black">249,000 </span> - Subscribers
+                                        </div>
+                                        <div class="details-text text-muted ">
+                                            <span class="text-black">$0</span> - Income (month)
+                                        </div>
+                                        <div class="details-text text-muted ">
+                                            <span class="text-black">$0</span> - Expense (month)
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="channel-buttons mt-3 d-flex align-items-center justify-content-center gap-3">
+                                        <a href="javascript:;"
+                                            class="customBtn btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                            <span class="position-relative z-1">Buy Channel</span>
+                                        </a>
+                                        <a href="javascript:;"
+                                            class="customBtn btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                            <span class="position-relative z-1">Add to favorites</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- seller box -->
+                    <div class="seller-container bg-light rounded-2 shadow-sm mt-3">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="heading fw-bold text-black mb-3">
+                                    Seller Info
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <!-- decription  -->
+                    <div class="channeldata bg-light rounded-2 shadow-sm ">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="right-container">
+                                    <div class="heading fw-bold text-black mb-3">
+                                        Channel images
+                                    </div>
+                                    <div class="row owl-carousel channelCarousel">
+                                        <div class="col-12">
+                                            <div class="img-box">
+                                                <img src="./assets/img/index/channel-screeenshot.jpg"
+                                                    alt="channel-screeenshot" class="h-100 w-100 object-fit-cover">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="img-box">
+                                                <img src="./assets/img/index/channel-screeenshot.jpg"
+                                                    alt="channel-screeenshot" class="h-100 w-100 object-fit-cover">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="img-box">
+                                                <img src="./assets/img/index/channel-screeenshot.jpg"
+                                                    alt="channel-screeenshot" class="h-100 w-100 object-fit-cover">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="heading fw-medium text-black mt-5 mb-3">
+                                        Description:
+                                    </div>
+                                    <div class="paragraph mt-3">
+                                        <span>𝗜 𝗔𝗺 𝗦𝗲𝗹𝗹𝗶𝗻𝗴 𝗙𝘂𝗹𝗹𝘆 𝗢𝗿𝗴𝗮𝗻𝗶𝗰 𝗢𝗹𝗱 𝗡𝗼𝗻
+                                            𝗠𝗼𝗻𝗲𝘁𝗶𝘇𝗲𝗱 𝗖𝗵𝗮𝗻𝗻𝗲𝗹.</span>
+                                        <br>
+                                        <br>
+                                        Subscribers:- 
+                                        <span>249K+</span>
+                                        <br>
+                                        Joined <span>Jun 28, 2021</span>
+                                        <br>
+                                        <span>54,057,406 </span> Views
+                                        <br>
+                                        Eligible For Monetization
+                                        <br>
+                                        First Apply Channel
+                                        <br>
+                                        Best For Live Streaming
+                                        <br>
+                                        <br>
+                                        <span>𝗣𝗮𝘆𝗺𝗲𝗻𝘁𝘀:</span>Paypal Friends & Family, Crypto, Wise, Payoneer,
+                                        Bank Transfer, CashApp, Zelle, Western Union,
+                                        <br>
+                                        <br>
+                                        <span>Monetization enabled: </span> No
+                                        <br>
+                                        <br>
+                                        <span>Ways of promotion: </span> not provided
+                                        <br>
+                                        <br>
+                                        <span>Sources of expense: </span> not provided
+                                        <br>
+                                        <br>
+                                        <span>To support the channel, you need: </span> not provided
+                                        <br>
+                                        <br>
+                                        <span>Content: </span> Unique content
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- comments  -->
+                    <div class="comments-container bg-light rounded-2 shadow-sm mt-3">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="heading fw-bold text-black">
+                                    Discussion: <span class="counter">0</span>
+                                </div>
+                                <div class="comments text-muted mt-3">
+                                    Nobody has posted any comments on this listing yet.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- profile page end  -->
+    <!-- channel section end  -->
 
     <!-- footer start  -->
-    <!-- <footer class="container-fluid footer">
+    <footer class="container-fluid footer">
         <div class="container">
             <div class="row footerdata align-items-center justify-content-center ">
                 <div class="col-md-auto order1">
@@ -87,7 +279,8 @@
                     <ul class="footerlinkmain list-unstyled d-flex justify-content-center m-0 align-items-center">
                         <li><a href="javascript:;" class="footerlink text-decoration-none text-nowrap">About us</a></li>
                         <li><a href="javascript:;" class="footerlink text-decoration-none text-nowrap">Escrow
-                                service</a></li>
+                                service</a>
+                        </li>
                         <li><a href="javascript:;" class="footerlink text-decoration-none text-nowrap">Sellers</a></li>
                         <li><a href="javascript:;" class="footerlink text-decoration-none text-nowrap">Contact us</a>
                         </li>
@@ -107,30 +300,743 @@
                     <div class="col-md">
                         <div class="copyrigtTitle">MetaSwap LPd</div>
                         <div class="copyrigtTitle mt-md-0 mt-1">Address: 91 Battersea Park Road, London, England, SW8
-                            4DU</div>
+                            4DU
+                        </div>
                     </div>
                     <div class="col-md-auto mt-md-0 mt-2">
                         <ul
                             class="list-unstyled m-0 privacydata d-flex align-items-center justify-content-md-start justify-content-center">
                             <li><a href="javascript:;" class="privacylink text-decoration-none">Terms and Conditions
-                                </a></li>
+                                </a>
+                            </li>
                             <li><a href="javascript:;" class="privacylink text-decoration-none">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <!-- footer end -->
 
     <!-- bootstrap js  -->
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-
     <!-- custom js  -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/js.js"></script>
-
-
+    <!-- login modal  -->
+    <div class="modal fade loginmodal" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog loginDialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fw-semibold" id="exampleModalLabel">Log in </div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div>
+                            <input type="text" class="form-control modalinput shadow-none"
+                                placeholder="Username or Email">
+                        </div>
+                        <div class="mt-3">
+                            <input type="password" class="form-control modalinput shadow-none" placeholder="Password">
+                        </div>
+                        <div class="text-end pt-1 pb-2">
+                            <a href="javascript:;" class="modaltitle text-decoration-none">Reset password</a>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center mt-3">
+                            <button type="submit"
+                                class="customBtn btnthree px-3 text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1 mx-4">Submit</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                  </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- sign up modal  -->
+    <div class="modal fade loginmodal" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog loginDialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fw-semibold" id="exampleModalLabel">Log in </div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div>
+                            <input type="text" class="form-control modalinput shadow-none" placeholder="Email">
+                        </div>
+                        <div class="mt-3">
+                            <input type="text" class="form-control modalinput shadow-none" placeholder="Username">
+                        </div>
+                        <div class="mt-3">
+                            <input type="password" class="form-control modalinput shadow-none" placeholder="Password">
+                        </div>
+                        <div class="mt-3">
+                            <input type="password" class="form-control modalinput shadow-none"
+                                placeholder="Confirm Password">
+                        </div>
+                        <div class="text-end pt-1 pb-2">
+                            <a href="javascript:;" class="modaltitle text-decoration-none" data-bs-target="#loginmodal"
+                                data-bs-toggle="modal">Already have an account ?</a>
+                        </div>
+                        <div id="html_element" class="w-100"></div>
+                        <!-- <input type="submit" value="Submit" class="fb9" /> -->
+                        <div class="d-flex align-items-center justify-content-center mt-3">
+                            <button type="submit"
+                                class="customBtn btnthree px-3 text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1 mx-4">Submit</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                  </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- chat offcanvas start  -->
+    <div class="offcanvas offcanvas-start chatoffcanvas" data-bs-backdrop="static" tabindex="1" id="chatoffcanvas"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header border-bottom shadow-sm bglight">
+            <div class="d-flex align-items-center userheader">
+                <div class="aiicon overflow-hidden rounded-circle">
+                    <img src="assets/img/index/aiicon.png" alt="icon" class="h-100 w-100 img-fluid">
+                </div>
+                <div>
+                    <div class="agentname fw-semibold">Agent (Marie)</div>
+                    <div class="onlinestatus fw-semibold">Online (24/7)</div>
+                </div>
+            </div>
+            <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body chatdata bg-light px-1">
+            <div class="row w-100 mx-auto alignitems-end  h100">
+                <div class="col-12 pt-2">
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="aiimg rounded-circle overflow-hidden">
+                                <img src="assets/img/index/aiicon.png" alt="ai" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-6 ps-0">
+                            <div
+                                class="msgcard aibox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir</div>
+                                <div class="time text-end">
+                                    <!-- <div></div>
+                                 <div></div> -->
+                                    13:20
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 pt-2">
+                    <div class="row justify-content-end">
+                        <div class="col-6 pe-0 text-end">
+                            <div
+                                class="msgcard userbox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir</div>
+                                <div class="time text-end">
+                                    <!-- <div></div>
+                                 <div></div> -->
+                                    13:20
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="aiimg rounded-circle overflow-hidden">
+                                <img src="assets/img/index/usericon.svg" alt="ai" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 pt-2">
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="aiimg rounded-circle overflow-hidden">
+                                <img src="assets/img/index/aiicon.png" alt="ai" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-6 ps-0">
+                            <div
+                                class="msgcard aibox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir</div>
+                                <div class="time text-end">
+                                    <!-- <div></div>
+                                 <div></div> -->
+                                    13:20
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 pt-2">
+                    <div class="row justify-content-end">
+                        <div class="col-6 pe-0 text-end">
+                            <div
+                                class="msgcard userbox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir</div>
+                                <div class="time text-end">
+                                    <!-- <div></div>
+                                 <div></div> -->
+                                    13:20
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="aiimg rounded-circle overflow-hidden">
+                                <img src="assets/img/index/usericon.svg" alt="ai" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 pt-2">
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="aiimg rounded-circle overflow-hidden">
+                                <img src="assets/img/index/aiicon.png" alt="ai" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-6 ps-0">
+                            <div
+                                class="msgcard aibox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir</div>
+                                <div class="time text-end">
+                                    <!-- <div></div>
+                                 <div></div> -->
+                                    13:20
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 pt-2">
+                    <div class="row justify-content-end">
+                        <div class="col-6 pe-0 text-end">
+                            <div
+                                class="msgcard userbox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir</div>
+                                <div class="time text-end">
+                                    <!-- <div></div>
+                                 <div></div> -->
+                                    13:20
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="aiimg rounded-circle overflow-hidden">
+                                <img src="assets/img/index/usericon.svg" alt="ai" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 pt-2">
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="aiimg rounded-circle overflow-hidden">
+                                <img src="assets/img/index/aiicon.png" alt="ai" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-6 ps-0">
+                            <div
+                                class="msgcard aibox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir hello sir hello sirhello sir hello
+                                    sir hello sir v
+                                </div>
+                                <div class="time text-end">
+                                    <!-- <div></div>
+                                 <div></div> -->
+                                    13:20
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 pt-2">
+                    <div class="row justify-content-end">
+                        <div class="col-6 pe-0 text-end">
+                            <div
+                                class="msgcard userbox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir hello sirhello sirhello sirhello
+                                    sirhello sirhello sirhello sirhello sirhello sirhello sirhello sirhello sir
+                                </div>
+                                <div class="time text-end">
+                                    <!-- <div></div>
+                                 <div></div> -->
+                                    13:20
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="aiimg rounded-circle overflow-hidden">
+                                <img src="assets/img/index/usericon.svg" alt="ai" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvasfooter shadow-sm border-top bglight">
+            <div class="d-flex align-items-center gap-2">
+                <div class="input-group inputdata borderbottom rounded0 rounded-5 align-items-center  ">
+                    <input type="text"
+                        class="form-control msginput ps-0 h-100 shadow-none bg-transparent border-0 rounded-0"
+                        placeholder="Enter Your Message" aria-label="Recipient's username"
+                        aria-describedby="basic-addon2">
+                    <input type="file" id="filedata" hidden>
+                    <label for="filedata"
+                        class="border-0 d-flex align-items-center justify-content-center shadow-none filechoose bg-transparent"
+                        id="basic-addon2">
+                        <img src="assets/img/index/attachfile.svg" alt="file" class="h-100 w100">
+                    </label>
+                </div>
+                <button class="btn sendbtn rounded-circle d-flex align-items-center justify-content-center">
+                    <img src="assets/img/index/send.svg" alt="send" class="h-100 w-100 img-fluid">
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- chat modal  -->
+    <div class="modal fade chatmodal" id="chatmodal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog chatdialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="exampleModalLabel">Chat</div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-0">
+                    <div class="row contactdata">
+                        <div class="col-12 contactinner">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
+                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div
+                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
+                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
+                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div
+                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
+                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
+                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div
+                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
+                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
+                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div
+                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
+                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
+                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div
+                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
+                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
+                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div
+                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
+                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
+                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div
+                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
+                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
+                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div
+                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
+                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
+                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div
+                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
+                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
+                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div
+                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
+                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
+                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div
+                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
+                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
+                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div
+                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
+                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
+                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div
+                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
+                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
+                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div
+                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
+                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
+                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div
+                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
+                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
+                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div
+                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
+                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
+                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div
+                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
+                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
+                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div
+                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
+                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
+                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div
+                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
+                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
+                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div
+                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
+                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
+                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div
+                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
+                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
+                                </div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-theme1">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- tooltip  -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+    <!-- owl carousel js -->
+    <script src="./assets/libs/owl/cdnjs.cloudflare.com_ajax_libs_OwlCarousel2_2.3.4_owl.carousel.min.js"></script>
+    <!-- custom js  -->
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

@@ -84,8 +84,27 @@
             color: #fff;
         }
     }
+   
 }
 
+.youtubeBtn{
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+    background-color: $red;
+    padding: 8px 20px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    gap: 8px;
+    border: 0;
+    outline: none;
+    &:hover{
+        background-color: rgb(191, 1, 1);
+    }
+}
 @include media-breakpoint(basic) {}
 
 @include media-breakpoint-up(sm) {}
@@ -108,11 +127,17 @@
     .customBtn {
         font-size: 13px;
     }
+    .youtubeBtn{
+        font-size: 13px;
+    }
 }
 
 @include media-breakpoint-down(sm) {
     .customBtn {
         font-size: 12px;
         padding: 7px 16px;
+    }
+    .youtubeBtn{
+        font-size: 12px;
     }
 }
