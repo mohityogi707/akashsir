@@ -267,7 +267,7 @@
                             <div class="carddata text-center"><span class="fw-bold">7 660 —</span> subscribers</div>
                             <div class="carddata text-center"><span class="fw-bold">5$ / months —</span> income</div>
                         </div>
-                        <a href="javscript:;" class="buychannel text-decoration-none text-center d-flex align-items-center justify-content-center">Buy this channel</a>
+                        <a href="javscript:;" class="buychannel text-decoration-none text-center d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#paymentmodal">Buy this channel</a>
                     </div>
                 </div>
                 <div class="col">
@@ -301,7 +301,7 @@
                             <div class="carddata text-center"><span class="fw-bold">7 660 —</span> subscribers</div>
                             <div class="carddata text-center"><span class="fw-bold">5$ / months —</span> income</div>
                         </div>
-                        <a href="javscript:;" class="buychannel text-decoration-none text-center d-flex align-items-center justify-content-center">Buy this channel</a>
+                        <a href="javscript:;" class="buychannel text-decoration-none text-center d-flex align-items-center justify-content-center" data-bs-toggle="modal" data-bs-target="#paymentmodal">Buy this channel</a>
                     </div>
                 </div>
                 <div class="col">
@@ -597,7 +597,7 @@
                 </div>
                 <div class="col mt-md-0 mt-sm-3 mt-2 orderl ord-3">
                     <ul class="footerlinkmain list-unstyled d-flex justify-content-center m-0 align-items-center">
-                        <li><a href="javascript:;" class="footerlink text-decoration-none text-nowrap">About us</a></li>
+                        <li><a href="about.html" class="footerlink text-decoration-none text-nowrap">About us</a></li>
                         <li><a href="javascript:;" class="footerlink text-decoration-none text-nowrap">Escrow service</a></li>
                         <li><a href="javascript:;" class="footerlink text-decoration-none text-nowrap">Sellers</a></li>
                         <li><a href="javascript:;" class="footerlink text-decoration-none text-nowrap">Contact us</a></li>
@@ -1351,7 +1351,7 @@
                             Email:- 
                         </label>
                         <div class="col-12 pt-2">
-                            <input type="email" class="heroinput form-control shadow-none border" placeholder="Enter amount in rs">
+                            <input type="email" class="heroinput form-control shadow-none border" placeholder="Email">
                         </div>
                         <div class="d-flex align-items-center pt-3 justify-content-center">
                             <a href="javascript:;" class="customBtn  btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1" id="liveAlertBtn">
@@ -1411,6 +1411,137 @@
         </div>
     </div>
     <!-- new password modal end -->
+
+    <!-- payment modal start  -->
+    <div class="modal fade dealmodal" id="paymentmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog dealdialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content dealcontent">
+                <div class="modal-header">
+                    <div class="modal-title " id="exampleModalLabel">Create a deal</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 selectpaytitle">
+                            Select payment methods you can use to pay the seller. The more options you choose, the greater the chance that one of them will suit the seller and he will agree to the deal.
+                        </div>
+                        <div class="col-12 pt-4 mt2">
+                            <div class="row g-sm-3 g-2 justify-content-center row-cols6 paymentoption">
+                                <div class="col">
+                                    <div class="paymentcard">
+                                        <input type="checkbox" hidden class="checkinput" id="box1">
+                                        <label for="box1" class="paymentlabel rounded-2 w-100">
+                                            <img src="assets/img/index/payment1.png" alt="payment" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="paymentcard">
+                                        <input type="checkbox" hidden class="checkinput" id="box2">
+                                        <label for="box2" class="paymentlabel rounded-2 w-100">
+                                            <img src="assets/img/index/payment2.png" alt="payment" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="paymentcard">
+                                        <input type="checkbox" hidden class="checkinput" id="box3">
+                                        <label for="box3" class="paymentlabel rounded-2 w-100">
+                                            <img src="assets/img/index/payment3.png" alt="payment" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="paymentcard">
+                                        <input type="checkbox" hidden class="checkinput" id="box4">
+                                        <label for="box4" class="paymentlabel rounded-2 w-100">
+                                            <img src="assets/img/index/payment11.png" alt="payment" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="paymentcard">
+                                        <input type="checkbox" hidden class="checkinput" id="box5">
+                                        <label for="box5" class="paymentlabel rounded-2 w-100">
+                                            <img src="assets/img/index/payment10.png" alt="payment" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="paymentcard">
+                                        <input type="checkbox" hidden class="checkinput" id="box6">
+                                        <label for="box6" class="paymentlabel rounded-2 w-100">
+                                            <img src="assets/img/index/payment8.png" alt="payment" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 transactiontitle pt-4">
+                            Transaction steps when using the escrow service:
+                        </div>
+                        <div class="col-12 paymentpolicy pt-3 mt-0">
+                            <span class="fw-bold text-dark ">1.</span>
+                            The buyer pays a 4-8% ($3 minimum) service fee.
+                        </div>
+                        <div class="col-12 paymentpolicy">
+                            <span class="fw-bold text-dark ">2.</span>
+                            The seller designates the escrow agent as manager.
+                        </div>
+                        <div class="col-12 paymentpolicy">
+                            <span class="fw-bold text-dark ">3.</span>
+                            After 7 days, the seller assigns primary ownership rights to the escrow agent (7 days is the minimum amount of time required in order to assign a new primary owner in the control panel.)
+                        </div>
+                        <div class="col-12 paymentpolicy">
+                            <span class="fw-semibold text-dark ">4.</span>
+                            The escrow agent verifies everything, removes the other managers, and notifies the buyer to pay the seller.
+                        </div>
+                        <div class="col-12 paymentpolicy">
+                            <span class="fw-semibold text-dark ">5.</span>
+                            The buyer pays the seller.
+                        </div>
+
+                        <div class="col-12 paymentpolicy">
+                            <span class="fw-semibold text-dark ">6.</span>
+                            After the seller's confirmation, the escrow agent assigns ownership rights to the buyer.
+                        </div>
+                        <div class="col-12 paymenttitletwo">
+                            In order to guarantee maximum security during the transaction, all messages must be sent through the website using the chat system where the transaction is completed, so that in case of any issues, the arbitration service can verify everything.
+                        </div>
+                        <div class="col-12 emailtitle text-center">
+                            Email address associated with the account which should be designated as the owner
+                        </div>
+                        <div class="col-12 pt-3">
+                            <div class="row gap-2 justify-content-center">
+                                <div class="col-sm-6">
+                                    <input type="email" class="form-control heroinput shadow-none border" placeholder="Enter your email ">
+                                </div>
+                                <div class="col-12 text-center">
+                                    <div>
+                                        <div class="discount">You have a discount on this deal!</div>
+                                        <div class="discountitlte pb-4 mb-sm-2">6% instead of 8% for the escrow service</div>
+                                        <a href="javascript:;" class="customBtn btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                            <span class="position-relative z-1 px-2">Create</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer"> -->
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <!-- <button class="btn customBtn position-relative"> Create</button> -->
+                    <!-- <a href="javascript:;" class="customBtn btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                        <span class="position-relative z-1">Create</span>
+                    </a> -->
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>   
+    <!-- payment modal end  -->
 
 
 </body>

@@ -37,22 +37,22 @@
         background-color: #a9a9a9;
         }
         
-        & .heroinput {
-            font-size: 14px;
-            font-weight: 500;
-            color: rgb(103, 103, 103);
-            height: 40px;
-            &::placeholder {
-                font-size: 14px;
-                font-weight: 500;
-                color: rgb(103, 103, 103);
-            }
-            & option {
-                font-size: 13px;
-                font-weight: 500;
-                color: rgb(103, 103, 103);
-            }
-        }
+        // & .heroinput {
+        //     font-size: 14px;
+        //     font-weight: 500;
+        //     color: rgb(103, 103, 103);
+        //     height: 40px;
+        //     &::placeholder {
+        //         font-size: 14px;
+        //         font-weight: 500;
+        //         color: rgb(103, 103, 103);
+        //     }
+        //     & option {
+        //         font-size: 13px;
+        //         font-weight: 500;
+        //         color: rgb(103, 103, 103);
+        //     }
+        // }
         & .checkbox {
             height: 40px;
             border: 2px solid rgb(90, 90, 90);
@@ -109,17 +109,17 @@
 }
 .heroinput {
     font-size: 14px !important;
-    font-weight: 500 !important;
-    color: rgb(103, 103, 103) !important;
+    font-weight: 400 !important;
+    color: rgb(73, 73, 73) !important;
     height: 40px !important;
     &::placeholder {
         font-size: 14px;
-        font-weight: 500;
+        font-weight: 400;
         color: rgb(103, 103, 103);
     }
     & option {
         font-size: 13px;
-        font-weight: 500;
+        font-weight: 400;
         color: rgb(103, 103, 103);
     }
 }
@@ -1701,3 +1701,356 @@
 }
 
 // balance modal end
+
+
+// deal page start 
+.dealsection {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    & .dealcard {
+        padding:20px;
+    }
+    & .dealheading {
+        font-size: 20px;
+        font-weight: 700;
+        color: #000;
+    }
+    & .nodealtitle  {
+        font-size: 19px;
+        font-weight: 500;
+    }
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .dealsection {
+        & .dealcard {
+            padding:18px;
+        }
+        & .dealheading {
+            font-size:19px;
+        }
+        & .nodealtitle  {
+            font-size: 17px;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .dealsection {
+        & .dealcard {
+            padding:15px;
+        }
+        & .dealheading {
+            font-size:18px;
+        }
+        & .nodealtitle  {
+            font-size: 16px;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .dealsection {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        & .dealcard {
+            padding:10px;
+        }
+        & .dealheading {
+            font-size:16px;
+        }
+        & .nodealtitle  {
+            font-size: 14px;
+        }
+        & .inputarrow {
+            transform: rotate(90deg);
+        }
+    }
+}
+
+// deal page end 
+
+
+// Payment modal start 
+.dealmodal {
+    & .dealdialog {
+        max-width: 70%;
+        & .modal-title {
+            font-size: 22px;
+            font-weight: 600;
+        }
+        & .btn-close {
+            background-size: 14px;
+        }
+        & .selectpaytitle {
+            font-size: 15px;
+            font-weight: 500;
+        }
+        & .paymentoption {
+            & *> {
+                flex: 1 1 14%;
+                width: 14%;
+            }
+            & .paymentlabel {
+                border: 2px solid rgb(232, 229, 229);
+                height: 70px;
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                & img {
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+            & .checkinput:checked ~ .paymentlabel {
+                border-color: $theme1;
+                & img {
+                    transform: scale(1.1);
+                }
+            }
+        }
+        & .transactiontitle {
+            font-size: 16px;
+            font-weight: 500;
+        }
+        & .paymentpolicy {
+            font-size: 15px;
+            margin-top: 10px;
+            line-height: 24px;
+            & span {
+                padding-right: 5px;
+            }
+        }
+        & .paymenttitletwo {
+            font-size: 15px;
+            font-weight: 600;
+            color: red;
+            margin-top: 18px;
+        }
+        & .emailtitle {
+            font-size: 14px;
+            font-weight: 500;
+            padding-top: 14px;
+        }
+        & .discount {
+            font-size: 15px;
+            font-weight: 600;
+            color: #00D50A;
+        }
+        & .discountitlte {
+            font-size: 15px;
+            line-height: normal;
+            color: #000;
+        }
+    }
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {
+    .dealmodal {
+        & .dealdialog {
+            max-width: 90%;
+            & .modal-title {
+            }
+            & .btn-close {
+            }
+            & .selectpaytitle {
+            }
+            & .paymentoption {
+                & >* {
+                }
+                & .paymentlabel {
+                    & img {
+                    }
+                }
+                & .checkinput:checked ~ .paymentlabel {
+                    & img {
+                    }
+                }
+            }
+            & .transactiontitle {
+            }
+            & .paymentpolicy {
+                & span {
+                }
+            }
+            & .paymenttitletwo {
+            }
+            & .emailtitle {
+            }
+            & .discount {
+            }
+            & .discountitlte {
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .dealmodal {
+        & .dealdialog {
+            max-width: 90%;
+            & .modal-title {
+                font-size: 20px;
+            }
+            & .btn-close {
+                background-size: 14px;
+            }
+            & .selectpaytitle {
+                font-size: 14px;
+            }
+            & .paymentoption {
+                & >* {
+                    flex: 1 1 25%;
+                    width: 25%;
+                }
+                & .paymentlabel {
+                    height: 60px;
+                    & img {
+                    }
+                }
+                & .checkinput:checked ~ .paymentlabel {
+                    & img {
+                    }
+                }
+            }
+            & .transactiontitle {
+                font-size: 15px;
+            }
+            & .paymentpolicy {
+                font-size: 13px;
+                margin-top: 8px;
+                line-height: 22px;
+                & span {
+                }
+            }
+            & .paymenttitletwo {
+                font-size: 14px;
+            }
+            & .emailtitle {
+                font-size: 13px;
+                padding-top: 12px;
+            }
+            & .discount {
+                font-size: 14px;
+            }
+            & .discountitlte {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .dealmodal {
+        & .dealdialog {
+            max-width: 100%;
+            & .modal-title {
+                font-size: 18px;
+            }
+            & .btn-close {
+                background-size: 13px;
+            }
+            & .selectpaytitle {
+                font-size: 13px;
+            }
+            & .paymentoption {
+                & >* {
+                    flex: 1 1 33.33%;
+                    width: 33.33%;
+                }
+                & .paymentlabel {
+                    height: 50px;
+                    & img {
+                    }
+                }
+                & .checkinput:checked ~ .paymentlabel {
+                    & img {
+                    }
+                }
+            }
+            & .transactiontitle {
+                font-size: 14px;
+            }
+            & .paymentpolicy {
+                font-size: 12px;
+                margin-top: 5px;
+                line-height: 20px;
+                & span {
+                    padding-right: 5px;
+                }
+            }
+            & .paymenttitletwo {
+                font-size: 13px;
+                margin-top: 15px;
+            }
+            & .emailtitle {
+                font-size: 12px;
+                padding-top: 12px;
+            }
+            & .discount {
+                font-size: 13px;
+            }
+            & .discountitlte {
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+// Payment modal end
+
+// about us page start 
+.aboutsection {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    & .aboutusheading {
+        font-size: 20px;
+        font-weight: 700;
+        color: #000;
+        line-height: normal;
+        padding-top: 15px;
+    }
+    & .aboutdata {
+        font-size: 14px;
+        margin-top: 15px;
+        line-height: 26px;
+    }
+    & .aboutcard {
+        padding: 30px;
+        background-color: lighten($theme1, 65);
+        & .cardHeding {
+            font-size: 19px;
+            font-weight: 600;
+            color: #000;
+        }
+    }
+}
+// about us page end

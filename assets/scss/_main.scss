@@ -60,7 +60,12 @@ body{
     }
   }
 }
-
+// all page heading 
+.mainheading {
+  font-size: 34px;
+  font-weight: 700;
+  color: #000;
+}
 @include media-breakpoint(basic) {}
 
 @include media-breakpoint-up(sm) {}
