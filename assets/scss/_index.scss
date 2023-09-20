@@ -403,19 +403,19 @@
             }
         }
     }
-    & .pagedatamain {
-        margin-top: 40px;
-        & .pagedata {
-            & .page-item, .page-link {
-                font-size: 14px;
-                color: #000;
-                font-weight: 500;
-            }
-            & .page-link {
-                &.active {
-                    background-color: $theme1;
-                    color: #fff;
-                }
+}
+.pagedatamain {
+    margin-top: 40px;
+    & .pagedata {
+        & .page-item, .page-link {
+            font-size: 14px;
+            color: #000;
+            font-weight: 500;
+        }
+        & .page-link {
+            &.active {
+                background-color: $theme1;
+                color: #fff;
             }
         }
     }
@@ -515,14 +515,14 @@
                 }
             }
         }
-        & .pagedatamain {
-            margin-top: 35px;
-            & .pagedata {
-                & .page-item, .page-link {
-                }
-                & .page-link {
-                    &.active {
-                    }
+    }
+    .pagedatamain {
+        margin-top: 35px;
+        & .pagedata {
+            & .page-item, .page-link {
+            }
+            & .page-link {
+                &.active {
                 }
             }
         }
@@ -598,14 +598,14 @@
                 }
             }
         }
-        & .pagedatamain {
-            margin-top: 30px;
-            & .pagedata {
-                & .page-item, .page-link {
-                }
-                & .page-link {
-                    &.active {
-                    }
+    }
+    .pagedatamain {
+        margin-top: 30px;
+        & .pagedata {
+            & .page-item, .page-link {
+            }
+            & .page-link {
+                &.active {
                 }
             }
         }
@@ -698,15 +698,15 @@
                 }
             }
         }
-        & .pagedatamain {
-            margin-top: 25px;
-            & .pagedata {
-                & .page-item, .page-link {
-                    font-size: 12px;
-                }
-                & .page-link {
-                    &.active {
-                    }
+    }
+    .pagedatamain {
+        margin-top: 25px;
+        & .pagedata {
+            & .page-item, .page-link {
+                font-size: 12px;
+            }
+            & .page-link {
+                &.active {
                 }
             }
         }
@@ -1444,39 +1444,39 @@
     padding-bottom: 50px;
     & .inputcard {
         padding: 20px;
-        & .sellingheading {
-            font-size: 24px;
-            font-weight: 700;
-            color: #000;
-        }
-        & .heroinput {
-            font-size: 13px;
+    }
+    & .sellingheading {
+        font-size: 24px;
+        font-weight: 700;
+        color: #000;
+    }
+    & .heroinput {
+        font-size: 13px;
+        font-weight: 400;
+        &::placeholder {
             font-weight: 400;
-            &::placeholder {
-                font-weight: 400;
-                font-size: 13px;
-            }
+            font-size: 13px;
         }
-        & .formdata {
-            padding: 4px;
-            height: 45px;
-            & .copylinkbtn {
-                font-size: 13px;
-                font-weight: 500;
-                background-color: $theme1;
-                color: #fff; 
-                padding: 4px 16px;
-            }
-        }
-        & .textbox {
-            height: 80px;
-            resize: none;
-        }
-        & .inputtitle {
-            font-size: 14px;
-            color: #000;
+    }
+    & .formdata {
+        padding: 4px;
+        height: 45px;
+        & .copylinkbtn {
+            font-size: 13px;
             font-weight: 500;
+            background-color: $theme1;
+            color: #fff; 
+            padding: 4px 16px;
         }
+    }
+    & .textbox {
+        height: 80px;
+        resize: none;
+    }
+    & .inputtitle {
+        font-size: 14px;
+        color: #000;
+        font-weight: 500;
     }
     & .checkinput {
         min-width: 30px;
@@ -1524,20 +1524,20 @@
             & .sellingheading {
                 font-size: 22px;
             }
-            & .heroinput {
-                &::placeholder {
-                }
+        }
+        & .heroinput {
+            &::placeholder {
             }
-            & .formdata {
-                height: 43px;
-                & .copylinkbtn {
-                }
+        }
+        & .formdata {
+            height: 43px;
+            & .copylinkbtn {
             }
-            & .textbox {
-            }
-            & .inputtitle {
-                font-size: 3;
-            }
+        }
+        & .textbox {
+        }
+        & .inputtitle {
+            font-size: 3;
         }
     }
     
@@ -1563,26 +1563,26 @@
             & .sellingheading {
                 font-size: 20px;
             }
-            & .heroinput {
-                font-size: 12px;
-                &::placeholder {
-                    font-size: 12px;
-                }
-            }
-            & .formdata {
-                padding: 3px;
-                height: 40px;
-                & .copylinkbtn {
-                    font-size: 12px;
-                    padding: 4px 13px;
-                }
-            }
-            & .textbox {
-                height: 70px;
-            }
-            & .inputtitle {
+        }
+        & .heroinput {
+            font-size: 12px;
+            &::placeholder {
                 font-size: 12px;
             }
+        }
+        & .formdata {
+            padding: 3px;
+            height: 40px;
+            & .copylinkbtn {
+                font-size: 12px;
+                padding: 4px 13px;
+            }
+        }
+        & .textbox {
+            height: 70px;
+        }
+        & .inputtitle {
+            font-size: 12px;
         }
     }
     
@@ -2040,7 +2040,7 @@
     }
     & .aboutdata {
         font-size: 14px;
-        margin-top: 15px;
+        margin-top:5px;
         line-height: 26px;
     }
     & .aboutcard {
@@ -2053,4 +2053,433 @@
         }
     }
 }
+
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {
+    .aboutsection {
+        & .aboutusheading {
+            font-size: 18px;
+            padding-top: 10px;
+            line-height: 29px;
+        }
+        & .aboutdata {
+        }
+        & .aboutcard {
+            padding: 20px;
+            & .cardHeding {
+                font-size: 18px;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .aboutsection {
+        & .aboutusheading {
+            font-size: 17px;
+            padding-top: 8px;
+            line-height: 26px;
+        }
+        & .aboutdata {
+            font-size: 13px;
+            margin-top:4px;
+            line-height: 23px;
+        }
+        & .aboutcard {
+            padding: 15px;
+            & .cardHeding {
+                font-size: 17px;
+            }
+        }
+    }
+}
+
 // about us page end
+
+// seller page start 
+.sellerpage {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    & .sellercard {
+        padding: 20px;
+        & .inputtitletwo {
+            font-size: 16px;
+            color: #000;
+            margin-bottom: 7px;
+            line-height: normal;
+        }
+        & .rightarrow {
+            font-size: 18px;
+        }
+        & .heroinputtwo {
+            height: 45px !important;
+        }
+    }
+    & .tablecard {
+        margin-top: 45px;
+        padding: 15px;
+        & .table {
+        }
+        & .tablebody {
+            & td {
+                padding: 15px;
+            }
+        }
+        & .tableheader {
+            & .headlink {
+                font-size: 15px;
+                font-weight: 600;
+                padding: 15px ;
+            }
+
+        }
+        & .userinfocard {
+            padding:0px 0;
+            padding-bottom: 10px;
+            width: 220px;
+            // height: 80px;
+            & .sellerimg {
+                height: 40px;
+                min-width: 40px;
+                max-width: 40px;
+            }
+            & .sellername {
+                font-size: 14px;
+                font-weight: 500;
+                color: #000;
+                line-height: normal;
+            }
+            & .lastonline {
+                font-size: 13px;
+                color: #8b8b8b;
+                font-weight: 400;
+                line-height: normal;
+                margin-top: 2px;
+                &.online {
+                    font-weight: 600;
+                    color: rgb(12, 186, 12);
+                }
+            }
+            & .vip {
+                font-size: 15px;
+                font-weight: 700;
+                background-color: #ff7200;
+                color: #fff;
+                padding: 2px 8px;
+                top: 0;
+                left: 0;
+                line-height: normal
+            }
+            & .pass {
+                font-size: 13px;
+                background-color: #00D50A;
+                color:#fff;
+                font-weight: 500;
+                padding: 1px 10px;
+                line-height: normal;
+                margin-bottom: 3px;
+                gap: 4px;
+                & span {
+                    color: #fff;
+                    font-size: 12px;
+                }
+            }
+        }
+        & .ratingcard {
+            // padding: 10px;
+            & .ratingtitle {
+                font-size: 15px;
+                font-weight: 700;
+                padding: 6px;
+            }
+            & .rating {
+                padding:0 8px;
+            }
+        }
+        & .channelcard {
+            & .youtubeicon {
+                height: 15px;
+                width: 15px;
+            }
+            & .channelname {
+                font-size: 14px;
+                color: #000;
+                font-weight: 600;
+            }
+            & .totaluser {
+                font-size: 13px;
+                font-weight: 500;
+                color: #4a4a4a;
+                & span {
+                    font-size: 16px;
+                    color: #8b8b8b;
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {
+    .sellerpage {
+        & .sellercard {
+            padding: 20px;
+            & .inputtitletwo {
+                font-size: 14px;
+            }
+            & .rightarrow {
+            }
+            & .heroinputtwo {
+                height: 40px !important;
+            }
+        }
+        & .tablecard {
+            padding: 20px;
+            & .table {
+            }
+            & .tablebody {
+                & td {
+                    padding: 13px;
+                }
+            }
+            & .tableheader {
+                & .headlink {
+                    font-size: 14px;
+                    padding: 13px ;
+                }
+            }
+            & .userinfocard {
+                padding-bottom: 10px;
+                width: 190px;
+                // height: 80px;
+                & .sellerimg {
+                    height: 37px;
+                    min-width: 37px;
+                    max-width: 37px;
+                }
+                & .sellername {
+                    font-size: 13px;
+                }
+                & .lastonline {
+                    font-size: 11px;
+                    &.online {
+                    }
+                }
+                & .vip {
+                    font-size: 14px;
+                    padding: 2px 8px;
+                }
+                & .pass {
+                    font-size: 13px;
+                    padding: 1px 7px;
+                    & span {
+                        font-size: 11px;
+                    }
+                }
+            }
+            & .ratingcard {
+                // padding: 10px;
+                & .ratingtitle {
+                    font-size: 13px;
+                    padding: 4px;
+                }
+                & .rating {
+                    padding:0 8px;
+                }
+            }
+            & .channelcard {
+                & .youtubeicon {
+                    height: 14px;
+                    width: 14px;
+                }
+                & .channelname {
+                    font-size: 13px;
+                }
+                & .totaluser {
+                    font-size: 12px;
+                    & span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .sellerpage {
+        & .sellercard {
+            padding: 10px;
+            & .inputtitletwo {
+                font-size: 14px;
+            }
+            & .rightarrow {
+                font-size: 17px;
+                transform: rotate(90deg);
+            }
+            & .heroinputtwo {
+                height: 40px !important;
+            }
+        }
+        & .tablecard {
+            padding: 15px;
+            & .table {
+            }
+            & .tablebody {
+                & td {
+                    padding: 10px;
+                }
+            }
+            & .tableheader {
+                & .headlink {
+                    font-size: 14px;
+                    padding: 10px ;
+                }
+            }
+            & .userinfocard {
+                padding-bottom: 10px;
+                width: 170px;
+                // height: 80px;
+                & .sellerimg {
+                    height: 35px;
+                    min-width: 35px;
+                    max-width: 35px;
+                }
+                & .sellername {
+                    font-size: 13px;
+                }
+                & .lastonline {
+                    font-size: 11px;
+                    &.online {
+                    }
+                }
+                & .vip {
+                    font-size: 13px;
+                    padding: 2px 8px;
+                }
+                & .pass {
+                    font-size: 12px;
+                    padding: 1px 7px;
+                    & span {
+                        font-size: 11px;
+                    }
+                }
+            }
+            & .ratingcard {
+                // padding: 10px;
+                & .ratingtitle {
+                    font-size: 13px;
+                    padding: 4px;
+                }
+                & .rating {
+                    padding:0 8px;
+                }
+            }
+            & .channelcard {
+                & .youtubeicon {
+                    height: 13px;
+                    width: 13px;
+                }
+                & .channelname {
+                    font-size: 13px;
+                }
+                & .totaluser {
+                    font-size: 12px;
+                    & span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// seller page end
+
+
+// contact us page start 
+.contactuspage {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    & .contactcard {
+        padding: 20px;
+        & .contacttitle {
+            font-size: 16px;
+            font-weight: 600;
+            color: #000;
+        }
+        & .textbox {
+            min-height: 150px;
+        }
+    }
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {
+    .contactuspage {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        & .contactcard {
+            padding: 15px;
+            & .contacttitle {
+                font-size: 15px;
+            }
+            & .textbox {
+                min-height: 100px;
+            }
+        }
+    }
+}
+
+// contact us page end 

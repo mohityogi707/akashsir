@@ -87,6 +87,9 @@ body{
     height: 55px;
     width:55px;
   }
+  .mainheading {
+    font-size: 31px;
+  }
 }
 
 @include media-breakpoint-down(md) {
@@ -100,6 +103,9 @@ body{
   
   .navbarLogo {
     height: 40px;
+  }
+  .mainheading {
+    font-size: 28px;
   }
 }
 
@@ -127,5 +133,8 @@ body{
       & .returnpage {
       }
     }
+  }
+  .mainheading {
+    font-size: 22px;
   }
 }

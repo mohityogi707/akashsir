@@ -60,15 +60,11 @@
                             </button>
                             <ul class="dropdown-menu innerdata shadow-sm">
                                 <li><a class="dropdown-item innerlink" href="profile.html">Profile</a></li>
-                                <li><a class="dropdown-item innerlink" href="javascript:;">Balance: <span>0</span></a>
-                                </li>
-                                <li><a class="dropdown-item innerlink" href="#">Message <span>(0)</span></a></li>
-                                <li>
-                                    <a class="dropdown-item innerlink" href="#">Favorites
-                                        <a>
-                                </li>
-                                <li><a class="dropdown-item innerlink" href="#">Settings<a></li>
-                                <li><a class="dropdown-item innerlink" href="#">My Deals<a></li>
+                                <li><a class="dropdown-item innerlink" href="javascript:;" data-bs-toggle="modal" data-bs-target="#balancemodal">Balance: <span>0</span></a></li>
+                                <li><a class="dropdown-item innerlink" href="#" data-bs-toggle="modal" data-bs-target="#chatmodal">Message <span>(0)</span></a></li>
+                                <li><a class="dropdown-item innerlink" href="#">Favorites<a></li>
+                                <li><a class="dropdown-item innerlink" href="javascript:;" data-bs-toggle="modal" data-bs-target="#settingsmodal">Settings<a></li>
+                                <li><a class="dropdown-item innerlink" href="deal.html">My Deals<a></li>
                                 <li><a class="dropdown-item innerlink" href="#">Log out<a></li>
                             </ul>
                         </div>
@@ -277,12 +273,10 @@
                 </div>
                 <div class="col mt-md-0 mt-sm-3 mt-2 orderl ord-3">
                     <ul class="footerlinkmain list-unstyled d-flex justify-content-center m-0 align-items-center">
-                        <li><a href="javascript:;" class="footerlink text-decoration-none text-nowrap">About us</a></li>
-                        <li><a href="javascript:;" class="footerlink text-decoration-none text-nowrap">Escrow
-                                service</a>
-                        </li>
-                        <li><a href="javascript:;" class="footerlink text-decoration-none text-nowrap">Sellers</a></li>
-                        <li><a href="javascript:;" class="footerlink text-decoration-none text-nowrap">Contact us</a>
+                        <li><a href="about.html" class="footerlink text-decoration-none text-nowrap">About us</a></li>
+                        <li><a href="javascript:;" class="footerlink text-decoration-none text-nowrap">Escrow service</a></li>
+                        <li><a href="sellers.html" class="footerlink text-decoration-none text-nowrap">Sellers</a></li>
+                        <li><a href="contactus.html" class="footerlink text-decoration-none text-nowrap">Contact us</a>
                         </li>
                     </ul>
                 </div>
@@ -323,6 +317,7 @@
     <!-- custom js  -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/js.js"></script>
+
     <!-- login modal  -->
     <div class="modal fade loginmodal" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -360,6 +355,7 @@
             </div>
         </div>
     </div>
+
     <!-- sign up modal  -->
     <div class="modal fade loginmodal" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog loginDialog modal-dialog-centered modal-dialog-scrollable">
@@ -405,6 +401,7 @@
             </div>
         </div>
     </div>
+
     <!-- chat offcanvas start  -->
     <div class="offcanvas offcanvas-start chatoffcanvas" data-bs-backdrop="static" tabindex="1" id="chatoffcanvas"
         aria-labelledby="offcanvasExampleLabel">
@@ -608,10 +605,11 @@
             </div>
         </div>
     </div>
+
     <!-- chat modal  -->
     <div class="modal fade chatmodal" id="chatmodal" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
-        <div class="modal-dialog chatdialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-dialog mx-auto chatdialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="modal-title" id="exampleModalLabel">Chat</div>
@@ -1028,6 +1026,7 @@
             </div>
         </div>
     </div>
+
     <!-- tooltip  -->
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')

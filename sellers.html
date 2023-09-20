@@ -1,0 +1,2670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- css  -->
+    <link rel="stylesheet" href="assets/css/style.min.css">
+
+    <!-- bootstrap css  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="assets/FontAwesome/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/libs/selectbox/nice-select2.css">
+
+    <link rel="stylesheet" href="assets/libs/select/selectcss.css">
+</head>
+<body>
+    <button class="text-decoration-none d-flex border-0 align-items-center justify-content-center msgbtn rounded-circle position-fixed" data-bs-toggle="modal" data-bs-target="#chatmodal">
+        <i class="fa-solid fa-comments"></i>
+    </button>
+    <!-- <button class="btn position-fixed msgbtn rounded-circle d-flex align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        <i class="fa-solid fa-comments"></i>
+    </button> -->
+
+    <!-- navbar start  -->
+    <nav class="navbar container-fluid sticky-top profilenav" id="navbar">
+        <div class="container">
+            <div class="row w-100 align-items-center mx-auto">
+                <div class="col d-mdblock dnone">
+                    <a href="index.html" class="navbarLogo d-inline-flex align-items-center justify-content-center">
+                        <img src="assets/img/index/logo2.png" alt="logo" class="h-100">
+                    </a>
+                </div>
+                <div class="col-auto mx-auto">
+                    <div class="headerlink d-flex gap-0 align-items-center">
+                        <a href="javascript:;" class="customBtn text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                            <span class="position-relative z-1">Start Selling</span>
+                        </a>
+                        <!-- <div class="d-flex align-items-center gap-2">
+                            <a href="javascript:;" class="login text-decoration-none position-relative" data-bs-toggle="modal" data-bs-target="#loginmodal">Log In</a>
+                            <span class="slash">/</span>
+                            <a href="javascript:;" class="login text-decoration-none position-relative"  data-bs-toggle="modal" data-bs-target="#signup">Register</a>
+                        </div> -->
+                        <div class="dropdown ms-3 userdropdwon">
+                            <button class="btn dropdownbtn p-0 ps-sm-2 ps-1 dropdown-toggle fw-medium d-flex align-items-center border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="userimg rounded-circle  overflow-hidden d-flex align-items-center justify-content-center">
+                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid" >
+                                </span>
+                                User name
+                            </button>
+                            <ul class="dropdown-menu innerdata shadow-sm">
+                                <li><a class="dropdown-item innerlink" href="profile.html">Profile</a></li>
+                                <li><a class="dropdown-item innerlink" href="javascript:;" data-bs-toggle="modal" data-bs-target="#balancemodal">Balance: <span>0</span></a></li>
+                                <li><a class="dropdown-item innerlink" href="#" data-bs-toggle="modal" data-bs-target="#chatmodal">Message <span>(0)</span></a></li>
+                                <li><a class="dropdown-item innerlink" href="#">Favorites<a></li>
+                                <li><a class="dropdown-item innerlink" href="javascript:;" data-bs-toggle="modal" data-bs-target="#settingsmodal">Settings<a></li>
+                                <li><a class="dropdown-item innerlink" href="deal.html">My Deals<a></li>
+                                <li><a class="dropdown-item innerlink" href="#">Log out<a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end  -->
+
+    <!-- seller section start  -->
+    <div class="container-fluid sellerpage bg-light">
+        <div class="container">
+            <nav aria-label="breadcrumb" class="activepage">
+                <ol class="breadcrumb mb-md-2 mb-0 rounded-2 d-inline-flex">
+                    <li class="breadcrumb-item"><a href="index.html" class="returnpage text-decoration-none">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Sellers</li>
+                </ol>
+            </nav>
+            <div class="mainheading pt-2">List Of Sellers
+            </div>
+            <div class="sellercard rounded-2 bg-white shadow-sm mt-3">
+                <div class="row g-3 align-items-end">
+                    <div class="col-md-6 py-0 sellingpage">
+                        <div class="inputtitletwo">Search for sellers with listings:</div>
+                        <div class="border formdata rounded-2 d-flex align-items-center ">
+                            <select name="" id="" class="form-select shadow-none border-0 h-100 heroinput">
+                                <option value="0" selected="">Choose subject</option>
+                                <option value="1">home</option>
+                                <option value="2">home</option>
+                                <option value="3">home</option>
+                                <option value="4">home</option>
+                                <option value="5">home</option>
+                            </select>
+                            <button class="btn text-nowrap copylinkbtn rounded-2 h-100 d-flex align-items-center">Verified Identity</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="inputtitletwo">Subscribe:</div>
+                        <div class="row align-items-center">
+                            <div class="col-sm">
+                                <input type="text" class="form-control bg-transparent heroinputtwo w-100 heroinput shadow-none border" placeholder="From">
+                            </div>
+                            <div class="col-sm-auto rightarrow px-0 text-center"><i class="fa-solid fa-arrow-right-long"></i></div>
+                            <div class="col-sm">
+                                <input type="text" class="form-control bg-transparent heroinputtwo w-100 heroinput shadow-none border" placeholder="To">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="inputtitletwo">Price:</div>
+                        <div class="row align-items-center">
+                            <div class="col-sm">
+                                <input type="text" class="form-control bg-transparent heroinputtwo w-100 heroinput shadow-none border" placeholder="From">
+                            </div>
+                            <div class="col-sm-auto text-center rightarrow px-0"><i class="fa-solid fa-arrow-right-long"></i></div>
+                            <div class="col-sm">
+                                <input type="text" class="form-control bg-transparent heroinputtwo w-100 heroinput shadow-none border" placeholder="To">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="inputtitletwo">Sort By:</div>
+                        <div class="row gap-sm-0 gap-3 align-items-center">
+                            <div class="col-sm-6">
+                                <select name="" id="" class="form-select shadow-none heroinputtwo border h100 heroinput">
+                                    <option value="0" selected="">Rating</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6">
+                                <select name="" id="" class="form-select shadow-none heroinputtwo border h100 heroinput">
+                                    <option value="0" selected="">Number of positive review</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-auto mx-auto pt-sm-3 pt-2">
+                        <a href="javascript:;" class="customBtn  btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                            <span class="position-relative z-1 px-2">Search</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="tablecard bg-white shadow-sm rounded-2">
+                <div class="table-responsive ">
+                    <table class="table text-nowrap">
+                        <thead class="tableheader">
+                            <tr>
+                                <th scope="col" class="headlink">Seller</th>
+                                <th scope="col" class="headlink">Rating</th>
+                                <th scope="col" class="headlink">Channel Information</th>
+                                <th scope="col" class="headlink">Channel Information</th>
+                                <th scope="col" class="headlink">Channel Information</th>
+                                <th scope="col" class="headlink">Channel Information</th>
+                                <th scope="col" class="headlink">Channel Information</th>
+                            </tr>
+                        </thead>
+                        <tbody class="align-middle tablebody">
+                            <tr>
+                                <td scope="row" class="ps-0">
+                                    <a href="profile.html" class="userinfocard h-100 overflow-hidden bg-light shadow-sm border position-relative rounded-2 w-100 d-flex flex-column text-decoration-none">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="vip d-flex align-items-center flexcolumn justify-content-center">
+                                                VIP
+                                            </div>
+                                            <div class="pass roundedpill d-flex align-items-center">
+                                                <span><i class="fa-solid fa-check"></i></span>
+                                                Pass
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mt-3 px-2 align-items-center gap-2 h-100">
+                                            <div class="sellerimg rounded-circle overflow-hidden">
+                                                <img src="assets/img/index/channelimg.jpg" alt="channel" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <div class="w-100">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="sellername">Mark</div>
+                                                
+                                                </div>
+                                                <div class="lastonline">Last Online 4 hour ago</div>
+                                            </div>
+                                        </div>
+                                        
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="ratingcard h-100 border d-flex flex-column justify-content-center align-items-center rounded-2">
+                                        <div class="ratingtitle">
+                                            353 343
+                                        </div>
+                                        <div class="ratingtitle fw-bold d-flex align-items-center justify-content-center border-top w-100">
+                                            <span class="text-success">+23</span>
+                                            <span class="rating text-secondary opacity-50">2</span>
+                                            <span class=" text-danger">-12</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="ps-0">
+                                    <a href="profile.html" class="userinfocard h-100 overflow-hidden bg-light shadow-sm border position-relative rounded-2 w-100 d-flex flex-column text-decoration-none">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="vip d-flex align-items-center flexcolumn justify-content-center">
+                                                VIP
+                                            </div>
+                                            <div class="pass roundedpill d-flex align-items-center">
+                                                <span><i class="fa-solid fa-check"></i></span>
+                                                Pass
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mt-3 px-2 align-items-center gap-2 h-100">
+                                            <div class="sellerimg rounded-circle overflow-hidden">
+                                                <img src="assets/img/index/channelimg.jpg" alt="channel" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <div class="w-100">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="sellername">Mark</div>
+                                                
+                                                </div>
+                                                <div class="lastonline online">Online</div>
+                                            </div>
+                                        </div>
+                                        
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="ratingcard h-100 border d-flex flex-column justify-content-center align-items-center rounded-2">
+                                        <div class="ratingtitle">
+                                            353 343
+                                        </div>
+                                        <div class="ratingtitle fw-bold d-flex align-items-center justify-content-center border-top w-100">
+                                            <span class="text-success">+23</span>
+                                            <span class="rating text-secondary opacity-50">2</span>
+                                            <span class=" text-danger">-12</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="ps-0">
+                                    <a href="profile.html" class="userinfocard h-100 overflow-hidden bg-light shadow-sm border position-relative rounded-2 w-100 d-flex flex-column text-decoration-none">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="vip d-flex align-items-center flexcolumn justify-content-center">
+                                                VIP
+                                            </div>
+                                            <div class="pass roundedpill d-flex align-items-center">
+                                                <span><i class="fa-solid fa-check"></i></span>
+                                                Pass
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mt-3 px-2 align-items-center gap-2 h-100">
+                                            <div class="sellerimg rounded-circle overflow-hidden">
+                                                <img src="assets/img/index/channelimg.jpg" alt="channel" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <div class="w-100">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="sellername">Mark</div>
+                                                
+                                                </div>
+                                                <div class="lastonline">Last Online 4 hour ago</div>
+                                            </div>
+                                        </div>
+                                        
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="ratingcard h-100 border d-flex flex-column justify-content-center align-items-center rounded-2">
+                                        <div class="ratingtitle">
+                                            353 343
+                                        </div>
+                                        <div class="ratingtitle fw-bold d-flex align-items-center justify-content-center border-top w-100">
+                                            <span class="text-success">+23</span>
+                                            <span class="rating text-secondary opacity-50">2</span>
+                                            <span class=" text-danger">-12</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="ps-0">
+                                    <a href="profile.html" class="userinfocard h-100 overflow-hidden bg-light shadow-sm border position-relative rounded-2 w-100 d-flex flex-column text-decoration-none">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="vip d-flex align-items-center flexcolumn justify-content-center">
+                                                VIP
+                                            </div>
+                                            <div class="pass roundedpill d-flex align-items-center">
+                                                <span><i class="fa-solid fa-check"></i></span>
+                                                Pass
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mt-3 px-2 align-items-center gap-2 h-100">
+                                            <div class="sellerimg rounded-circle overflow-hidden">
+                                                <img src="assets/img/index/channelimg.jpg" alt="channel" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <div class="w-100">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="sellername">Mark</div>
+                                                
+                                                </div>
+                                                <div class="lastonline online">Online</div>
+                                            </div>
+                                        </div>
+                                        
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="ratingcard h-100 border d-flex flex-column justify-content-center align-items-center rounded-2">
+                                        <div class="ratingtitle">
+                                            353 343
+                                        </div>
+                                        <div class="ratingtitle fw-bold d-flex align-items-center justify-content-center border-top w-100">
+                                            <span class="text-success">+23</span>
+                                            <span class="rating text-secondary opacity-50">2</span>
+                                            <span class=" text-danger">-12</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="ps-0">
+                                    <a href="profile.html" class="userinfocard h-100 overflow-hidden bg-light shadow-sm border position-relative rounded-2 w-100 d-flex flex-column text-decoration-none">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="vip d-flex align-items-center flexcolumn justify-content-center">
+                                                VIP
+                                            </div>
+                                            <div class="pass roundedpill d-flex align-items-center">
+                                                <span><i class="fa-solid fa-check"></i></span>
+                                                Pass
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mt-3 px-2 align-items-center gap-2 h-100">
+                                            <div class="sellerimg rounded-circle overflow-hidden">
+                                                <img src="assets/img/index/channelimg.jpg" alt="channel" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <div class="w-100">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="sellername">Mark</div>
+                                                
+                                                </div>
+                                                <div class="lastonline">Last Online 4 hour ago</div>
+                                            </div>
+                                        </div>
+                                        
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="ratingcard h-100 border d-flex flex-column justify-content-center align-items-center rounded-2">
+                                        <div class="ratingtitle">
+                                            353 343
+                                        </div>
+                                        <div class="ratingtitle fw-bold d-flex align-items-center justify-content-center border-top w-100">
+                                            <span class="text-success">+23</span>
+                                            <span class="rating text-secondary opacity-50">2</span>
+                                            <span class=" text-danger">-12</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="ps-0">
+                                    <a href="profile.html" class="userinfocard h-100 overflow-hidden bg-light shadow-sm border position-relative rounded-2 w-100 d-flex flex-column text-decoration-none">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="vip d-flex align-items-center flexcolumn justify-content-center">
+                                                VIP
+                                            </div>
+                                            <div class="pass roundedpill d-flex align-items-center">
+                                                <span><i class="fa-solid fa-check"></i></span>
+                                                Pass
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mt-3 px-2 align-items-center gap-2 h-100">
+                                            <div class="sellerimg rounded-circle overflow-hidden">
+                                                <img src="assets/img/index/channelimg.jpg" alt="channel" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <div class="w-100">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="sellername">Mark</div>
+                                                
+                                                </div>
+                                                <div class="lastonline online">Online</div>
+                                            </div>
+                                        </div>
+                                        
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="ratingcard h-100 border d-flex flex-column justify-content-center align-items-center rounded-2">
+                                        <div class="ratingtitle">
+                                            353 343
+                                        </div>
+                                        <div class="ratingtitle fw-bold d-flex align-items-center justify-content-center border-top w-100">
+                                            <span class="text-success">+23</span>
+                                            <span class="rating text-secondary opacity-50">2</span>
+                                            <span class=" text-danger">-12</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="ps-0">
+                                    <a href="profile.html" class="userinfocard h-100 overflow-hidden bg-light shadow-sm border position-relative rounded-2 w-100 d-flex flex-column text-decoration-none">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="vip d-flex align-items-center flexcolumn justify-content-center">
+                                                VIP
+                                            </div>
+                                            <div class="pass roundedpill d-flex align-items-center">
+                                                <span><i class="fa-solid fa-check"></i></span>
+                                                Pass
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mt-3 px-2 align-items-center gap-2 h-100">
+                                            <div class="sellerimg rounded-circle overflow-hidden">
+                                                <img src="assets/img/index/channelimg.jpg" alt="channel" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <div class="w-100">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="sellername">Mark</div>
+                                                
+                                                </div>
+                                                <div class="lastonline">Last Online 4 hour ago</div>
+                                            </div>
+                                        </div>
+                                        
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="ratingcard h-100 border d-flex flex-column justify-content-center align-items-center rounded-2">
+                                        <div class="ratingtitle">
+                                            353 343
+                                        </div>
+                                        <div class="ratingtitle fw-bold d-flex align-items-center justify-content-center border-top w-100">
+                                            <span class="text-success">+23</span>
+                                            <span class="rating text-secondary opacity-50">2</span>
+                                            <span class=" text-danger">-12</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="ps-0">
+                                    <a href="profile.html" class="userinfocard h-100 overflow-hidden bg-light shadow-sm border position-relative rounded-2 w-100 d-flex flex-column text-decoration-none">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="vip d-flex align-items-center flexcolumn justify-content-center">
+                                                VIP
+                                            </div>
+                                            <div class="pass roundedpill d-flex align-items-center">
+                                                <span><i class="fa-solid fa-check"></i></span>
+                                                Pass
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mt-3 px-2 align-items-center gap-2 h-100">
+                                            <div class="sellerimg rounded-circle overflow-hidden">
+                                                <img src="assets/img/index/channelimg.jpg" alt="channel" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <div class="w-100">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="sellername">Mark</div>
+                                                
+                                                </div>
+                                                <div class="lastonline online">Online</div>
+                                            </div>
+                                        </div>
+                                        
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="ratingcard h-100 border d-flex flex-column justify-content-center align-items-center rounded-2">
+                                        <div class="ratingtitle">
+                                            353 343
+                                        </div>
+                                        <div class="ratingtitle fw-bold d-flex align-items-center justify-content-center border-top w-100">
+                                            <span class="text-success">+23</span>
+                                            <span class="rating text-secondary opacity-50">2</span>
+                                            <span class=" text-danger">-12</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="ps-0">
+                                    <a href="profile.html" class="userinfocard h-100 overflow-hidden bg-light shadow-sm border position-relative rounded-2 w-100 d-flex flex-column text-decoration-none">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="vip d-flex align-items-center flexcolumn justify-content-center">
+                                                VIP
+                                            </div>
+                                            <div class="pass roundedpill d-flex align-items-center">
+                                                <span><i class="fa-solid fa-check"></i></span>
+                                                Pass
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mt-3 px-2 align-items-center gap-2 h-100">
+                                            <div class="sellerimg rounded-circle overflow-hidden">
+                                                <img src="assets/img/index/channelimg.jpg" alt="channel" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <div class="w-100">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="sellername">Mark</div>
+                                                
+                                                </div>
+                                                <div class="lastonline">Last Online 4 hour ago</div>
+                                            </div>
+                                        </div>
+                                        
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="ratingcard h-100 border d-flex flex-column justify-content-center align-items-center rounded-2">
+                                        <div class="ratingtitle">
+                                            353 343
+                                        </div>
+                                        <div class="ratingtitle fw-bold d-flex align-items-center justify-content-center border-top w-100">
+                                            <span class="text-success">+23</span>
+                                            <span class="rating text-secondary opacity-50">2</span>
+                                            <span class=" text-danger">-12</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="row" class="ps-0">
+                                    <a href="profile.html" class="userinfocard h-100 overflow-hidden bg-light shadow-sm border position-relative rounded-2 w-100 d-flex flex-column text-decoration-none">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="vip d-flex align-items-center flexcolumn justify-content-center">
+                                                VIP
+                                            </div>
+                                            <div class="pass roundedpill d-flex align-items-center">
+                                                <span><i class="fa-solid fa-check"></i></span>
+                                                Pass
+                                            </div>
+                                        </div>
+                                        <div class="d-flex mt-3 px-2 align-items-center gap-2 h-100">
+                                            <div class="sellerimg rounded-circle overflow-hidden">
+                                                <img src="assets/img/index/channelimg.jpg" alt="channel" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <div class="w-100">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="sellername">Mark</div>
+                                                
+                                                </div>
+                                                <div class="lastonline online">Online</div>
+                                            </div>
+                                        </div>
+                                        
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="ratingcard h-100 border d-flex flex-column justify-content-center align-items-center rounded-2">
+                                        <div class="ratingtitle">
+                                            353 343
+                                        </div>
+                                        <div class="ratingtitle fw-bold d-flex align-items-center justify-content-center border-top w-100">
+                                            <span class="text-success">+23</span>
+                                            <span class="rating text-secondary opacity-50">2</span>
+                                            <span class=" text-danger">-12</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="channelcard border rounded-2 h-100">
+                                        <div class="d-flex align-items-center gap-2 p-2">
+                                            <div class="rounded-circle youtubeicon d-flex align-items-center justify-content-center overflow-hidden">
+                                                <img src="assets/img/index/youtube.png" alt="youtube" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <a href="product.html" class="channelname text-decoration-none">Titan</a>
+                                        </div>
+                                        <div class="p-2 border-top">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-users"></i></span>
+                                                    2342
+                                                </div>
+                                                <div class="totaluser">
+                                                    <span><i class="fa-solid fa-dollar-sign"></i></span>
+                                                342
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <nav aria-label="..." class="pagedatamain">
+                <ul class="pagination pagedata m-0">
+                    <li class="page-item disabled">
+                        <span class="page-link">Previous</span>
+                    </li>
+                    <!-- <li class="page-item active" aria-current="page">
+                        <span class="page-link">1</span>
+                    </li> -->
+                    <li class="page-item"><a class="page-link active h-100 shadow-none disabled" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link h-100 shadow-none" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link h-100 shadow-none" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link h-100 shadow-none" href="#">4</a></li>
+                    <li class="page-item"><a class="page-link h-100 shadow-none" href="#">5</a></li>
+                    <li class="page-item">
+                        <a class="page-link h-100 shadow-none" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- seller section end  -->
+
+    <!-- footer start  -->
+    <footer class="container-fluid footer">
+        <div class="container">
+            <div class="row footerdata align-items-center justify-content-center ">
+                <div class="col-md-auto order1">
+                    <a href="javascipt:;" class="footerlogo d-flex align-items-center justify-content-center">
+                        <img src="assets/img/index/logo2.png" alt="logo" class="h-100">
+                    </a>
+                </div>
+                <div class="col mt-md-0 mt-sm-3 mt-2 orderl ord-3">
+                    <ul class="footerlinkmain list-unstyled d-flex justify-content-center m-0 align-items-center">
+                        <li><a href="about.html" class="footerlink text-decoration-none text-nowrap">About us</a></li>
+                        <li><a href="javascript:;" class="footerlink text-decoration-none text-nowrap">Escrow service</a></li>
+                        <li><a href="sellers.html" class="footerlink text-decoration-none text-nowrap">Sellers</a></li>
+                        <li><a href="contactus.html" class="footerlink text-decoration-none text-nowrap">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-auto ms-sm-auto mx-auto mt-md-0 mt-3 order2">
+                    <a href="javascript:;" class="customBtn text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                        <span class="position-relative z-1">Start Selling</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="border-top border-light border-opacity-10">
+            <div class="container">
+                <div class="copyright row align-items-center text-md-start text-center">
+                    <div class="col-md">
+                        <div class="copyrigtTitle">MetaSwap LPd</div>
+                        <div class="copyrigtTitle mt-md-0 mt-1">Address: 91 Battersea Park Road, London, England, SW8 4DU</div>
+                    </div>
+                    <div class="col-md-auto mt-md-0 mt-2">
+                        <ul class="list-unstyled m-0 privacydata d-flex align-items-center justify-content-md-start justify-content-center">
+                            <li><a href="javascript:;" class="privacylink text-decoration-none">Terms and Conditions </a></li>
+                            <li><a href="javascript:;" class="privacylink text-decoration-none">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- bootstrap js  -->
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- custom js  -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/js.js"></script>
+    <script src="assets/libs/selectbox/nice-select2.js"></script>
+
+    <script src="assets/libs/select/selectjs.js"></script>
+
+    <!-- <script>
+        new MultiSelectTag('countries')  // id
+    </script> -->
+
+    <!-- login modal  -->
+    <div class="modal fade loginmodal" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog loginDialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fw-semibold" id="exampleModalLabel">Log in </div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div>
+                            <input type="text" class="form-control modalinput shadow-none" placeholder="Username or Email">
+                        </div>
+                        <div class="mt-3">
+                            <input type="password" class="form-control modalinput shadow-none" placeholder="Password">
+                        </div>
+                        <div class="text-end pt-1 pb-2">
+                            <a href="javascript:;" class="modaltitle text-decoration-none" data-bs-toggle="modal" data-bs-target="#resetpassword">Reset password</a>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center mt-3">
+                            <button type="submit" class="customBtn btnthree px-3 text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1 mx-4">Submit</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- sign up modal  -->
+    <div class="modal fade loginmodal" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog loginDialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fw-semibold" id="exampleModalLabel">Log in </div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div>
+                            <input type="text" class="form-control modalinput shadow-none" placeholder="Email">
+                        </div>
+                        <div class="mt-3">
+                            <input type="text" class="form-control modalinput shadow-none" placeholder="Username">
+                        </div>
+                        <div class="mt-3">
+                            <input type="password" class="form-control modalinput shadow-none" placeholder="Password">
+                        </div>
+                        <div class="mt-3">
+                            <input type="password" class="form-control modalinput shadow-none" placeholder="Confirm Password">
+                        </div>
+                        <div class="text-end pt-1 pb-2">
+                            <a href="javascript:;" class="modaltitle text-decoration-none" data-bs-target="#loginmodal" data-bs-toggle="modal">Already have an account ?</a>
+                        </div>
+                        <div id="html_element" class="w-100"></div>
+                        <!-- <input type="submit" value="Submit" class="fb9" /> -->
+                        <div class="d-flex align-items-center justify-content-center mt-3">
+                            <button type="submit" class="customBtn btnthree px-3 text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1 mx-4">Submit</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- chat offcanvas start  -->
+    <div class="offcanvas offcanvas-start chatoffcanvas" data-bs-backdrop="static" tabindex="1" id="chatoffcanvas" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header border-bottom shadow-sm bglight">
+            <div class="d-flex align-items-center userheader">
+                <div class="aiicon overflow-hidden rounded-circle">
+                    <img src="assets/img/index/aiicon.png" alt="icon" class="h-100 w-100 img-fluid">
+                </div>
+                <div>
+                    <div class="agentname fw-semibold">Agent (Marie)</div>
+                    <div class="onlinestatus fw-semibold">Online (24/7)</div>
+                </div>
+            </div>
+            <button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body chatdata bg-light px-1">
+            <div class="row w-100 mx-auto alignitems-end  h100">
+                <div class="col-12 pt-2">
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="aiimg rounded-circle overflow-hidden">
+                                <img src="assets/img/index/aiicon.png" alt="ai" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-6 ps-0">
+                            <div class="msgcard aibox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir</div>
+                                <div class="time text-end">
+                                    <!-- <div></div>
+                                    <div></div> -->
+                                    13:20
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="col-12 pt-2">
+                    <div class="row justify-content-end">
+                        <div class="col-6 pe-0 text-end">
+                            <div class="msgcard userbox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir</div>
+                                <div class="time text-end">
+                                    <!-- <div></div>
+                                    <div></div> -->
+                                    13:20
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="aiimg rounded-circle overflow-hidden">
+                                <img src="assets/img/index/usericon.svg" alt="ai" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="col-12 pt-2">
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="aiimg rounded-circle overflow-hidden">
+                                <img src="assets/img/index/aiicon.png" alt="ai" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-6 ps-0">
+                            <div class="msgcard aibox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir</div>
+                                <div class="time text-end">
+                                    <!-- <div></div>
+                                    <div></div> -->
+                                    13:20
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="col-12 pt-2">
+                    <div class="row justify-content-end">
+                        <div class="col-6 pe-0 text-end">
+                            <div class="msgcard userbox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir</div>
+                                <div class="time text-end">
+                                    <!-- <div></div>
+                                    <div></div> -->
+                                    13:20
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="aiimg rounded-circle overflow-hidden">
+                                <img src="assets/img/index/usericon.svg" alt="ai" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="col-12 pt-2">
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="aiimg rounded-circle overflow-hidden">
+                                <img src="assets/img/index/aiicon.png" alt="ai" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-6 ps-0">
+                            <div class="msgcard aibox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir</div>
+                                <div class="time text-end">
+                                    <!-- <div></div>
+                                    <div></div> -->
+                                    13:20
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="col-12 pt-2">
+                    <div class="row justify-content-end">
+                        <div class="col-6 pe-0 text-end">
+                            <div class="msgcard userbox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir</div>
+                                <div class="time text-end">
+                                    <!-- <div></div>
+                                    <div></div> -->
+                                    13:20
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="aiimg rounded-circle overflow-hidden">
+                                <img src="assets/img/index/usericon.svg" alt="ai" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="col-12 pt-2">
+                    <div class="row">
+                        <div class="col-auto">
+                            <div class="aiimg rounded-circle overflow-hidden">
+                                <img src="assets/img/index/aiicon.png" alt="ai" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                        <div class="col-6 ps-0">
+                            <div class="msgcard aibox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir hello sir hello sirhello sir hello sir hello sir v</div>
+                                <div class="time text-end">
+                                    <!-- <div></div>
+                                    <div></div> -->
+                                    13:20
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="col-12 pt-2">
+                    <div class="row justify-content-end">
+                        <div class="col-6 pe-0 text-end">
+                            <div class="msgcard userbox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir hello sirhello sirhello sirhello sirhello sirhello sirhello sirhello sirhello sirhello sirhello sirhello sir</div>
+                                <div class="time text-end">
+                                    <!-- <div></div>
+                                    <div></div> -->
+                                    13:20
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="aiimg rounded-circle overflow-hidden">
+                                <img src="assets/img/index/usericon.svg" alt="ai" class="h-100 w-100 img-fluid">
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        <div class="offcanvasfooter shadow-sm border-top bglight">
+            <div class="d-flex align-items-center gap-2">
+                <div class="input-group inputdata borderbottom rounded0 rounded-5 align-items-center  ">
+                    <input type="text" class="form-control msginput ps-0 h-100 shadow-none bg-transparent border-0 rounded-0" placeholder="Enter Your Message" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <input type="file" id="filedata" hidden>
+                    <label for="filedata" class="border-0 d-flex align-items-center justify-content-center shadow-none filechoose bg-transparent" id="basic-addon2">
+                        <img src="assets/img/index/attachfile.svg" alt="file" class="h-100 w100">
+                    </label>
+                </div>
+                <button class="btn sendbtn rounded-circle d-flex align-items-center justify-content-center">
+                    <img src="assets/img/index/send.svg" alt="send" class="h-100 w-100 img-fluid">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- chat modal  -->
+    <div class="modal fade chatmodal" id="chatmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog mx-auto chatdialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="exampleModalLabel">Chat</div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body pt-0">
+                    <div class="row contactdata">
+                        <div class="col-12 contactinner">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 2</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 contactinner border-top">
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
+                                <div class="w-100">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="username">Username 3</div>
+                                        <div class="time">8:20 PM</div>
+                                    </div>
+                                    <div class="lastmsg">
+                                        <span class="fw-medium text-dark">You:</span> how are you
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-theme1">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- dm modal start -->
+    <div class="modal fade dmmodal" id="dmcontact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog dmdialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="exampleModalLabel">Dm</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="detaildm">
+                        Placing contacts in the description of the listing or contacts for sale on the page itself is prohibited. If you need to have a contact on the page for advertising, orders or similar purposes, you can leave it. But if the client writes to you about the sale through these contacts, you will have to ask him to contact the seller through the listing he found. By listing on accs-market.com, you accept these conditions and the fact that the administration will control this and will be forced to block you if this condition is not met. If you do not need to leave contacts and open DM on the page, we are ready to give you 50% more rating after the transaction is completed, as this will make it easier for us to control. Rating is one of the main factors of trust from buyers. An additional rating will be automatically added after the completion of the transaction if you check the box below, but in case of violation of this agreement, we will have to block you.
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- dm modal end -->
+
+    <!-- balance modal start  -->
+    <div class="modal fade balancemodal commonmodal" id="balancemodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header border-bottom">
+                    <div class="modal-title fw-bold" id="exampleModalLabel">Balance</div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <label class="col-12 fw-medium amoutlabel">
+                            Amount:- 
+                        </label>
+                        <div class="col-12 pt-2">
+                            <input type="text" class="heroinput form-control shadow-none border" placeholder="Enter amount in rs">
+                        </div>
+                        <label class="col-12 pt-4 fw-medium amoutlabel">
+                            Payment method:- 
+                        </label>
+                        <div class="col-12 pt-2">
+                            <select class="form-select heroinput shadow-none border" tabindex="-1">
+                                <option value="0" disabled="" selected="">Select Method</option>
+                                <option value="1">Debit Card</option>
+                                <option value="2">Credit Card</option>
+                                <option value="4">Visa</option>
+                                <option value="6">UPI</option>
+                            </select>
+                        </div>
+                        <div class="col-12 text-center modaldata">
+                            The money on the balance cannot be withdrawn, but it can be spent on any services on the site (escrow agent's commission and advertisements).
+                            You can't pay the seller with your balance.
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="javascript:;" class="customBtn px-4 py-2 btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1 px-2">Pay</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- balance modal end  -->
+
+    <!-- setting modal start  -->
+    <div class="modal fade settingmodal balancemodal commonmodal" id="settingsmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollables">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="exampleModalLabel">Setting</div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <label class="col-12 fw-medium amoutlabel">
+                            Email:- 
+                        </label>
+                        <div class="col-12 pt-2">
+                            <input type="email" class="heroinput form-control shadow-none border" placeholder="Enter amount in rs">
+                        </div>
+                        <label class="col-12 pt-4 fw-medium amoutlabel">
+                            Username (can be changed no more than once a month):- 
+                        </label>
+                        <div class="col-12 pt-2">
+                            <input type="text" class="heroinput form-control shadow-none border" placeholder="Enter amount in rs">
+                        </div>
+                        <div class="col-12 text-end pt-1">
+                            <a href="javascript:;" class="controltitle text-decoration-none">Control Panel</a>
+                        </div>
+                        <div class="d-flex align-items-center pt-4 justify-content-center">
+                            <a href="javascript:;" class="customBtn px-4 py-2 btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1 px-2">Pay</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- setting modal end  -->
+
+    <!-- reset password modal start  -->
+    <div class="modal fade commonmodal" id="resetpassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title " id="exampleModalLabel">Reset Password</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="alert alert-primary" role="alert" id="liveAlertPlaceholder">
+                                We have e-mailed your password reset link!
+                            </div>
+                        </div>
+                        <label class="col-12 fw-medium amoutlabel">
+                            Email:- 
+                        </label>
+                        <div class="col-12 pt-2">
+                            <input type="email" class="heroinput form-control shadow-none border" placeholder="Email">
+                        </div>
+                        <div class="d-flex align-items-center pt-3 justify-content-center">
+                            <a href="javascript:;" class="customBtn  btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1" id="liveAlertBtn">
+                                <span class="position-relative z-1 px-2">Send Password Reset Link</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- reset password modal end  -->
+
+    <!-- new password modal start -->
+    <div class="modal fade loginmodal" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog loginDialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fw-semibold" id="exampleModalLabel">Create New Password</div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div>
+                            <input type="text" class="form-control modalinput shadow-none" placeholder="Email">
+                        </div>
+                        <div class="mt-3">
+                            <input type="text" class="form-control modalinput shadow-none" placeholder="Username">
+                        </div>
+                        <div class="mt-3">
+                            <input type="password" class="form-control modalinput shadow-none" placeholder="Password">
+                        </div>
+                        <div class="mt-3">
+                            <input type="password" class="form-control modalinput shadow-none" placeholder="Confirm Password">
+                        </div>
+                        <div class="text-end pt-1 pb-2">
+                            <a href="javascript:;" class="modaltitle text-decoration-none" data-bs-target="#loginmodal" data-bs-toggle="modal">Already have an account ?</a>
+                        </div>
+                        <div id="html_element" class="w-100"></div>
+                        <!-- <input type="submit" value="Submit" class="fb9" /> -->
+                        <div class="d-flex align-items-center justify-content-center mt-3">
+                            <button type="submit" class="customBtn btnthree px-3 text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1 mx-4">Submit</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- new password modal end -->
+
+    <!-- payment modal start  -->
+    <div class="modal fade dealmodal" id="paymentmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog dealdialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content dealcontent">
+                <div class="modal-header">
+                    <div class="modal-title " id="exampleModalLabel">Create a deal</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 selectpaytitle">
+                            Select payment methods you can use to pay the seller. The more options you choose, the greater the chance that one of them will suit the seller and he will agree to the deal.
+                        </div>
+                        <div class="col-12 pt-4 mt2">
+                            <div class="row g-sm-3 g-2 justify-content-center row-cols6 paymentoption">
+                                <div class="col">
+                                    <div class="paymentcard">
+                                        <input type="checkbox" hidden class="checkinput" id="box1">
+                                        <label for="box1" class="paymentlabel rounded-2 w-100">
+                                            <img src="assets/img/index/payment1.png" alt="payment" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="paymentcard">
+                                        <input type="checkbox" hidden class="checkinput" id="box2">
+                                        <label for="box2" class="paymentlabel rounded-2 w-100">
+                                            <img src="assets/img/index/payment2.png" alt="payment" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="paymentcard">
+                                        <input type="checkbox" hidden class="checkinput" id="box3">
+                                        <label for="box3" class="paymentlabel rounded-2 w-100">
+                                            <img src="assets/img/index/payment3.png" alt="payment" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="paymentcard">
+                                        <input type="checkbox" hidden class="checkinput" id="box4">
+                                        <label for="box4" class="paymentlabel rounded-2 w-100">
+                                            <img src="assets/img/index/payment11.png" alt="payment" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="paymentcard">
+                                        <input type="checkbox" hidden class="checkinput" id="box5">
+                                        <label for="box5" class="paymentlabel rounded-2 w-100">
+                                            <img src="assets/img/index/payment10.png" alt="payment" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="paymentcard">
+                                        <input type="checkbox" hidden class="checkinput" id="box6">
+                                        <label for="box6" class="paymentlabel rounded-2 w-100">
+                                            <img src="assets/img/index/payment8.png" alt="payment" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 transactiontitle pt-4">
+                            Transaction steps when using the escrow service:
+                        </div>
+                        <div class="col-12 paymentpolicy pt-3 mt-0">
+                            <span class="fw-bold text-dark ">1.</span>
+                            The buyer pays a 4-8% ($3 minimum) service fee.
+                        </div>
+                        <div class="col-12 paymentpolicy">
+                            <span class="fw-bold text-dark ">2.</span>
+                            The seller designates the escrow agent as manager.
+                        </div>
+                        <div class="col-12 paymentpolicy">
+                            <span class="fw-bold text-dark ">3.</span>
+                            After 7 days, the seller assigns primary ownership rights to the escrow agent (7 days is the minimum amount of time required in order to assign a new primary owner in the control panel.)
+                        </div>
+                        <div class="col-12 paymentpolicy">
+                            <span class="fw-semibold text-dark ">4.</span>
+                            The escrow agent verifies everything, removes the other managers, and notifies the buyer to pay the seller.
+                        </div>
+                        <div class="col-12 paymentpolicy">
+                            <span class="fw-semibold text-dark ">5.</span>
+                            The buyer pays the seller.
+                        </div>
+
+                        <div class="col-12 paymentpolicy">
+                            <span class="fw-semibold text-dark ">6.</span>
+                            After the seller's confirmation, the escrow agent assigns ownership rights to the buyer.
+                        </div>
+                        <div class="col-12 paymenttitletwo">
+                            In order to guarantee maximum security during the transaction, all messages must be sent through the website using the chat system where the transaction is completed, so that in case of any issues, the arbitration service can verify everything.
+                        </div>
+                        <div class="col-12 emailtitle text-center">
+                            Email address associated with the account which should be designated as the owner
+                        </div>
+                        <div class="col-12 pt-3">
+                            <div class="row gap-2 justify-content-center">
+                                <div class="col-sm-6">
+                                    <input type="email" class="form-control heroinput shadow-none border" placeholder="Enter your email ">
+                                </div>
+                                <div class="col-12 text-center">
+                                    <div>
+                                        <div class="discount">You have a discount on this deal!</div>
+                                        <div class="discountitlte pb-4 mb-sm-2">6% instead of 8% for the escrow service</div>
+                                        <a href="javascript:;" class="customBtn btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                            <span class="position-relative z-1 px-2">Create</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer"> -->
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <!-- <button class="btn customBtn position-relative"> Create</button> -->
+                    <!-- <a href="javascript:;" class="customBtn btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                        <span class="position-relative z-1">Create</span>
+                    </a> -->
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>   
+    <!-- payment modal end  -->
+
+    <!-- tooltip  -->
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+
+
+</body>
+</html>
