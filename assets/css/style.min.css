@@ -511,36 +511,62 @@ body {
 .channelinfo .comments-container .heading {
   font-size: 18px;
 }
+.channelinfo .comments-container .no-comment {
+  font-size: 14px;
+}
+.channelinfo .comments-container .comment-box-container .comment-box .comment-head .username {
+  font-size: 14px;
+  line-height: normal;
+}
+.channelinfo .comments-container .comment-box-container .comment-box .comment-head .time {
+  font-size: 14px;
+  line-height: normal;
+  color: #adb5bd;
+}
+.channelinfo .comments-container .comment-box-container .comment-box .comment-head .delete-icon {
+  height: 10px;
+  width: 10px;
+}
+.channelinfo .comments-container .comment-box-container .comment-box .comment-body {
+  font-size: 14px;
+  line-height: normal;
+  max-width: 90%;
+}
+.channelinfo .comments-container .comment-box-container .comment-box .comment-footer a {
+  font-size: 14px;
+  line-height: normal;
+  color: #6c757d;
+}
+.channelinfo .comments-container .comment-input .heading {
+  font-size: 14px;
+}
+.channelinfo .comments-container .comment-input textarea {
+  font-size: 14px;
+}
+.channelinfo .comments-container .comment-input textarea::placeholder {
+  font-size: 14px;
+}
 
 @media (max-width: 991.98px) {
   .channelinfo {
     padding-top: 40px;
     padding-bottom: 35px;
   }
+  .channelinfo .detail-box .left-details .text {
+    font-size: 13px;
+  }
+  .channelinfo .detail-box .right-details .close-channel-text {
+    font-size: 13px;
+  }
   .channelinfo .profilecard .left-container .channel-info .channel-main-details .channel-name {
     font-size: 22px;
     line-height: 28px;
   }
-  .channelinfo .profilecard .left-container .price-box {
-    font-size: 19px;
+  .channelinfo .profilecard .left-container .channel-info .channel-main-details .channel-subtitle {
+    font-size: 13px;
   }
-  .channelinfo .seller-container .heading {
-    font-size: 17px;
-  }
-  .channelinfo .channeldata .right-container .heading {
-    font-size: 17px;
-  }
-  .channelinfo .comments-container .heading {
-    font-size: 17px;
-  }
-}
-@media (max-width: 575.98px) {
-  .channelinfo {
-    padding-top: 35px;
-    padding-bottom: 30px;
-  }
-  .channelinfo .profilecard .left-container .channel-info .channel-main-details .channel-name {
-    font-size: 20px;
+  .channelinfo .profilecard .left-container .details .details-text {
+    font-size: 13px;
   }
   .channelinfo .profilecard .left-container .price-box {
     font-size: 18px;
@@ -551,8 +577,91 @@ body {
   .channelinfo .channeldata .right-container .heading {
     font-size: 16px;
   }
+  .channelinfo .channeldata .right-container .paragraph {
+    font-size: 13px;
+    line-height: normal;
+  }
   .channelinfo .comments-container .heading {
     font-size: 16px;
+  }
+  .channelinfo .comments-container .no-comment {
+    font-size: 13px;
+  }
+  .channelinfo .comments-container .comment-box-container .comment-box .comment-head .username {
+    font-size: 13px;
+  }
+  .channelinfo .comments-container .comment-box-container .comment-box .comment-head .time {
+    font-size: 13px;
+  }
+  .channelinfo .comments-container .comment-box-container .comment-box .comment-body {
+    font-size: 13px;
+  }
+  .channelinfo .comments-container .comment-box-container .comment-box .comment-footer a {
+    font-size: 13px;
+  }
+  .channelinfo .comments-container .comment-input .heading {
+    font-size: 13px;
+  }
+  .channelinfo .comments-container .comment-input textarea {
+    font-size: 13px;
+  }
+  .channelinfo .comments-container .comment-input textarea::placeholder {
+    font-size: 13px;
+  }
+}
+@media (max-width: 575.98px) {
+  .channelinfo {
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+  .channelinfo .detail-box .left-details .text {
+    font-size: 12px;
+  }
+  .channelinfo .detail-box .right-details .close-channel-text {
+    font-size: 12px;
+  }
+  .channelinfo .profilecard .left-container .channel-info .channel-main-details .channel-name {
+    font-size: 20px;
+  }
+  .channelinfo .profilecard .left-container .details .details-text {
+    font-size: 12px;
+  }
+  .channelinfo .seller-container .heading {
+    font-size: 14px;
+  }
+  .channelinfo .channeldata .right-container .heading {
+    font-size: 14px;
+  }
+  .channelinfo .channeldata .right-container .paragraph {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .channelinfo .comments-container .heading {
+    font-size: 14px;
+  }
+  .channelinfo .comments-container .no-comment {
+    font-size: 12px;
+  }
+  .channelinfo .comments-container .comment-box-container .comment-box .comment-head .username {
+    font-size: 12px;
+  }
+  .channelinfo .comments-container .comment-box-container .comment-box .comment-head .time {
+    font-size: 12px;
+  }
+  .channelinfo .comments-container .comment-box-container .comment-box .comment-body {
+    font-size: 12px;
+  }
+  .channelinfo .comments-container .comment-box-container .comment-box .comment-footer a {
+    font-size: 12px;
+  }
+  .channelinfo .comments-container .comment-input .heading {
+    font-size: 12px;
+  }
+  .channelinfo .comments-container .comment-input textarea {
+    font-size: 12px;
+  }
+  .channelinfo .comments-container .comment-input textarea::placeholder {
+    font-size: 12px;
   }
 }
 .footer {
