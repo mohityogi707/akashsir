@@ -908,9 +908,14 @@
             width: 120px;
             cursor: pointer;
         }
-        & .online {
+        & .lastseen {
             font-size: 14px;
-            color: #00D50A;
+            // color: #00D50A;
+            color: #8b8b8b;
+            &.online {
+                color: #00D50A;
+                font-weight: 500;
+            }
         }
         & .Username {
             font-size: 18px;
@@ -948,6 +953,18 @@
         padding-top: 10px;
         color: #FF7200;
     }
+    & .listingcard {
+        padding: 16px;
+        & .subcard {
+            & .subimg {
+                height: 60px;
+                width: 60px;
+            }
+        }
+    }
+    & .reviewcard {
+        padding: 16px;
+    }
 } 
 @include media-breakpoint(basic) {}
 
@@ -979,7 +996,7 @@
                 height: 110px;
                 width: 110px;
             }
-            & .online {
+            & .lastseen {
                 font-size: 13px;
             }
             & .Username {
@@ -1021,7 +1038,7 @@
                 width: 100px;
                 cursor: pointer;
             }
-            & .online {
+            & .lastseen {
                 font-size: 12px;
             }
             & .Username {
