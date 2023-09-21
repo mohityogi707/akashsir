@@ -1507,8 +1507,11 @@
                         <div class="col-12 pt-2">
                             <input type="text" class="heroinput form-control shadow-none border" placeholder="Enter amount in rs">
                         </div>
-                        <div class="col-12 text-end pt-1">
-                            <a href="javascript:;" class="controltitle text-decoration-none">Control Panel</a>
+                        <div class="col-12 text-end pt-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <a href="javascript:;" class="controltitle text-decoration-none"  data-bs-toggle="modal" data-bs-target="#newpassward">Change Password</a>
+                                <a href="javascript:;" class="controltitle text-decoration-none">Control Panel</a>
+                            </div>
                         </div>
                         <div class="d-flex align-items-center pt-4 justify-content-center">
                             <a href="javascript:;" class="customBtn px-4 py-2 btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
@@ -1564,7 +1567,7 @@
     <!-- reset password modal end  -->
 
     <!-- new password modal start -->
-    <div class="modal fade loginmodal" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade loginmodal" id="newpassward" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog loginDialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
@@ -1574,25 +1577,19 @@
                 <div class="modal-body">
                     <form action="">
                         <div>
-                            <input type="text" class="form-control modalinput shadow-none" placeholder="Email">
+                            <input type="text" class="form-control modalinput shadow-none" placeholder="Old Password">
                         </div>
                         <div class="mt-3">
-                            <input type="text" class="form-control modalinput shadow-none" placeholder="Username">
+                            <input type="text" class="form-control modalinput shadow-none" placeholder="New Password">
                         </div>
                         <div class="mt-3">
-                            <input type="password" class="form-control modalinput shadow-none" placeholder="Password">
-                        </div>
-                        <div class="mt-3">
-                            <input type="password" class="form-control modalinput shadow-none" placeholder="Confirm Password">
-                        </div>
-                        <div class="text-end pt-1 pb-2">
-                            <a href="javascript:;" class="modaltitle text-decoration-none" data-bs-target="#loginmodal" data-bs-toggle="modal">Already have an account ?</a>
+                            <input type="password" class="form-control modalinput shadow-none" placeholder="Confirm New Password">
                         </div>
                         <div id="html_element" class="w-100"></div>
                         <!-- <input type="submit" value="Submit" class="fb9" /> -->
                         <div class="d-flex align-items-center justify-content-center mt-3">
                             <button type="submit" class="customBtn btnthree px-3 text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
-                                <span class="position-relative z-1 mx-4">Submit</span>
+                                <span class="position-relative z-1 mx-4">Save</span>
                             </button>
                         </div>
                     </form>

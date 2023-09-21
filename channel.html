@@ -359,39 +359,35 @@
     <script src="assets/js/js.js"></script>
 
     <!-- login modal  -->
-    <div class="modal fade loginmodal" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="modal fade loginmodal" id="loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog loginDialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="modal-title fw-semibold" id="exampleModalLabel">Log in </div>
-                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form action="">
                         <div>
-                            <input type="text" class="form-control modalinput shadow-none"
-                                placeholder="Username or Email">
+                            <input type="text" class="form-control modalinput shadow-none" placeholder="Username or Email">
                         </div>
                         <div class="mt-3">
                             <input type="password" class="form-control modalinput shadow-none" placeholder="Password">
                         </div>
                         <div class="text-end pt-1 pb-2">
-                            <a href="javascript:;" class="modaltitle text-decoration-none">Reset password</a>
+                            <a href="javascript:;" class="modaltitle text-decoration-none" data-bs-toggle="modal" data-bs-target="#resetpassword">Reset password</a>
                         </div>
                         <div class="d-flex align-items-center justify-content-center mt-3">
-                            <button type="submit"
-                                class="customBtn btnthree px-3 text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                            <button type="submit" class="customBtn btnthree px-3 text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
                                 <span class="position-relative z-1 mx-4">Submit</span>
                             </button>
                         </div>
                     </form>
                 </div>
                 <!-- <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                  </div> -->
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
             </div>
         </div>
     </div>
@@ -402,8 +398,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="modal-title fw-semibold" id="exampleModalLabel">Log in </div>
-                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <form action="">
@@ -417,34 +412,30 @@
                             <input type="password" class="form-control modalinput shadow-none" placeholder="Password">
                         </div>
                         <div class="mt-3">
-                            <input type="password" class="form-control modalinput shadow-none"
-                                placeholder="Confirm Password">
+                            <input type="password" class="form-control modalinput shadow-none" placeholder="Confirm Password">
                         </div>
                         <div class="text-end pt-1 pb-2">
-                            <a href="javascript:;" class="modaltitle text-decoration-none" data-bs-target="#loginmodal"
-                                data-bs-toggle="modal">Already have an account ?</a>
+                            <a href="javascript:;" class="modaltitle text-decoration-none" data-bs-target="#loginmodal" data-bs-toggle="modal">Already have an account ?</a>
                         </div>
                         <div id="html_element" class="w-100"></div>
                         <!-- <input type="submit" value="Submit" class="fb9" /> -->
                         <div class="d-flex align-items-center justify-content-center mt-3">
-                            <button type="submit"
-                                class="customBtn btnthree px-3 text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                            <button type="submit" class="customBtn btnthree px-3 text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
                                 <span class="position-relative z-1 mx-4">Submit</span>
                             </button>
                         </div>
                     </form>
                 </div>
                 <!-- <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                  </div> -->
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
             </div>
         </div>
     </div>
 
     <!-- chat offcanvas start  -->
-    <div class="offcanvas offcanvas-start chatoffcanvas" data-bs-backdrop="static" tabindex="1" id="chatoffcanvas"
-        aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas offcanvas-start chatoffcanvas" data-bs-backdrop="static" tabindex="1" id="chatoffcanvas" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header border-bottom shadow-sm bglight">
             <div class="d-flex align-items-center userheader">
                 <div class="aiicon overflow-hidden rounded-circle">
@@ -467,27 +458,26 @@
                             </div>
                         </div>
                         <div class="col-6 ps-0">
-                            <div
-                                class="msgcard aibox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                            <div class="msgcard aibox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
                                 <div class="chatmsg position-relative z-1">hello sir</div>
                                 <div class="time text-end">
                                     <!-- <div></div>
-                                 <div></div> -->
+                                    <div></div> -->
                                     13:20
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-12 pt-2">
                     <div class="row justify-content-end">
                         <div class="col-6 pe-0 text-end">
-                            <div
-                                class="msgcard userbox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                            <div class="msgcard userbox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
                                 <div class="chatmsg position-relative z-1">hello sir</div>
                                 <div class="time text-end">
                                     <!-- <div></div>
-                                 <div></div> -->
+                                    <div></div> -->
                                     13:20
                                 </div>
                             </div>
@@ -498,6 +488,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-12 pt-2">
                     <div class="row">
@@ -507,27 +498,26 @@
                             </div>
                         </div>
                         <div class="col-6 ps-0">
-                            <div
-                                class="msgcard aibox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                            <div class="msgcard aibox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
                                 <div class="chatmsg position-relative z-1">hello sir</div>
                                 <div class="time text-end">
                                     <!-- <div></div>
-                                 <div></div> -->
+                                    <div></div> -->
                                     13:20
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-12 pt-2">
                     <div class="row justify-content-end">
                         <div class="col-6 pe-0 text-end">
-                            <div
-                                class="msgcard userbox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                            <div class="msgcard userbox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
                                 <div class="chatmsg position-relative z-1">hello sir</div>
                                 <div class="time text-end">
                                     <!-- <div></div>
-                                 <div></div> -->
+                                    <div></div> -->
                                     13:20
                                 </div>
                             </div>
@@ -538,6 +528,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-12 pt-2">
                     <div class="row">
@@ -547,27 +538,26 @@
                             </div>
                         </div>
                         <div class="col-6 ps-0">
-                            <div
-                                class="msgcard aibox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                            <div class="msgcard aibox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
                                 <div class="chatmsg position-relative z-1">hello sir</div>
                                 <div class="time text-end">
                                     <!-- <div></div>
-                                 <div></div> -->
+                                    <div></div> -->
                                     13:20
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-12 pt-2">
                     <div class="row justify-content-end">
                         <div class="col-6 pe-0 text-end">
-                            <div
-                                class="msgcard userbox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                            <div class="msgcard userbox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
                                 <div class="chatmsg position-relative z-1">hello sir</div>
                                 <div class="time text-end">
                                     <!-- <div></div>
-                                 <div></div> -->
+                                    <div></div> -->
                                     13:20
                                 </div>
                             </div>
@@ -578,6 +568,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-12 pt-2">
                     <div class="row">
@@ -587,31 +578,26 @@
                             </div>
                         </div>
                         <div class="col-6 ps-0">
-                            <div
-                                class="msgcard aibox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
-                                <div class="chatmsg position-relative z-1">hello sir hello sir hello sirhello sir hello
-                                    sir hello sir v
-                                </div>
+                            <div class="msgcard aibox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir hello sir hello sirhello sir hello sir hello sir v</div>
                                 <div class="time text-end">
                                     <!-- <div></div>
-                                 <div></div> -->
+                                    <div></div> -->
                                     13:20
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="col-12 pt-2">
                     <div class="row justify-content-end">
                         <div class="col-6 pe-0 text-end">
-                            <div
-                                class="msgcard userbox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
-                                <div class="chatmsg position-relative z-1">hello sir hello sirhello sirhello sirhello
-                                    sirhello sirhello sirhello sirhello sirhello sirhello sirhello sirhello sir
-                                </div>
+                            <div class="msgcard userbox position-relative shadow-sm rounded-2 d-inline-flex flex-column bgwhite">
+                                <div class="chatmsg position-relative z-1">hello sir hello sirhello sirhello sirhello sirhello sirhello sirhello sirhello sirhello sirhello sirhello sirhello sir</div>
                                 <div class="time text-end">
                                     <!-- <div></div>
-                                 <div></div> -->
+                                    <div></div> -->
                                     13:20
                                 </div>
                             </div>
@@ -622,20 +608,16 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
         <div class="offcanvasfooter shadow-sm border-top bglight">
             <div class="d-flex align-items-center gap-2">
                 <div class="input-group inputdata borderbottom rounded0 rounded-5 align-items-center  ">
-                    <input type="text"
-                        class="form-control msginput ps-0 h-100 shadow-none bg-transparent border-0 rounded-0"
-                        placeholder="Enter Your Message" aria-label="Recipient's username"
-                        aria-describedby="basic-addon2">
+                    <input type="text" class="form-control msginput ps-0 h-100 shadow-none bg-transparent border-0 rounded-0" placeholder="Enter Your Message" aria-label="Recipient's username" aria-describedby="basic-addon2">
                     <input type="file" id="filedata" hidden>
-                    <label for="filedata"
-                        class="border-0 d-flex align-items-center justify-content-center shadow-none filechoose bg-transparent"
-                        id="basic-addon2">
+                    <label for="filedata" class="border-0 d-flex align-items-center justify-content-center shadow-none filechoose bg-transparent" id="basic-addon2">
                         <img src="assets/img/index/attachfile.svg" alt="file" class="h-100 w100">
                     </label>
                 </div>
@@ -647,25 +629,18 @@
     </div>
 
     <!-- chat modal  -->
-    <div class="modal fade chatmodal" id="chatmodal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
+    <div class="modal fade chatmodal" id="chatmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog mx-auto chatdialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="modal-title" id="exampleModalLabel">Chat</div>
-                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body pt-0">
                     <div class="row contactdata">
                         <div class="col-12 contactinner">
-                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
-                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
-                                <div
-                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
-                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
-                                </div>
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
                                 <div class="w-100">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="username">Username</div>
@@ -678,13 +653,8 @@
                             </a>
                         </div>
                         <div class="col-12 contactinner border-top">
-                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
-                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
-                                <div
-                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
-                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
-                                </div>
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
                                 <div class="w-100">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="username">Username 2</div>
@@ -697,13 +667,8 @@
                             </a>
                         </div>
                         <div class="col-12 contactinner border-top">
-                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
-                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
-                                <div
-                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
-                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
-                                </div>
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
                                 <div class="w-100">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="username">Username 3</div>
@@ -716,13 +681,8 @@
                             </a>
                         </div>
                         <div class="col-12 contactinner border-top">
-                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
-                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
-                                <div
-                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
-                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
-                                </div>
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
                                 <div class="w-100">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="username">Username 2</div>
@@ -735,13 +695,8 @@
                             </a>
                         </div>
                         <div class="col-12 contactinner border-top">
-                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
-                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
-                                <div
-                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
-                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
-                                </div>
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
                                 <div class="w-100">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="username">Username 3</div>
@@ -754,13 +709,8 @@
                             </a>
                         </div>
                         <div class="col-12 contactinner border-top">
-                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
-                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
-                                <div
-                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
-                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
-                                </div>
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
                                 <div class="w-100">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="username">Username 2</div>
@@ -773,13 +723,8 @@
                             </a>
                         </div>
                         <div class="col-12 contactinner border-top">
-                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
-                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
-                                <div
-                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
-                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
-                                </div>
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
                                 <div class="w-100">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="username">Username 3</div>
@@ -792,13 +737,8 @@
                             </a>
                         </div>
                         <div class="col-12 contactinner border-top">
-                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
-                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
-                                <div
-                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
-                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
-                                </div>
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
                                 <div class="w-100">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="username">Username 2</div>
@@ -811,13 +751,8 @@
                             </a>
                         </div>
                         <div class="col-12 contactinner border-top">
-                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
-                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
-                                <div
-                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
-                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
-                                </div>
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
                                 <div class="w-100">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="username">Username 3</div>
@@ -830,13 +765,8 @@
                             </a>
                         </div>
                         <div class="col-12 contactinner border-top">
-                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
-                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
-                                <div
-                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
-                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
-                                </div>
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
                                 <div class="w-100">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="username">Username 2</div>
@@ -849,13 +779,8 @@
                             </a>
                         </div>
                         <div class="col-12 contactinner border-top">
-                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
-                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
-                                <div
-                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
-                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
-                                </div>
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
                                 <div class="w-100">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="username">Username 3</div>
@@ -868,13 +793,8 @@
                             </a>
                         </div>
                         <div class="col-12 contactinner border-top">
-                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
-                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
-                                <div
-                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
-                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
-                                </div>
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
                                 <div class="w-100">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="username">Username 2</div>
@@ -887,13 +807,8 @@
                             </a>
                         </div>
                         <div class="col-12 contactinner border-top">
-                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
-                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
-                                <div
-                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
-                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
-                                </div>
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
                                 <div class="w-100">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="username">Username 3</div>
@@ -906,13 +821,8 @@
                             </a>
                         </div>
                         <div class="col-12 contactinner border-top">
-                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
-                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
-                                <div
-                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
-                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
-                                </div>
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
                                 <div class="w-100">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="username">Username 2</div>
@@ -925,13 +835,8 @@
                             </a>
                         </div>
                         <div class="col-12 contactinner border-top">
-                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
-                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
-                                <div
-                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
-                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
-                                </div>
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
                                 <div class="w-100">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="username">Username 3</div>
@@ -944,13 +849,8 @@
                             </a>
                         </div>
                         <div class="col-12 contactinner border-top">
-                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
-                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
-                                <div
-                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
-                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
-                                </div>
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
                                 <div class="w-100">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="username">Username 2</div>
@@ -963,13 +863,8 @@
                             </a>
                         </div>
                         <div class="col-12 contactinner border-top">
-                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
-                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
-                                <div
-                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
-                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
-                                </div>
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
                                 <div class="w-100">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="username">Username 3</div>
@@ -982,13 +877,8 @@
                             </a>
                         </div>
                         <div class="col-12 contactinner border-top">
-                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
-                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
-                                <div
-                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
-                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
-                                </div>
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
                                 <div class="w-100">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="username">Username 2</div>
@@ -1001,13 +891,8 @@
                             </a>
                         </div>
                         <div class="col-12 contactinner border-top">
-                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
-                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
-                                <div
-                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
-                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
-                                </div>
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
                                 <div class="w-100">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="username">Username 3</div>
@@ -1020,13 +905,8 @@
                             </a>
                         </div>
                         <div class="col-12 contactinner border-top">
-                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
-                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
-                                <div
-                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
-                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
-                                </div>
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
                                 <div class="w-100">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="username">Username 2</div>
@@ -1039,13 +919,8 @@
                             </a>
                         </div>
                         <div class="col-12 contactinner border-top">
-                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none"
-                                data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-                                data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
-                                <div
-                                    class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg">
-                                    <img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid">
-                                </div>
+                            <a href="javascript:;" class="d-flex align-items-center contactcard text-decoration-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" data-bs-target="#chatoffcanvas" aria-controls="chatoffcanvas">
+                                <div class="d-flex align-items-center justify-content-center overflow-hidden rounded-circle contactimg"><img src="assets/img/index/usericon.svg" alt="user" class="h-100 w-100 img-fluid"></div>
                                 <div class="w-100">
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="username">Username 3</div>
@@ -1057,6 +932,7 @@
                                 </div>
                             </a>
                         </div>
+                        
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -1066,6 +942,325 @@
             </div>
         </div>
     </div>
+
+    <!-- dm modal start -->
+    <div class="modal fade dmmodal" id="dmcontact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog dmdialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="exampleModalLabel">Dm</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="detaildm">
+                        Placing contacts in the description of the listing or contacts for sale on the page itself is prohibited. If you need to have a contact on the page for advertising, orders or similar purposes, you can leave it. But if the client writes to you about the sale through these contacts, you will have to ask him to contact the seller through the listing he found. By listing on accs-market.com, you accept these conditions and the fact that the administration will control this and will be forced to block you if this condition is not met. If you do not need to leave contacts and open DM on the page, we are ready to give you 50% more rating after the transaction is completed, as this will make it easier for us to control. Rating is one of the main factors of trust from buyers. An additional rating will be automatically added after the completion of the transaction if you check the box below, but in case of violation of this agreement, we will have to block you.
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- dm modal end -->
+
+    <!-- balance modal start  -->
+    <div class="modal fade balancemodal commonmodal" id="balancemodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header border-bottom">
+                    <div class="modal-title fw-bold" id="exampleModalLabel">Balance</div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <label class="col-12 fw-medium amoutlabel">
+                            Amount:- 
+                        </label>
+                        <div class="col-12 pt-2">
+                            <input type="text" class="heroinput form-control shadow-none border" placeholder="Enter amount in rs">
+                        </div>
+                        <label class="col-12 pt-4 fw-medium amoutlabel">
+                            Payment method:- 
+                        </label>
+                        <div class="col-12 pt-2">
+                            <select class="form-select heroinput shadow-none border" tabindex="-1">
+                                <option value="0" disabled="" selected="">Select Method</option>
+                                <option value="1">Debit Card</option>
+                                <option value="2">Credit Card</option>
+                                <option value="4">Visa</option>
+                                <option value="6">UPI</option>
+                            </select>
+                        </div>
+                        <div class="col-12 text-center modaldata">
+                            The money on the balance cannot be withdrawn, but it can be spent on any services on the site (escrow agent's commission and advertisements).
+                            You can't pay the seller with your balance.
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a href="javascript:;" class="customBtn px-4 py-2 btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1 px-2">Pay</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- balance modal end  -->
+
+    <!-- setting modal start  -->
+    <div class="modal fade settingmodal balancemodal commonmodal" id="settingsmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollables">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title" id="exampleModalLabel">Setting</div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <label class="col-12 fw-medium amoutlabel">
+                            Email:- 
+                        </label>
+                        <div class="col-12 pt-2">
+                            <input type="email" class="heroinput form-control shadow-none border" placeholder="Enter amount in rs">
+                        </div>
+                        <label class="col-12 pt-4 fw-medium amoutlabel">
+                            Username (can be changed no more than once a month):- 
+                        </label>
+                        <div class="col-12 pt-2">
+                            <input type="text" class="heroinput form-control shadow-none border" placeholder="Enter amount in rs">
+                        </div>
+                        <div class="col-12 text-end pt-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <a href="javascript:;" class="controltitle text-decoration-none"  data-bs-toggle="modal" data-bs-target="#newpassward">Change Password</a>
+                                <a href="javascript:;" class="controltitle text-decoration-none">Control Panel</a>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center pt-4 justify-content-center">
+                            <a href="javascript:;" class="customBtn px-4 py-2 btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1 px-2">Pay</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- setting modal end  -->
+
+    <!-- reset password modal start  -->
+    <div class="modal fade commonmodal" id="resetpassword" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title " id="exampleModalLabel">Reset Password</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="alert alert-primary" role="alert" id="liveAlertPlaceholder">
+                                We have e-mailed your password reset link!
+                            </div>
+                        </div>
+                        <label class="col-12 fw-medium amoutlabel">
+                            Email:- 
+                        </label>
+                        <div class="col-12 pt-2">
+                            <input type="email" class="heroinput form-control shadow-none border" placeholder="Email">
+                        </div>
+                        <div class="d-flex align-items-center pt-3 justify-content-center">
+                            <a href="javascript:;" class="customBtn  btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1" id="liveAlertBtn">
+                                <span class="position-relative z-1 px-2">Send Password Reset Link</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- reset password modal end  -->
+
+    <!-- new password modal start -->
+    <div class="modal fade loginmodal" id="newpassward" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog loginDialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title fw-semibold" id="exampleModalLabel">Create New Password</div>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div>
+                            <input type="text" class="form-control modalinput shadow-none" placeholder="Old Password">
+                        </div>
+                        <div class="mt-3">
+                            <input type="text" class="form-control modalinput shadow-none" placeholder="New Password">
+                        </div>
+                        <div class="mt-3">
+                            <input type="password" class="form-control modalinput shadow-none" placeholder="Confirm New Password">
+                        </div>
+                        <div id="html_element" class="w-100"></div>
+                        <!-- <input type="submit" value="Submit" class="fb9" /> -->
+                        <div class="d-flex align-items-center justify-content-center mt-3">
+                            <button type="submit" class="customBtn btnthree px-3 text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                <span class="position-relative z-1 mx-4">Save</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- new password modal end -->
+
+    <!-- payment modal start  -->
+    <div class="modal fade dealmodal" id="paymentmodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog dealdialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content dealcontent">
+                <div class="modal-header">
+                    <div class="modal-title " id="exampleModalLabel">Create a deal</div>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 selectpaytitle">
+                            Select payment methods you can use to pay the seller. The more options you choose, the greater the chance that one of them will suit the seller and he will agree to the deal.
+                        </div>
+                        <div class="col-12 pt-4 mt2">
+                            <div class="row g-sm-3 g-2 justify-content-center row-cols6 paymentoption">
+                                <div class="col">
+                                    <div class="paymentcard">
+                                        <input type="checkbox" hidden class="checkinput" id="box1">
+                                        <label for="box1" class="paymentlabel rounded-2 w-100">
+                                            <img src="assets/img/index/payment1.png" alt="payment" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="paymentcard">
+                                        <input type="checkbox" hidden class="checkinput" id="box2">
+                                        <label for="box2" class="paymentlabel rounded-2 w-100">
+                                            <img src="assets/img/index/payment2.png" alt="payment" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="paymentcard">
+                                        <input type="checkbox" hidden class="checkinput" id="box3">
+                                        <label for="box3" class="paymentlabel rounded-2 w-100">
+                                            <img src="assets/img/index/payment3.png" alt="payment" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="paymentcard">
+                                        <input type="checkbox" hidden class="checkinput" id="box4">
+                                        <label for="box4" class="paymentlabel rounded-2 w-100">
+                                            <img src="assets/img/index/payment11.png" alt="payment" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="paymentcard">
+                                        <input type="checkbox" hidden class="checkinput" id="box5">
+                                        <label for="box5" class="paymentlabel rounded-2 w-100">
+                                            <img src="assets/img/index/payment10.png" alt="payment" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="paymentcard">
+                                        <input type="checkbox" hidden class="checkinput" id="box6">
+                                        <label for="box6" class="paymentlabel rounded-2 w-100">
+                                            <img src="assets/img/index/payment8.png" alt="payment" class="h-100 w-100 img-fluid object-fit-contain">
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 transactiontitle pt-4">
+                            Transaction steps when using the escrow service:
+                        </div>
+                        <div class="col-12 paymentpolicy pt-3 mt-0">
+                            <span class="fw-bold text-dark ">1.</span>
+                            The buyer pays a 4-8% ($3 minimum) service fee.
+                        </div>
+                        <div class="col-12 paymentpolicy">
+                            <span class="fw-bold text-dark ">2.</span>
+                            The seller designates the escrow agent as manager.
+                        </div>
+                        <div class="col-12 paymentpolicy">
+                            <span class="fw-bold text-dark ">3.</span>
+                            After 7 days, the seller assigns primary ownership rights to the escrow agent (7 days is the minimum amount of time required in order to assign a new primary owner in the control panel.)
+                        </div>
+                        <div class="col-12 paymentpolicy">
+                            <span class="fw-semibold text-dark ">4.</span>
+                            The escrow agent verifies everything, removes the other managers, and notifies the buyer to pay the seller.
+                        </div>
+                        <div class="col-12 paymentpolicy">
+                            <span class="fw-semibold text-dark ">5.</span>
+                            The buyer pays the seller.
+                        </div>
+
+                        <div class="col-12 paymentpolicy">
+                            <span class="fw-semibold text-dark ">6.</span>
+                            After the seller's confirmation, the escrow agent assigns ownership rights to the buyer.
+                        </div>
+                        <div class="col-12 paymenttitletwo">
+                            In order to guarantee maximum security during the transaction, all messages must be sent through the website using the chat system where the transaction is completed, so that in case of any issues, the arbitration service can verify everything.
+                        </div>
+                        <div class="col-12 emailtitle text-center">
+                            Email address associated with the account which should be designated as the owner
+                        </div>
+                        <div class="col-12 pt-3">
+                            <div class="row gap-2 justify-content-center">
+                                <div class="col-sm-6">
+                                    <input type="email" class="form-control heroinput shadow-none border" placeholder="Enter your email ">
+                                </div>
+                                <div class="col-12 text-center">
+                                    <div>
+                                        <div class="discount">You have a discount on this deal!</div>
+                                        <div class="discountitlte pb-4 mb-sm-2">6% instead of 8% for the escrow service</div>
+                                        <a href="javascript:;" class="customBtn btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                            <span class="position-relative z-1 px-2">Create</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer"> -->
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    <!-- <button class="btn customBtn position-relative"> Create</button> -->
+                    <!-- <a href="javascript:;" class="customBtn btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                        <span class="position-relative z-1">Create</span>
+                    </a> -->
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>   
+    <!-- payment modal end  -->
 
     <!-- tooltip  -->
     <script>
