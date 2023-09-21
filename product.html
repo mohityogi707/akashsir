@@ -7,6 +7,8 @@
     <title>Document</title>
     <!-- jquery -->
     <script src="./assets/js/jquery.js"></script>
+    <!-- glight-box -->
+    <link rel="stylesheet" href="./assets/libs/glight/css/glightbox.min.css">
     <!-- css  -->
     <link rel="stylesheet" href="assets/css/style.min.css">
     <!-- bootstrap css  -->
@@ -148,7 +150,7 @@
                                         </div>
                                     </div>
                                     <div
-                                        class="channel-buttons mt-3 d-flex align-items-center justify-content-center gap-3">
+                                        class="channel-buttons mt-3 d-flex flex-wrap align-items-center justify-content-center gap-3 row-gap-2">
                                         <a href="javascript:;"
                                             class="customBtn btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
                                             <span class="position-relative z-1">Buy Channel</span>
@@ -170,10 +172,33 @@
                                 <div class="heading fw-bold text-black mb-3">
                                     Seller Info
                                 </div>
+                                <div class="seller-box d-flex flex-wrap align-items-center justify-content-between border rounded-pill p-2 px-3">
+                                    <div class="seller-details d-flex align-items-center gap-2">
+                                        <div class="seller-img rounded-circle overflow-hidden">
+                                            <img src="./assets/img/index/channel.jpg" alt="Seller images" class="h-100 w-100 object-fit-cover">
+                                        </div>
+                                        <div class="seller-name">
+                                            <div class="name fw-semibold">Ediiz</div>
+                                            <div class="rating text-muted">rating: 11772</div>
+                                        </div>
+                                    </div>
+                                    <div class="records d-flex gap-3 fw-bold justify-content-end">
+                                    <span class="text-success">+212</span>
+                                    <span class="text-secondary">1</span>
+                                    <span class="text-danger">-2</span>
+                                    </div>
+                                </div>
+                                <div class="button-seller mt-2">
+                                    <a href="javascript:;" class="customBtn btntwo text-decoration-none fw-medium rounded-pill d-inline-flex align-items-center position-relative overflow-hidden z-1">
+                                        <span class="position-relative z-1">Contact Seller</span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col-md-8">
                     <!-- decription  -->
                     <div class="channeldata bg-light rounded-2 shadow-sm ">
@@ -183,26 +208,42 @@
                                     <div class="heading fw-bold text-black mb-3">
                                         Channel images
                                     </div>
-                                    <div class="row owl-carousel channelCarousel">
+
+                                    <div class="row owl-carousel channelCarousel w-100 mx-0 overflow-hidden">
                                         <div class="col-12">
                                             <div class="img-box">
-                                                <img src="./assets/img/index/channel-screeenshot.jpg"
-                                                    alt="channel-screeenshot" class="h-100 w-100 object-fit-cover">
-                                            </div>
+                                                <a href="./assets/img/index/channel-screenshot.jpg"  class="glightbox h-100 w-100 object-fit-cover">
+                                                    <img src="./assets/img/index/channel-screenshot.jpg"
+                                                    alt="channel-screenshot">
+                                                </a>
+                                               </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="img-box">
-                                                <img src="./assets/img/index/channel-screeenshot.jpg"
-                                                    alt="channel-screeenshot" class="h-100 w-100 object-fit-cover">
-                                            </div>
+                                                <a href="./assets/img/index/channel-screenshot.jpg"  class="glightbox h-100 w-100 object-fit-cover">
+                                                    <img src="./assets/img/index/channel-screenshot.jpg"
+                                                    alt="channel-screenshot">
+                                                </a>
+                                               </div>
                                         </div>
                                         <div class="col-12">
                                             <div class="img-box">
-                                                <img src="./assets/img/index/channel-screeenshot.jpg"
-                                                    alt="channel-screeenshot" class="h-100 w-100 object-fit-cover">
-                                            </div>
+                                                <a href="./assets/img/index/channel-screenshot.jpg"  class="glightbox h-100 w-100 object-fit-cover">
+                                                    <img src="./assets/img/index/channel-screenshot.jpg"
+                                                    alt="channel-screenshot">
+                                                </a>
+                                               </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="img-box">
+                                                <a href="./assets/img/index/channel-screenshot.jpg"  class="glightbox h-100 w-100 object-fit-cover">
+                                                    <img src="./assets/img/index/channel-screenshot.jpg"
+                                                    alt="channel-screenshot">
+                                                </a>
+                                               </div>
                                         </div>
                                     </div>
+                                    
                                     <div class="heading fw-medium text-black mt-5 mb-3">
                                         Description:
                                     </div>
@@ -1035,6 +1076,8 @@
     </script>
     <!-- owl carousel js -->
     <script src="./assets/libs/owl/cdnjs.cloudflare.com_ajax_libs_OwlCarousel2_2.3.4_owl.carousel.min.js"></script>
+    <!-- glight-box -->
+    <script src="./assets/libs/glight/js/glightbox.min.js"></script>
     <!-- custom js  -->
     <script src="./assets/js/main.js"></script>
 </body>
