@@ -956,14 +956,93 @@
     & .listingcard {
         padding: 16px;
         & .subcard {
+            border: 1.4px solid #d4d4d4;
+            padding: 8px;
+            gap: 5px;
+            transition: all 0.3s ease-in-out;
             & .subimg {
                 height: 60px;
-                width: 60px;
+                min-width: 60px;
+                max-width: 60px;
+            }
+            & .channelname {
+                font-size: 14px;
+                font-weight: 600;
+                color: #000;
+                line-height: normal;
+                margin-bottom: 7px;
+                gap: 3px;
+                & .youtubeicon {
+                    height: 14px;
+                    min-width: 14px;
+                    max-width: 14px;
+                    margin-top: 2px;
+                }
+            }
+            & .totaluser {
+                font-size: 13px;
+                font-weight: 500;
+                color: #6a6a6a;
+                line-height: normal;
+                & .usericon {
+                    font-size: 13px;
+                    color: #6a6a6a;
+                }
+            }
+            & .view{
+                font-size: 13px;
+                font-weight: 500;
+                // color: white;
+                // background-color: $theme1;
+                padding: 1px 6px;
+                border-radius: 1px;
+            }
+            &:hover {
+                border-color: $theme1;
             }
         }
     }
     & .reviewcard {
         padding: 16px;
+        & .commentcardmain {
+            margin-top: 20px;
+            gap: 14px;
+            & .commentcard {
+                padding: 14px;
+                border: 1.4px solid #d4d4d4;
+                transition: all 0.3s ease-in-out;
+                & .date {
+                    font-size: 13px;
+                    font-weight: 500;
+                }
+                & .comment {
+                    font-size: 14px;
+                    font-weight: 500;
+                    // color: #000;
+                    color: #7f7f7fe3;
+                    margin-top: 5px;
+                }
+                & .username {
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: #000;
+                    margin-top: 7px;
+                    gap: 7px;
+                    display: block;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    & .checkicon {
+                        font-size: 15px;
+                        color: #00D50A;
+                        margin-top: 3px;
+                    }
+                }
+                &:hover {
+                    border-color: $theme1;
+                }
+            }
+        }
     }
 } 
 @include media-breakpoint(basic) {}
@@ -982,7 +1061,45 @@
 
 @include media-breakpoint-down(xl) {}
 
-@include media-breakpoint-down(lg) {}
+@include media-breakpoint-down(lg) {
+    .profileSection {
+        & .listingcard {
+            & .subcard {
+                & .subimg {
+                }
+                & .channelname {
+                    & .youtubeicon {
+                    }
+                }
+                & .totaluser {
+                    & .usericon {
+                    }
+                }
+                & .view{
+                }
+                &:hover {
+                }
+            }
+        }
+        & .reviewcard {
+            margin-top: 25px;
+            & .commentcardmain {
+                & .commentcard {
+                    & .date {
+                    }
+                    & .comment {
+                    }
+                    & .username {
+                        & .checkicon {
+                        }
+                    }
+                    &:hover {
+                    }
+                }
+            }
+        }
+    }
+}
 
 @include media-breakpoint-down(md) {
     .profileSection {
@@ -1067,6 +1184,64 @@
         & .nolistings {
             font-size: 12px;
             padding-top: 5px;
+        }
+        & .listingcard {
+            padding: 13px;
+            & .subcard {
+                & .subimg {
+                    height: 50px;
+                    min-width: 50px;
+                    max-width: 50px;
+                }
+                & .channelname {
+                    font-size: 13px;
+                    margin-bottom: 5px;
+                    & .youtubeicon {
+                        height: 12px;
+                        min-width: 12px;
+                        max-width: 12px;
+                    }
+                }
+                & .totaluser {
+                    font-size: 12px;
+                    & .usericon {
+                        font-size: 12px;
+                    }
+                }
+                & .view{
+                    font-size: 13px;
+                }
+                &:hover {
+                    border-color: $theme1;
+                }
+            }
+        }
+        & .reviewcard {
+            padding: 13px;
+            margin-top: 25px;
+            & .commentcardmain {
+                margin-top: 15px;
+                gap: 12px;
+                & .commentcard {
+                    & .date {
+                        font-size: 12px;
+                    }
+                    & .comment {
+                        font-size: 13px;
+                        margin-top: 5px;
+                    }
+                    & .username {
+                        font-size: 13px;
+                        gap: 5px;
+                        & .checkicon {
+                            font-size: 13px;
+                        }
+                    }
+                    &:hover {
+                        border-color: $theme1;
+                    }
+                }
+            }
         }
     } 
     
