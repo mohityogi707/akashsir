@@ -203,6 +203,9 @@
                 &::placeholder{
                     font-size: 14px;
                 }
+                &:focus{
+                    border-color: $theme1 !important;
+                }
             }
         }
     }
