@@ -1,7 +1,10 @@
 .channelinfo {
     padding-top: 45px;
     padding-bottom: 40px;
-
+    & .leftdata {
+        // position: sticky;
+        // top: 82px;
+    }
     & .detail-box {
         & .left-details {
             & .text {
