@@ -94,23 +94,27 @@
 
     & .seller-container {
         padding: 14px;
-        & .heading{
+
+        & .heading {
             font-size: 18px;
             line-height: normal;
             color: $black;
         }
-        & .seller-box{
-            & .seller-details{
-                & .seller-img{
+
+        & .seller-box {
+            & .seller-details {
+                & .seller-img {
                     height: 44px;
                     width: 44px;
                 }
-                & .seller-name{
-                    & .name{
+
+                & .seller-name {
+                    & .name {
                         font-size: 14px;
                         line-height: 18px;
                     }
-                    & .rating{
+
+                    & .rating {
                         font-size: 13px;
                         line-height: 14px;
                     }
@@ -136,8 +140,9 @@
                     font-weight: 500;
                 }
             }
-            & .channelCarousel{
-                & .owl-stage-outer{
+
+            & .channelCarousel {
+                & .owl-stage-outer {
                     padding: 0;
                 }
             }
@@ -149,6 +154,59 @@
 
         & .heading {
             font-size: 18px;
+        }
+
+        & .no-comment {
+            font-size: 14px;
+        }
+
+        & .comment-box-container {
+            & .comment-box {
+                & .comment-head {
+                    & .username {
+                        font-size: 14px;
+                        line-height: normal;
+                    }
+
+                    & .time {
+                        font-size: 14px;
+                        line-height: normal;
+                        color: $gray-500;
+                    }
+                    & .delete-icon{
+                        height: 10px;
+                        width: 10px;
+                    }
+                }
+
+                & .comment-body {
+                    font-size: 14px;
+                    line-height: normal;
+                    max-width: 90%;
+                }
+
+                & .comment-footer {
+                    & a {
+                        font-size: 14px;
+                        line-height: normal;
+                        color: $gray-600;
+                    }
+                }
+            }
+        }
+        & .comment-input{
+            & .heading{
+                font-size: 14px;
+            }
+            & textarea{
+                font-size: 14px;
+                &::placeholder{
+                    font-size: 14px;
+                }
+                &:focus{
+                    border-color: $theme1 !important;
+                }
+            }
         }
     }
 }
@@ -173,77 +231,122 @@
     .channelinfo {
         padding-top: 40px;
         padding-bottom: 35px;
-    
+
         & .detail-box {
             & .left-details {
                 & .text {
+                    font-size: 13px;
                 }
             }
-    
+
             & .right-details {
                 & .close-channel-text {
+                    font-size: 13px;
                 }
             }
         }
-    
+
         & .profilecard {
-    
+
             & .left-container {
-                & .channel-image {
-                }
-    
+                & .channel-image {}
+
                 & .channel-info {
                     & .channel-main-details {
                         & .channel-name {
                             font-size: 22px;
                             line-height: 28px;
                         }
-    
+
                         & .channel-subtitle {
+                            font-size: 13px;
                         }
                     }
                 }
-    
+
                 & .details {
                     & .details-text {
+                        font-size: 13px;
                     }
                 }
-    
+
                 & .price-box {
-                    font-size: 19px;
-    
+                    font-size: 18px;
+
                     & .price {}
                 }
             }
         }
-    
+
         & .seller-container {
-            & .heading{
-                font-size: 17px;
+            & .heading {
+                font-size: 16px;
             }
+            
         }
-    
+
         & .channeldata {
-    
+
             & .right-container {
                 & .heading {
-                    font-size: 17px;
+                    font-size: 16px;
                 }
-    
+
                 & .paragraph {
-    
-                    & span {
-                    }
+                    font-size: 13px;
+                    line-height: normal;
+                    & span {}
                 }
-                & .channelCarousel{
-                }
+
+                & .channelCarousel {}
             }
         }
-    
+
         & .comments-container {
     
             & .heading {
-                font-size: 17px;
+                font-size: 16px;
+            }
+    
+            & .no-comment {
+                font-size: 13px;
+            }
+    
+            & .comment-box-container {
+                & .comment-box {
+                    & .comment-head {
+                        & .username {
+                            font-size: 13px;
+                        }
+    
+                        & .time {
+                            font-size: 13px;
+                        }
+                        & .delete-icon{
+                        }
+                    }
+    
+                    & .comment-body {
+                        font-size: 13px;
+                    }
+    
+                    & .comment-footer {
+                        & a {
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+            & .comment-input{
+                & .heading{
+                    font-size: 13px;
+                }
+                & textarea{
+                    font-size: 13px;
+                    &::placeholder{
+                        font-size: 13px;
+                    }
+                }
             }
         }
     }
@@ -255,76 +358,119 @@
     .channelinfo {
         padding-top: 35px;
         padding-bottom: 30px;
-    
+
         & .detail-box {
             & .left-details {
                 & .text {
+                    font-size: 12px;
                 }
             }
-    
+
             & .right-details {
                 & .close-channel-text {
+                    font-size: 12px;
                 }
             }
         }
-    
+
         & .profilecard {
-    
+
             & .left-container {
-                & .channel-image {
-                }
-    
+                & .channel-image {}
+
                 & .channel-info {
                     & .channel-main-details {
                         & .channel-name {
                             font-size: 20px;
                         }
-    
+
                         & .channel-subtitle {
                         }
                     }
                 }
-    
+
                 & .details {
                     & .details-text {
+                        font-size: 12px;
                     }
                 }
-    
+
                 & .price-box {
-                    font-size: 18px;
-    
+
                     & .price {}
                 }
             }
         }
-    
+
         & .seller-container {
-            & .heading{
-                font-size: 16px;
+            & .heading {
+                font-size: 14px;
             }
         }
-    
+
         & .channeldata {
-    
+
             & .right-container {
                 & .heading {
-                    font-size: 16px;
+                    font-size: 14px;
                 }
-    
+
                 & .paragraph {
-    
-                    & span {
-                    }
+                    font-size: 12px;
+                    line-height: 20px;
+                    & span {}
                 }
-                & .channelCarousel{
-                }
+
+                & .channelCarousel {}
             }
         }
-    
+
         & .comments-container {
     
             & .heading {
-                font-size: 16px;
+                font-size: 14px;
+            }
+    
+            & .no-comment {
+                font-size: 12px;
+            }
+    
+            & .comment-box-container {
+                & .comment-box {
+                    & .comment-head {
+                        & .username {
+                            font-size: 12px;
+                        }
+                        
+                        & .time {
+                            font-size: 12px;
+                        }
+                        & .delete-icon{
+                        }
+                    }
+                    
+                    & .comment-body {
+                        
+                        font-size: 12px;
+                    }
+    
+                    & .comment-footer {
+                        & a {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+            & .comment-input{
+                & .heading{
+                    font-size: 12px;
+                }
+                & textarea{
+                    font-size: 12px;
+                    &::placeholder{
+                        font-size: 12px;
+                    }
+                }
             }
         }
     }
