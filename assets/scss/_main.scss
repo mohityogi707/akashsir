@@ -50,9 +50,11 @@ body{
     color: #fff;
     
     &.active{
-      color: $theme2;
+      // color: ;
+      color: #dadada;
       &::before {
-        color: $theme2;
+        // color: $theme2;
+        color: #dadada;
       }
     }
     & .returnpage {

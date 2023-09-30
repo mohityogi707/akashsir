@@ -2,13 +2,14 @@
 
 // hero section start 
 .herosection {
-    background: url(../img/index/bg.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 100px;
-    padding-bottom: 70px;
+    // background: url(../img/index/bg.jpg) no-repeat;
+    // background-size: cover;
+    // background-position: center;
+    // padding-top: 140px;
+    padding-top: 50px;
+    padding-bottom: 60px;
     & .herocard {
-        background: rgba(0, 0, 0, 0.5);
+        background:rgb(125, 125, 125);
         // background-color: rgba($theme1, 0.3);
         padding: 40px;
         & .heortitle {
@@ -55,7 +56,7 @@
         // }
         & .checkbox {
             height: 40px;
-            border: 2px solid rgb(90, 90, 90);
+            border: 1.4px solid #fff;
             padding: 0 20px;
             gap: 20px;
             color: #dadada;
@@ -73,8 +74,9 @@
         }
         & .checkinput {
             &:checked ~ .checkbox {
-                border-color: #fff;
-                color: #fff;
+                border-color: $theme1;
+                color: $white;  
+                background-color: $theme1;
                 & .icon {
                     opacity: 1;
                 }
@@ -105,6 +107,9 @@
         & .searchbtn {
             padding: 10px 0;
         }
+    }
+    & .heroimg {
+        aspect-ratio: 6/11;
     }
 }
 .heroinput {
@@ -137,14 +142,24 @@
 
 @include media-breakpoint-down(xxl) {}
 
-@include media-breakpoint-down(xl) {}
+@include media-breakpoint-down(xl) {
+    .herosection {
+        & .heroimg {
+            aspect-ratio: 6/20;
+            & img {
+                object-fit: contain;
+            }
+        }
+    }
+}
 
 @include media-breakpoint-down(lg) {}
 
 @include media-breakpoint-down(md) {
     .herosection {
-        padding-top: 80px;
-        padding-bottom: 50px;
+        // padding-top: 110px;
+        padding-top: 50px;
+        padding-bottom: 45px;
         & .herocard {
             padding: 30px;
             & .heortitle {
@@ -195,8 +210,9 @@
 
 @include media-breakpoint-down(sm) {
     .herosection {
-        padding-top: 80px;
-        padding-bottom: 35px;
+        // padding-top: 100px;
+        padding-top: 40px;
+        padding-bottom: 40px;
         & .herocard {
             padding: 20px 14px;
             & .heortitle {
@@ -1329,9 +1345,9 @@
                 color: #000;
             }
             &.aibox {
-                background-color: $theme2;
+                background-color: lighten($black, 85);
                 &::before {
-                    background-color: $theme2;
+                    background-color: lighten($black, 85);
                     content: '';
                     position: absolute;
                     left: -4px;
@@ -1623,6 +1639,7 @@
             & button {
                 font-size: 14px;
                 font-weight: 500;
+                color: $white;
             }
         }
     }
@@ -1672,6 +1689,10 @@
     }
     & .checkinput {
         min-width: 30px;
+        &:checked {
+            background-color: $theme1;
+            border-color: $theme1;
+        }
     }
 }
 
@@ -1994,7 +2015,7 @@
             font-weight: 500;
         }
         & .paymentoption {
-            & *> {
+            & >* {
                 flex: 1 1 14%;
                 width: 14%;
             }
@@ -2675,3 +2696,116 @@
 }
 
 // contact us page end 
+
+
+
+// hero section two start 
+.herotwo {
+    height: 100vh;
+    padding-top: 60px;
+    & .heroheading {
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 60px;
+    }
+    & .herocontent {
+        font-size: 16px;
+        margin-top: 14px;
+        line-height: 23px;
+    }
+    
+}
+@include media-breakpoint(basic) {}
+
+@include media-breakpoint-up(sm) {}
+
+@include media-breakpoint-up(md) {}
+
+@include media-breakpoint-up(lg) {}
+
+@include media-breakpoint-up(xl) {}
+
+@include media-breakpoint-up(xxl) {}
+
+@include media-breakpoint-down(xxl) {}
+
+@include media-breakpoint-down(xl) {
+    .herotwo {
+        & .herosectionimg {
+            & img {
+            }
+        }
+        & .heroheading {
+            font-size: 40px;
+            line-height: 52px;
+        }
+        & .herocontent {
+        }
+        
+    }
+}
+
+@include media-breakpoint-down(lg) {
+    .herotwo {
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 45px;
+        & .herosectionimg {
+            aspect-ratio: 8/3;
+            & img {
+                object-fit: contain;
+            }
+        }
+        & .heroheading {
+            font-size: 36px;
+            line-height: 49px;
+        }
+        & .herocontent {
+        }
+        
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .herotwo {
+        padding-top: 85px;
+        & .herosectionimg {
+            aspect-ratio: 6/3;
+            & img {
+            }
+        }
+        & .heroheading {
+            font-size: 30px;
+            line-height: 38px;
+        }
+        & .herocontent {
+            font-size: 15px;
+            margin-top: 12px;
+            line-height: 22px;
+        }
+        
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .herotwo {
+        padding-top: 80px;
+        padding-bottom: 35px;
+        & .herosectionimg {
+            & img {
+            }
+        }
+        & .heroheading {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        & .herocontent {
+            font-size: 14px;
+            margin-top: 10px;
+            line-height: 21px;
+        }
+        
+    }
+}
+
+// hero section two end

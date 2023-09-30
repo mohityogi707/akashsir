@@ -5,6 +5,14 @@
         background-size: cover;
         background-position: center;
     }
+    &.indexnav {
+        background-color: #fff;
+        & .headerlink {
+            & .login {
+                color: #000;
+            }
+        }
+    }
     & .headerlink {
         gap: 24px;
         & .login {
